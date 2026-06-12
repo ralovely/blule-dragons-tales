@@ -24,4 +24,6 @@ Running log of anything that looks like an error or needs a decision outside the
 
 6. **"Fooling no one" variants (15, 45)** — **author: do as planned** (both swept to period deadpan per §8).
 
-7. **Out-of-scope files** — **author confirmed**: `2-aizomea.md` is the superseded single-file manuscript; it and `0-ToC.md` / `0-timeline.md` / `3-colophon.md` receive no edits.
+7. **Fix 16 amendment (post-Phase 2)** — **author decision**: the mother's family summers are on the **Côte Basque**, not Brittany. Prologue and canon ledger updated. Side benefit: gives Indigo's recurring south-of-France comparisons (entries 3, 41; fix 8) a biographical root.
+
+8. **Out-of-scope files** — **author confirmed**: `2-aizomea.md` is the superseded single-file manuscript; it and `0-ToC.md` / `0-timeline.md` / `3-colophon.md` receive no edits.

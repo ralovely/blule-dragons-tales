@@ -25,7 +25,7 @@ The hill didn't move. But a little puff of steam came out of a crack near the to
 
 ---
 
-Indy's father was English, a man who spoke to his books more than to people. Her mother was French, and once hosted a dinner for fourteen in a room meant for six; she considered it a triumph. Indigo grew up between them: winters in the draughty library of the estate in England, summers with her mother's people in Brittany or at the flat in Montmartre, where the paint never dried on the windowsills and somebody was always arguing about Cézanne.
+Indy's father was English, a man who spoke to his books more than to people. Her mother was French, and once hosted a dinner for fourteen in a room meant for six; she considered it a triumph. Indigo grew up between them: winters in the draughty library of the estate in England, summers with her mother's people on the Côte Basque or at the flat in Montmartre, where the paint never dried on the windowsills and somebody was always arguing about Cézanne.
 
 She studied biology at Oxford, one of three women in the department. Her rooms held trays of frogs, feathers and bones, and then, increasingly, notebooks of stories — sailors' stories, mountain stories, stories of dragons.
 
