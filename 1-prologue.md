@@ -67,7 +67,7 @@ What she saw, what she learnt, and what she drew is the heart of this book.
 
 ---
 
-Lady Pepper spent decades fighting for the protection of dragons. She wrote letters, gave lectures, cornered politicians at dinners. I have a photograph of her in the trunk, standing outside the United Nations in a hat she clearly bought for the occasion, looking as if she has just won an argument with a building. In 1972, coincidentally the year of my birth — she helped create the Dragon Protection Act, an international law that recognised dragons as living beings deserving of conservation.
+Lady Pepper spent decades fighting for the protection of dragons. She wrote letters, gave lectures, cornered politicians at dinners. I have a photograph of her in the trunk, standing outside the United Nations in a hat she clearly bought for the occasion, looking as if she has just won an argument with a building. In 1972 — coincidentally the year of my birth — she helped create the Dragon Protection Act, an international law that recognised dragons as living beings deserving of conservation.
 
 Her public work made her the foremost authority on dragons in the world. But her private work, everything about Aizomea, she kept hidden. Perhaps the dragons ensured it. Perhaps she chose to. By the time she died in 1985, it had all disappeared.
 
