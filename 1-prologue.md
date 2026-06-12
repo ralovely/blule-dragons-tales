@@ -73,7 +73,7 @@ Her public work made her the foremost authority on dragons in the world. But her
 
 ---
 
-My mother and uncle followed in her footsteps, both becoming explorers. My mother vanished during an expedition, in a plane crash over the Pacific. There is a photograph of her in the trunk, taken on a wide beach: she is laughing, her hair is wet, and the sea behind her is very bright. My uncle Cendre died a few months later, in his sleep. When his rooms were cleared there was a row of stones on his desk, arranged by size; I know now where two of them came from. I was the only one left.
+My mother and uncle followed in her footsteps, both becoming explorers. My mother vanished during an expedition, in a plane crash over the Pacific. On my birthdays she used to wake me at first light, and we would cut the cake hours early, just the two of us, and eat the first slices sitting on the kitchen floor. My uncle Cendre died a few months later, in his sleep. When his rooms were cleared there was a row of stones on his desk, arranged by size; I know now where two of them came from. I was the only one left.
 
 My father, whom I never knew growing up, is somewhere in these pages. I did not understand that until I read them. I have since met him. That story is not for this book, but it is the reason I could write it.
 
