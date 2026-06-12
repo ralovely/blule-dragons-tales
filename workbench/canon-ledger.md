@@ -105,6 +105,7 @@ Entries are **thematically ordered, not chronological** ("This is not a diary in
 | "It ate the sign." | 40 |
 | The blue cloth | 75 |
 | "Jamie. If you are reading this…" note in full | P |
+| "The rock was not a rock. It was a dormant dragon egg." (author-affirmed 2026-06-12: the one sanctioned negation-reframe in the prologue — do not re-flag in verification) | P |
 
 ## 6. Tic inventory — baselines → targets (per-file; verify *lumpy* distribution)
 

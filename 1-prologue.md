@@ -45,7 +45,7 @@ They met at a botanical conference in Prague. Indy was presenting a paper on "Ac
 
 As she was packing up, feeling dejected, an older woman approached. She didn't laugh. She leaned in and whispered, "It's not singing because it's lonely. They only hum in pairs. Where did you find this one? I have its sister."
 
-The rock was a dormant dragon egg.
+The rock was not a rock. It was a dormant dragon egg.
 
 They found each other again and again over the years, in the strangest places — a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched — have you considered that it's not a knot for a rope, but a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere — let alone to Aizomea.
 
