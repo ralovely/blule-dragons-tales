@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aizomea — before / after</title>
+<style>
+*{box-sizing:border-box}
+:root{--del:#fbe4e4;--delx:#a13030;--add:#e2f2e6;--addx:#1c6b35}
+body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:#faf8f4;color:#26221a;display:grid;grid-template-columns:270px 1fr;height:100vh}
+#side{border-right:1px solid #e2ddd3;overflow-y:auto;background:#f4f1ea;padding:8px 0;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px}
+#side .it{padding:4px 12px;cursor:pointer;display:flex;gap:8px;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#4d4738}
+#side .it:hover{background:#ece7dc}
+#side .it.act{background:#e3dccb;font-weight:600;color:#26221a}
+.dot{width:8px;height:8px;border-radius:50%;background:#cfc8b6;flex:none}
+.dot.chg{background:#d97706}
+#main{display:flex;flex-direction:column;overflow:hidden}
+#head{padding:10px 18px;border-bottom:1px solid #e2ddd3;display:flex;align-items:baseline;gap:14px;font-family:ui-sans-serif,system-ui,sans-serif}
+#head h1{font-size:15px;margin:0;font-weight:650}
+#head .meta{font-size:12.5px;color:#6b6353}
+.badge{font-size:11px;padding:2px 9px;border-radius:99px;background:#eee7d8;color:#6b6353}
+.badge.chg{background:#fdf0d5;color:#92600a}
+#panes{flex:1;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.pane{overflow-y:auto;padding:26px 36px 70px}
+.pane+.pane{border-left:1px solid #e2ddd3;background:#fffdf9}
+.pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a8170;margin:0 0 16px}
+.txt{font-size:15.5px;line-height:1.66;max-width:64ch}
+.txt .para{margin:0 0 1em}
+span.del{background:var(--del);color:var(--delx);text-decoration:line-through;border-radius:2px;padding:0 1px}
+span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px}
+body.nodiff span.del{background:none;color:inherit;text-decoration:none;padding:0}
+body.nodiff span.add{background:none;color:inherit;padding:0}
+#foot{padding:6px 18px;border-top:1px solid #e2ddd3;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8a8170}
+.empty{color:#8a8170;font-style:italic}
+kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
+</style>
+</head>
+<body>
+<div id="side"></div>
+<div id="main">
+  <div id="head"><h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span></div>
+  <div id="panes">
+    <div class="pane"><h2>Original</h2><div class="txt" id="oldt"></div></div>
+    <div class="pane"><h2>Edited</h2><div class="txt" id="newt"></div></div>
+  </div>
+  <div id="foot"><kbd>J</kbd>/<kbd>→</kbd> next &nbsp;·&nbsp; <kbd>K</kbd>/<kbd>←</kbd> previous &nbsp;·&nbsp; <kbd>D</kbd> toggle highlights &nbsp;·&nbsp; click the list to jump</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let FILES=[],OLD=[],NEW=[],idx=0;
+
+function tok(t){return t.replace(/\r/g,'').trim().replace(/\n{2,}/g,' ¶ ').split(/\s+/).filter(Boolean);}
+
+function lcsOps(a,b){
+  const m=a.length,n=b.length;
+  if(m*n>4000000) return null;
+  const W=n+1,dp=new Int32Array((m+1)*W);
+  for(let i=m-1;i>=0;i--)for(let j=n-1;j>=0;j--){
+    dp[i*W+j]=a[i]===b[j]?dp[(i+1)*W+j+1]+1:Math.max(dp[(i+1)*W+j],dp[i*W+j+1]);
+  }
+  const ops=[];let i=0,j=0;
+  while(i<m&&j<n){
+    if(a[i]===b[j]){ops.push(['s',a[i]]);i++;j++;}
+    else if(dp[(i+1)*W+j]>=dp[i*W+j+1]){ops.push(['d',a[i]]);i++;}
+    else{ops.push(['a',b[j]]);j++;}
+  }
+  while(i<m)ops.push(['d',a[i++]]);
+  while(j<n)ops.push(['a',b[j++]]);
+  return ops;
+}
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+
+function rend(ops,side){
+  let html='<div class="para">';
+  for(const[t,w]of ops){
+    if(side==='old'&&t==='a')continue;
+    if(side==='new'&&t==='d')continue;
+    if(w==='¶'){html+='</div><div class="para">';continue;}
+    const cls=t==='s'?'':(t==='d'?'del':'add');
+    html+=cls?`<span class="${cls}">${esc(w)}</span> `:esc(w)+' ';
+  }
+  return html+'</div>';
+}
+
+function plain(t){
+  if(t==null)return '<div class="empty">— no file —</div>';
+  return t.trim().split(/\n{2,}/).map(p=>`<div class="para">${esc(p).replace(/\n/g,'<br>')}</div>`).join('');
+}
+
+function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
+
+function show(i){
+  idx=Math.max(0,Math.min(FILES.length-1,i));
+  const f=FILES[idx],o=OLD[idx],n=NEW[idx];
+  const mm=f.match(/^(\d+[a-z]?)-(.+?)-(T[-\dT]*\d)\.md$/);
+  $('ttl').textContent=mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
+  const chg=(o??'')!==(n??'');
+  const dw=wc(n)-wc(o), dws=dw===0?'':` (${dw>0?'+':''}${dw})`;
+  $('meta').textContent=`${mm?mm[3]:''} · ${wc(o)} → ${wc(n)} words${dws} · entry ${idx+1}/${FILES.length}`;
+  $('badge').textContent=chg?'changed':'unchanged';
+  $('badge').className='badge'+(chg?' chg':'');
+  if(o!=null&&n!=null&&chg){
+    const ops=lcsOps(tok(o),tok(n));
+    if(ops){$('oldt').innerHTML=rend(ops,'old');$('newt').innerHTML=rend(ops,'new');}
+    else{$('oldt').innerHTML=plain(o);$('newt').innerHTML=plain(n);}
+  }else{
+    $('oldt').innerHTML=plain(o);$('newt').innerHTML=plain(n);
+  }
+  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
+  const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});
+  document.querySelectorAll('.pane').forEach(p=>p.scrollTop=0);
+}
+
+async function boot(){
+  FILES=await(await fetch('preview-files.json')).json();
+  const get=async p=>{const r=await fetch(p);return r.ok?await r.text():null;};
+  [OLD,NEW]=await Promise.all([
+    Promise.all(FILES.map(f=>get('entries/'+encodeURIComponent(f)))),
+    Promise.all(FILES.map(f=>get('entries-v2/'+encodeURIComponent(f))))
+  ]);
+  $('side').innerHTML=FILES.map((f,k)=>{
+    const chg=(OLD[k]??'')!==(NEW[k]??'');
+    const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
+    return `<div class="it" onclick="show(${k})"><span class="dot${chg?' chg':''}"></span>${mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f}</div>`;
+  }).join('');
+  show(0);
+}
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='j'||e.key==='J'||e.key==='ArrowRight')show(idx+1);
+  else if(e.key==='k'||e.key==='K'||e.key==='ArrowLeft')show(idx-1);
+  else if(e.key==='d'||e.key==='D')document.body.classList.toggle('nodiff');
+});
+boot();
+</script>
+</body>
+</html>
