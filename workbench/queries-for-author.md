@@ -26,4 +26,6 @@ Running log of anything that looks like an error or needs a decision outside the
 
 7. **Fix 16 amendment (post-Phase 2)** — **author decision**: the mother's family summers are on the **Côte Basque**, not Brittany. Prologue and canon ledger updated. Side benefit: gives Indigo's recurring south-of-France comparisons (entries 3, 41; fix 8) a biographical root.
 
-8. **Out-of-scope files** — **author confirmed**: `2-aizomea.md` is the superseded single-file manuscript; it and `0-ToC.md` / `0-timeline.md` / `3-colophon.md` receive no edits.
+8. **Fix 19 amendment (post-Phase 2)** — **author decision**: the prologue's closing paragraph shortened to two sentences; the staged "Jamie inherited-tic moment" (apologising to Nangula's carved dragon) was cut as not worth its scaffolding. §5's single-inheritance-moment device is waived; the "knick-knackeries" echo and the object ending (compass, eye brighter in one direction) are kept. Entry 67's weather-apology tic reverted to optional.
+
+9. **Out-of-scope files** — **author confirmed**: `2-aizomea.md` is the superseded single-file manuscript; it and `0-ToC.md` / `0-timeline.md` / `3-colophon.md` receive no edits.
