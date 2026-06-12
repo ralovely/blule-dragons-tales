@@ -79,7 +79,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 | 62 | T4 | std | JOKE | — | Fix 4: "brain freeze" ×2 → period coinage (e.g. "the cold-ache"; she'd name it herself). River-at-the-docks beat exact. Keep sky-blame close. |
 | 63 | T4 | std-short | IMG | — | "I can only describe as delighted recognition" → recast. End on Manami watching River (the look = image). Payload: Manami recognising a younger somebody — exact. |
 | 64 | T4 | std-short | PF | B: THE notice, once, as close: "I did not measure it. I seem to have stopped measuring things. Cassius would mind."; E: candidate | Hiccupper memory payload exact (eight years). Current "Progress, of a kind." → replaced by the measuring admission. |
-| 65 | T3-T4 | std + Later — 1971 addendum | ST | — | Fix 12: recast final River/Kai para as a clearly-later addendum (1971) — removes "second visit" ambiguity without renaming. De-tick: tea-simile opener keep (Tic D adjacent), "The Normandy coast was never like this. Nothing was ever like this." → soften repetition. Keep "a language I do not think is entirely Manaïari." |
+| 65 | T3-T5 | std | ST | — | Fix 12 RESOLVED by author-approved rename (`T3-T4`→`T3-T5`): "on her second visit" now sits correctly as 1971 — keep the phrase. Edit body in T3 batch, final River/Kai para in T5 voice. De-tick: tea-simile opener keep (Tic D adjacent), "The Normandy coast was never like this. Nothing was ever like this." → soften repetition. Keep "a language I do not think is entirely Manaïari." |
 | 66 | T4 | std-short | JOKE | — | Fix 22: convert "[replace the intro…]" and "[make a wet journal entry here]" into ONE Jamie editorial footnote in archivist register (Jamie has processed the pages). Keep "It waits longer." |
 | 67 | T4 | std-short | LOG | C: escalation — the apology to the weather lands here (snow that has no business existing) | Keep chicken-leg close (domestic). T4 parental noticing (River in the thick, Cendre's dignity). |
 | 68 | T4 | short scene — near-ultra, leave | ST | Strike-through candidate (one struck word, mother's restraint) | BIG-FIVE: keeps its weight. *le mal du pays* keep. |
@@ -94,7 +94,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 ## Furniture placement summary (lumpy by design)
 
 - **Strike-throughs (5–8):** 02, 09, 30, 50, 68 (+1 optional in T5 if natural). Never typos — visible thinking only.
-- **"Later —" addenda:** 16, 53, 65 (the fix-12 one), optional 35.
+- **"Later —" addenda:** 16, 53, optional 35 (65's fix-12 addendum no longer needed — resolved by rename).
 - **Sketch captions (4–6, coordinate with illustration placement):** 08 (existing ×3), 47, 50, 74.
 - **Interrupted entries:** 12 (existing "Tomorrow."), 56 (protected cut), one optional new in 45 or 27.
 - **Italic-distrusted words:** 03 (*leader*), 17 (*wares*), 24 (*ready*), 10 (*valuable*) — 3–4 of these.
@@ -116,5 +116,5 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 
 ## Batch order (Phase 3)
 
-T1 batch 1: 01–09 · T1 batch 2: 10, 11, 19, 20, 32, 34, 35, 43, 58, 70 · T2: 13, 18, 31 (+T2 halves of 32/58/59) · T3 batch 1: 12, 14–17, 21–28 · T3 batch 2: 29, 30, 33, 36–42 · T3 batch 3: 45–57 · T3 batch 4: 65, 69 (T3 halves) · T4: 61–64, 66–68 (+65 addendum) · T5: 44, 59 (T5 half), 60, 71, 72, 74, 75 (73 untouched).
+T1 batch 1: 01–09 · T1 batch 2: 10, 11, 19, 20, 32, 34, 35, 43, 58, 70 · T2: 13, 18, 31 (+T2 halves of 32/58/59) · T3 batch 1: 12, 14–17, 21–28 · T3 batch 2: 29, 30, 33, 36–42 · T3 batch 3: 45–57 · T3 batch 4: 65, 69 (T3 halves) · T4: 61–64, 66–68 · T5: 44, 59 (T5 half), 60, 65 (River/Kai para), 71, 72, 74, 75 (73 untouched).
 After every batch: re-grep §2 patterns on the batch's files + self-audit for newly introduced repetitions; check neighbour ending-types; commit `Tn batch i/j: entries … — <what>`.

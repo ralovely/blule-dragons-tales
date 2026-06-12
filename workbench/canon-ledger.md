@@ -158,5 +158,7 @@ Strike-throughs: 0 (target 5–8). "Later —" addenda: 0 (target several, uneve
 - **T1 (1938):** 01–11, 19, 20, 34, 35, 43, 70 (+ dual: 32, 58) — 17 (+2)
 - **T2 (1948):** 13, 18, 31 (+ dual: 32, 58, 59) — 3 (+3). *Thinnest trip — §7a candidate 3 targets this.*
 - **T3 (1955):** 12, 14–17, 21–30, 33, 36–42, 45–57 (+ dual: 65, 69) — 36 (+2)
-- **T4 (1963):** 61–64, 66, 67, 68 (+ dual: 65) — 7 (+1)
-- **T5 (1971):** 44, 60, 71–75 (+ dual: 59, 69) — 7 (+2)
+- **T4 (1963):** 61–64, 66, 67, 68 — 7
+- **T5 (1971):** 44, 60, 71–75 (+ dual: 59, 65, 69) — 7 (+3)
+
+*(65 renamed `T3-T4`→`T3-T5` per fix 12, author-approved 2026-06-12: the River/Kai surfing beat is her second visit = 1971.)*

@@ -3,7 +3,7 @@
 One row per file. **Topics and paintable moments are the contract with the illustration spreads — they do not change.**
 Word counts are the pre-edit baseline; flag any rewrite moving an entry more than ~±40% in `queries-for-author.md` (author review, not violation).
 
-Filename convention: `NN-slug-Tn.md`. Numeric prefix = fixed entry order; suffix = trip tag (five files carry dual tags, recorded as written). **Files are never renamed.** New entries (§7a, ≤3–4, default zero) slot in as `NNa-slug-Tn.md` and are registered in the second table below.
+Filename convention: `NN-slug-Tn.md`. Numeric prefix = fixed entry order; suffix = trip tag (five files carry dual tags, recorded as written). **Files are never renamed** (one author-approved exception: 65's tag suffix corrected `T3-T4`→`T3-T5` per fix 12, 2026-06-12; numeric prefix unchanged). New entries (§7a, ≤3–4, default zero) slot in as `NNa-slug-Tn.md` and are registered in the second table below.
 
 | # | Filename | Trip | Topic (one sentence) | Primary paintable moment | Words |
 |---|---|---|---|---|---|
@@ -71,7 +71,7 @@ Filename convention: `NN-slug-Tn.md`. Numeric prefix = fixed entry order; suffix
 | 62 | 62-the-grand-gourmands-T4.md | T4 | Dragons love ice cream: blue-stone flavour, catapult delivery, repeated brain freeze. | A frozen sphere launched by catapult, caught mid-flight in open dragon jaws. | 268 |
 | 63 | 63-mirrors-to-humanity-T4.md | T4 | Dragons imitate us: the hammock fad; River's delighted recognition. | A dragon wedged swaying in a stolen cargo net between two reinforced palms. | 164 |
 | 64 | 64-i-brought-them-here-T4.md | T4 | Returning to the Hiccupper with the children after eight years; it remembers her. | The grown Hiccupper crossing the clearing to nudge her hand, Cendre and River watching. | 200 |
-| 65 | 65-the-sea-the-surfers-T3-T4.md | T3-T4 | Surfing: constant, unceremonious, human and dragon on the same wave; River takes to it with Kai. | A surfer and a dragon carving the same turn on the same wave in tandem. | 548 |
+| 65 | 65-the-sea-the-surfers-T3-T5.md | T3-T5 | Surfing: constant, unceremonious, human and dragon on the same wave; River takes to it with Kai (1971). | A surfer and a dragon carving the same turn on the same wave in tandem. | 548 |
 | 66 | 66-mudscale-amphibians-T4.md | T4 | The mudscale amphibians: underwater grace, soaked-sheep emergence, the triple shake. Contains Jamie-footnote conversion site (fix 22). | The sleek dragon underwater beside its drenched, electrified post-swim self. | 205 |
 | 67 | 67-snow-dragon-snowball-fights-T4.md | T4 | Ice dragons invent snow to have snowball fights; the family gets hit anyway. | The frost-patch battlefield — dragons stockpiling snowballs, children woefully outmatched. | 235 |
 | 68 | 68-leaving-T4.md | T4 | Leaving (1963): River looking back; what a mother sees and does not name. | The three of them walking to the shore, River turned toward the village. | 63 |
