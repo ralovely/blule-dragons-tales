@@ -1,8 +1,8 @@
 *Day three.*
 
-Three days since I woke on Aizomea (I have the name of the place now) and my hand is finally steady enough to set things down in order. I am writing this because if I do not write it down, I will convince myself it is not real. I am a scientist. The notebook is the only tool I have that still works.
+Three days now, and my hand is at last steady enough to set things down in order. I do not know the name of this place. I am writing this because if I do not write it down, I will convince myself it is not real. I am a scientist. The notebook is the only tool I have that still works.
 
-I woke three days ago in a room I did not recognise. Stone ceiling. A bed too large for me, built for someone broader, taller. The air smelled of wet stone and something warm I had no name for. Something was breathing on the other side of the wall; slowly, deeply, on a scale I could feel through the floor.
+I woke in a room I did not recognise. Stone ceiling. A bed too large for me, built for someone broader, taller. The air smelled of wet stone and something warm I had no name for. Something was breathing on the other side of the wall; slowly, deeply, on a scale I could feel through the floor.
 
 I was outside within the hour. A dragon was sleeping in the path. Just lying there, like a dog in a doorway. I stood in my doorframe, heart hammering, until a child walked up, stepped over the dragon's tail without looking down, and disappeared around a corner. So I stepped over it too. ~~Madness.~~ It was the only way into the village. The village was behind it, full of people, full of noise, full of life that had been happening long before I arrived and showed no sign of adjusting to my presence. Everything is built at two scales: human doors beside dragon-wide arches, narrow stairs next to broad ramps; two villages shuffled into one. Even the human scale is too large for me; I walk through the doorframes feeling like a child visiting a grown-up's house. I was furniture delivered to the wrong address. N.B. Measure a doorway, when I find a tape measure, or the courage to ask for one.
 
