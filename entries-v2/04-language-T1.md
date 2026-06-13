@@ -16,7 +16,7 @@ There is no written form. Everything is oral. I may be the first person to write
 
 Place names change. A hill is not named. It is called "the hill where the old dragon slept" until a new dragon sleeps there, and then it becomes something else. A path is "the path past the red flowers" until the flowers die, and then it is "the path where the red flowers were." The landscape is a living sentence, constantly being revised. I asked Manami for directions last week and she sent me to a landmark that had, apparently, been renamed the previous afternoon. I arrived somewhere else entirely. She did not see the problem.
 
-The word for "blue" and the word for "home" are nearly identical. The tonal difference is so slight I cannot hear it. I keep saying one when I mean the other. Nobody corrects me. I am beginning to suspect that, here, it may not matter which one I mean.
+The word for "blue" and the word for "home" are nearly identical. The tonal difference is so slight I cannot hear it. I keep saying one when I mean the other. No one corrects me. I am beginning to suspect that, here, it may not matter which one I mean.
 
 I am learning this language the way one learns to swim: badly, in public, swallowing a great deal of water. Being bilingual helps; the French half of my brain is more willing to bend than the English half, which keeps insisting on rules. I catch myself thinking in it sometimes, just for a moment, before the English rushes back in. In those moments, the world here makes a kind of sense it does not make in my own tongue. I am not yet fluent. I may never be.
 

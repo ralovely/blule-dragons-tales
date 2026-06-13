@@ -1,6 +1,6 @@
 There is a young dragon in the village that is, as far as I can tell, made entirely of appetite. It hatched three weeks before I arrived, and it has not stopped eating since.
 
-I watched it work through an entire pen of goats this morning. It latched onto the first with a grip that made the goat's eyes go very wide, emptied it in minutes, released it, and moved to the next. Like a milkman working through the bottles on a doorstep, except in reverse. The goat stood there, deflated, looking personally offended. Nobody seemed alarmed. A man sighed, picked the dragon up (it is still small enough to carry, though not for much longer), and set it on the grass. It burped. The goat nearest to it took a step back.
+I watched it work through an entire pen of goats this morning. It latched onto the first with a grip that made the goat's eyes go very wide, emptied it in minutes, released it, and moved to the next. Like a milkman working through the bottles on a doorstep, except in reverse. The goat stood there, deflated, looking personally offended. No one seemed alarmed. A man sighed, picked the dragon up (it is still small enough to carry, though not for much longer), and set it on the grass. It burped. The goat nearest to it took a step back.
 
 I can already hear some future colleague insisting that dragons, being non-mammalian, cannot possibly drink milk. To which I say: come here, watch a hatchling drain a goat in four minutes flat, and then explain to the hatchling that it is doing something biologically impossible. I am sure it will be fascinated.
 
