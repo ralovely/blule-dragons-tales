@@ -1,6 +1,6 @@
 I have been asking how dragons die. It is not a question the Manaïari enjoy, though not because it is sad. It is because the answer is not one answer.
 
-Some fade. Over weeks, they grow quieter. They eat less. Their colour pales. The Listeners say the dragon's presence thins, until one morning the flank is cool. It is not sudden. It is not violent. It is a long exhale that, at some point, does not draw back in.
+Some fade. Over weeks, they grow quieter. They eat less. Their colour pales. The Listeners say the dragon's presence thins, until one morning the flank is cool. It is not sudden, and not violent. It is a long exhale that, at some point, does not draw back in.
 
 Some go to the sea. The dying dragon walks to the coast, enters the water, and swims out past the reef. The marine dragons rise to meet it. What happens beyond the fog line, nobody has seen. The fishermen say the water glows for a night afterwards, a deep blue, and then it stops.
 
