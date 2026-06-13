@@ -18,10 +18,10 @@ I watched a man in a sleek, insect-like glider stand perfectly still in a launch
 
 **A Conversation with the Wind**
 
-Three launches, three entirely different methods. It strikes me now that the launch is unimportant. It is merely the opening line of a conversation.
+However they leave the ground, it strikes me now, the launch is the unimportant part. It is merely the opening line of a conversation.
 
-The Manaïari do not fly *through* the air. They fly *with* it. I saw the grandmother from the canyon adjust the tips of her glider's wings --- just slightly --- to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
+The Manaïari do not fly *through* the air. They fly *with* it. I saw the grandmother from the canyon adjust the tips of her glider's wings, just slightly, to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
 
 Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, did not teach the Manaïari physics. They taught them a language.
 
-I asked Manami if she flies. She looked at me as if I'd asked whether she breathes.
+I asked Manami if she flies. She looked at me for a long moment, then went back to mending her net. I did not ask again.
