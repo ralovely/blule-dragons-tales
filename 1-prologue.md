@@ -1,9 +1,9 @@
 Prologue - The Accidental Inheritance
 =====================================
 
-It's hard to talk about dragons without talking about Lady Indigo Pepper. Or Indy, like I used to call her. Lady Pepper was my grandmother, and I like to think I was her favourite grandchild — which is not such a stretch, given I was the only one.
+It's hard to talk about dragons without talking about Lady Indigo Pepper. Or Indy, like I used to call her. Lady Pepper was my grandmother, and I like to think I was her favourite grandchild, which is not such a stretch, given I was the only one.
 
-I should start with the house — not where the story begins, but where I found it.
+I should start with the house: not where the story begins, but where I found it.
 
 The door stuck, the way it always had. Inside, the house smelled of dust and something underneath the dust that was hers. The little table where we'd had tea parties with impossibly tiny sandwiches was still there, still set for two. The bannister I used to slide down was still smooth on the underside, where a hundred descents had polished it. She used to pretend to be furious.
 
@@ -27,7 +27,7 @@ The hill didn't move. But a little puff of steam came out of a crack near the to
 
 Indy's father was English, a man who spoke to his books more than to people. Her mother was French, and once hosted a dinner for fourteen in a room meant for six; she considered it a triumph. Indigo grew up between them: winters in the draughty library of the estate in England, summers with her mother's people on the Côte Basque or at the flat in Montmartre, where the paint never dried on the windowsills and somebody was always arguing about Cézanne.
 
-She studied biology at Oxford, one of three women in the department. Her rooms held trays of frogs, feathers and bones, and then, increasingly, notebooks of stories — sailors' stories, mountain stories, stories of dragons.
+She studied biology at Oxford, one of three women in the department. Her rooms held trays of frogs, feathers and bones, and then, increasingly, notebooks of stories: sailors' stories, mountain stories, stories of dragons.
 
 In the 1920s she abandoned the constraints of England, setting off in search of the creatures she knew were real. Her travels led her across Eastern Europe, South America, Asia Minor, and finally to whispers of a lost continent called Aizomea, hidden somewhere in the Pacific. The stories all agreed on one thing: it could not be found, because it did not wish to be.
 
@@ -47,7 +47,7 @@ As she was packing up, feeling dejected, an older woman approached. She didn't l
 
 The rock was not a rock. It was a dormant dragon egg.
 
-They found each other again and again over the years, in the strangest places — a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched — have you considered that it's not a knot for a rope, but a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere — let alone to Aizomea.
+They found each other again and again over the years, in the strangest places: a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched. Have you considered that it's not a knot for a rope, but a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere, let alone to Aizomea.
 
 Nangula had known all along. She had been waiting for the right person to show it to, and she had decided that person was Indy; the years of sideways questions were her way of making sure.
 
@@ -61,13 +61,13 @@ The guardianship had been passed on.
 
 What followed were five journeys spanning thirty-three years. The first, in 1938, lasted nearly a year. She went alone, with nothing but Nangula's scrolls, a compass that did not point north, and more courage than I think she would ever have admitted to. She returned to England changed, and spent the next decade trying to go back.
 
-She did: again in 1948, and again in 1955, the year after my grandfather Cassius died — a longer stay that time, and a deeper one. In 1963, she brought her children: my uncle Cendre and my mother, River. In 1971, she went one last time, with River alone. She was seventy years old.
+She did: again in 1948, and again in 1955, the year after my grandfather Cassius died; a longer stay that time, and a deeper one. In 1963, she brought her children: my uncle Cendre and my mother, River. In 1971, she went one last time, with River alone. She was seventy years old.
 
 What she saw, what she learnt, and what she drew is the heart of this book.
 
 ---
 
-Lady Pepper spent decades fighting for the protection of dragons. She wrote letters, gave lectures, sat on committees, and cornered politicians at dinners. I have a photograph of her in the trunk, standing outside the United Nations in a hat she clearly bought for the occasion, looking as if she has just won an argument with a building. In 1972 — coincidentally the year of my birth — she helped create the Dragon Protection Act, an international law that recognised dragons as living beings deserving of conservation.
+Lady Pepper spent decades fighting for the protection of dragons. She wrote letters, gave lectures, sat on committees, and cornered politicians at dinners. I have a photograph of her in the trunk, standing outside the United Nations in a hat she clearly bought for the occasion, looking as if she has just won an argument with a building. In 1972 (coincidentally the year of my birth) she helped create the Dragon Protection Act, an international law that recognised dragons as living beings deserving of conservation.
 
 Her public work made her the foremost authority on dragons in the world. But her private work, everything about Aizomea, she kept hidden. I like to think the dragons ensured it, though it is just as possible she simply chose to. By the time she died in 1985, it had all disappeared.
 
@@ -83,7 +83,7 @@ The library still smelled of paper. I sat on the rug where I used to sit, and fo
 
 I was running my hand along the spines when I found it. Le Tour du Monde en 80 Jours, by Jules Verne. My childhood favourite. A sheet of paper fell out. A hand-drawn map of the forest behind the estate, in Indy's handwriting. At the bottom, in pencil: "Jamie. If you are reading this, I am gone and you are ready. Follow the map. Trust the compass. Do not be afraid of what you find. I wasn't. Well, perhaps a little. — Indy"
 
-Beneath the oldest tree lay a trunk, sealed away for generations. Inside were her research, her paintings, her detailed studies of the dragons of Aizomea, and the Aizomea Compass: a sphere about the size of a tangerine, covered in carved dragon scales and bound by a band of blue-tinged metal etched with stars. It opens like a locket, and inside is a dragon's eye — green-gold, with a slit pupil, clear as glass, still bright after what must be centuries.
+Beneath the oldest tree lay a trunk, sealed away for generations. Inside were her research, her paintings, her detailed studies of the dragons of Aizomea, and the Aizomea Compass: a sphere about the size of a tangerine, covered in carved dragon scales and bound by a band of blue-tinged metal etched with stars. It opens like a locket, and inside is a dragon's eye: green-gold, with a slit pupil, clear as glass, still bright after what must be centuries.
 
 I knelt there for a long time, the compass in one hand and a stack of my grandmother's journals in the other. The forest was very quiet.
 

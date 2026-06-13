@@ -2,6 +2,8 @@
 
 Consult this **before opening each file** in Phase 3; re-grep after each batch (§2 patterns). No entry is finished until its neighbours have been checked for ending-type collisions.
 
+**EM-DASH RULE (author, 2026-06-13): avoid em-dashes (`---`/`—`) throughout.** They are an AI tell, and a typographic instrument — someone writing a journal by hand wouldn't reach for them. Replace with comma, semicolon, colon, parentheses, or a full stop; restructure if none fits. The double-dash parenthetical (`--- x ---`) is banned outright. Budget: a stray single dash may survive only where speech rhythm truly demands it (target ≤4 across the whole corpus; baseline in untouched originals: 36 — sweep each batch as it's edited). The "Later —" addendum device becomes "Later:". Parentheses are period-correct for Indigo's asides and are Jamie's documented tic — prefer them.
+
 **Ending types:** PF plain fact · MT mid-thought stop · LOG logistics/domestic · Q unanswered question · JOKE joke with no moral · QUOTE someone else's words · IMG sensory image · ST aphorism/stinger (STj = joke-stinger, counts toward the stinger budget).
 **Budget check:** ST/STj total = 17 of ≤25 (10 are jokes ✓). No two consecutive entries share a type. JOKE and STj are distinct types but where they sit adjacent (33/34, 37/38, 45/46, 59/60) vary the register: one situational, one aphoristic.
 **Shapes:** std (standard scene) · ultra (≤6 lines) · list · interrupted · addendum (Later — carries the point) · letter (Cassius/Nangula/children cadence) · caption (sketch-caption-led) · unbroken (single excited paragraph) · sections (headed sub-scenes — already humanly lumpy, keep) · catalogue (specimen-by-specimen).
