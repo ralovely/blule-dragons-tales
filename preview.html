@@ -25,17 +25,14 @@ body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:#faf8f4;col
 .pane{overflow-y:auto;padding:26px 36px 70px;position:relative}
 .pane+.pane{border-left:1px solid #e2ddd3;background:#fffdf9}
 .pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a8170;margin:0 0 16px;display:flex;gap:8px;align-items:center}
-.mode{font-size:10px;border:1px solid #d8d1c2;border-radius:4px;padding:1px 6px;color:#8a8170;background:#f6f2ea;cursor:pointer;user-select:none}
+.mode{font-size:10px;border:1px solid #d8d1c2;border-radius:4px;padding:1px 6px;color:#8a8170;background:#f6f2ea;cursor:pointer;user-select:none;letter-spacing:0;text-transform:none}
 .mode:hover{background:#ece4d4;color:#5a5142}
 .txt{font-size:15.5px;line-height:1.66;max-width:64ch}
 .txt .para{margin:0 0 1em}
 span.del{background:var(--del);color:var(--delx);text-decoration:line-through;border-radius:2px;padding:0 1px}
 span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px}
-body.nodiff span.del{background:none;color:inherit;text-decoration:none;padding:0}
-body.nodiff span.add{background:none;color:inherit;padding:0}
 #edit{display:block;width:100%;max-width:64ch;min-height:calc(100vh - 200px);border:none;outline:none;resize:none;background:transparent;color:#26221a;font-family:Georgia,'Iowan Old Style',serif;font-size:15.5px;line-height:1.66;padding:0}
 #edit:focus{box-shadow:-14px 0 0 -12px #c9a24a}
-.hidden{display:none!important}
 #foot{padding:6px 18px;border-top:1px solid #e2ddd3;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8a8170;display:flex;gap:18px;align-items:center}
 #status{margin-left:auto;display:flex;align-items:center;gap:6px}
 #status .pulse{width:7px;height:7px;border-radius:50%;background:#7da37d}
@@ -54,22 +51,24 @@ kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
     <h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span>
   </div>
   <div id="panes">
-    <div class="pane"><h2>Original</h2><div class="txt" id="oldt"></div></div>
     <div class="pane">
-      <h2>Edited <span class="mode" id="modetag" onclick="toggleMode()" title="switch edit / diff">editing</span></h2>
+      <h2>Original <span class="mode" id="modetag" onclick="toggleMode()" title="plain original / word-diff vs edited (⌘/Ctrl+D)">diff</span></h2>
+      <div class="txt" id="oldt"></div>
+    </div>
+    <div class="pane">
+      <h2>Edited</h2>
       <textarea id="edit" spellcheck="false"></textarea>
-      <div class="txt hidden" id="newt"></div>
     </div>
   </div>
   <div id="foot">
-    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · click <b>editing/diff</b> label (or <kbd>D</kbd>, <kbd>⌘/Ctrl+D</kbd> while typing) to toggle · <kbd>Esc</kbd> leave text box · right pane autosaves</span>
+    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · click <b>diff/plain</b> label (or <kbd>⌘/Ctrl+D</kbd>) to toggle the left pane · <kbd>Esc</kbd> leaves the text box · right pane autosaves</span>
     <span id="status"><span class="pulse"></span><span id="statustxt">ready</span></span>
   </div>
 </div>
 <script>
 const $=id=>document.getElementById(id);
 let FILES=[],OLD=[],NEW=[],idx=0;
-let dirty=false, mode='edit', saveTimer=null;
+let dirty=false, mode='diff', saveTimer=null;   // mode: 'diff' | 'plain' (left pane only)
 const ta=$('edit');
 
 const get=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.text():null).catch(()=>null);
@@ -97,7 +96,7 @@ function lcsOps(a,b){
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
 function rendDiff(o,n){
   const ops=lcsOps(tok(o||''),tok(n||''));
-  if(!ops)return plain(n);
+  if(!ops)return plain(o);
   let html='<div class="para">';
   for(const[t,w]of ops){
     if(w==='¶'){html+='</div><div class="para">';continue;}
@@ -120,12 +119,16 @@ function sideItemHTML(f,k){
 function buildSide(){$('side').innerHTML=FILES.map(sideItemHTML).join('');markActive();}
 function markActive(){document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));}
 function updateSideItem(k){const el=document.querySelector(`#side .it[data-k="${k}"] .dot`);if(el)el.classList.toggle('chg',isChg(k));}
+function setStatus(cls,txt){$('status').className=cls;$('statustxt').textContent=txt;}
 
-function setStatus(cls,txt){const s=$('status');s.className=cls;$('statustxt').textContent=txt;}
-
+// Left pane: plain original, or a live word-diff between original and the current edited text.
+function renderLeft(){
+  $('modetag').textContent=mode;
+  if(mode==='diff')$('oldt').innerHTML=rendDiff(OLD[idx],ta.value);
+  else $('oldt').innerHTML=plain(OLD[idx]);
+}
 function renderMeta(){
-  const f=FILES[idx],o=OLD[idx];
-  const cur=mode==='edit'?ta.value:NEW[idx];
+  const f=FILES[idx],o=OLD[idx],cur=ta.value;
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-(T[-\dT]*\d)\.md$/);
   $('ttl').textContent=mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
   const chg=(o??'')!==(cur??'');
@@ -134,61 +137,40 @@ function renderMeta(){
   $('badge').textContent=chg?'changed':'unchanged';
   $('badge').className='badge'+(chg?' chg':'');
 }
-
-function renderLeft(){$('oldt').innerHTML=plain(OLD[idx]);}
-
-function toggleMode(){flush();mode=mode==='edit'?'diff':'edit';applyMode();renderMeta();if(mode==='edit')ta.focus();}
-function applyMode(){
-  $('modetag').textContent=mode;
-  if(mode==='edit'){ta.classList.remove('hidden');$('newt').classList.add('hidden');}
-  else{ta.classList.add('hidden');$('newt').classList.remove('hidden');$('newt').innerHTML=rendDiff(OLD[idx],NEW[idx]);}
-}
-
 function loadEntry(){
   ta.value=NEW[idx]??'';
   dirty=false;
-  renderLeft();
-  applyMode();
-  renderMeta();
-  markActive();
+  renderLeft();renderMeta();markActive();
   const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});
   document.querySelectorAll('.pane').forEach(p=>p.scrollTop=0);
 }
-
 function show(i){
   flush();
-  i=Math.max(0,Math.min(FILES.length-1,i));
-  if(i===idx&&FILES.length){ // same entry, just ensure loaded
-    idx=i;loadEntry();return;
-  }
-  idx=i;loadEntry();
+  idx=Math.max(0,Math.min(FILES.length-1,i));
+  loadEntry();
 }
+function toggleMode(){mode=mode==='diff'?'plain':'diff';renderLeft();}
 
 // ---- saving ----
 function scheduleSave(){
   dirty=true;
-  renderMeta();
+  renderLeft();renderMeta();
   setStatus('saving','editing…');
   clearTimeout(saveTimer);
   saveTimer=setTimeout(()=>doSave(idx,ta.value),1500);
 }
-function flush(){
-  if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}
-}
+function flush(){if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}}
 function doSave(k,text){
   setStatus('saving','saving…');
   fetch('entries-v2/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text})
-    .then(r=>{
-      if(!r.ok)throw new Error(r.status);
+    .then(r=>{if(!r.ok)throw new Error(r.status);
       NEW[k]=text;
       if(k===idx&&ta.value===text)dirty=false;
       updateSideItem(k);
-      if(k===idx)renderMeta();
       setStatus('','saved '+new Date().toLocaleTimeString());
     })
     .catch(e=>setStatus('error','save failed ('+e.message+')'));
 }
-
 ta.addEventListener('input',scheduleSave);
 ta.addEventListener('blur',flush);
 
@@ -200,12 +182,7 @@ async function pollCurrent(){
   if(o!==OLD[k]){OLD[k]=o;if(k===idx){renderLeft();renderMeta();updateSideItem(k);}}
   if(n!==NEW[k]){
     NEW[k]=n;
-    if(k===idx&&!dirty){            // only refresh editor when you have no unsaved edits
-      ta.value=n??'';
-      if(mode==='diff')applyMode();
-      renderMeta();
-      setStatus('','updated '+new Date().toLocaleTimeString());
-    }
+    if(k===idx&&!dirty){ta.value=n??'';renderLeft();renderMeta();setStatus('','updated '+new Date().toLocaleTimeString());}
     updateSideItem(k);
   }
 }
@@ -219,7 +196,7 @@ async function pollAll(){
     Promise.all(files.map(getNew))
   ]);
   const curName=FILES[idx];
-  if(dirty&&FILES[idx]){const di=files.indexOf(curName);if(di>=0)news[di]=ta.value;} // don't clobber unsaved
+  if(dirty&&FILES[idx]){const di=files.indexOf(curName);if(di>=0)news[di]=ta.value;}
   FILES=files;OLD=olds;NEW=news;
   if(manifestChanged){const ni=FILES.indexOf(curName);idx=ni>=0?ni:Math.min(idx,FILES.length-1);buildSide();}
   else{FILES.forEach((_,k)=>updateSideItem(k));}
@@ -232,24 +209,17 @@ async function boot(){
     Promise.all(FILES.map(getOld)),
     Promise.all(FILES.map(getNew))
   ]);
-  buildSide();
-  loadEntry();
-  setStatus('','ready');
+  buildSide();loadEntry();setStatus('','ready');
   setInterval(pollCurrent,1500);
   setInterval(pollAll,15000);
   window.addEventListener('focus',pollAll);
 }
 
 document.addEventListener('keydown',e=>{
-  const inText=e.target===ta;
-  if(inText){
-    if(e.key==='Escape'){ta.blur();}
-    else if((e.key==='d'||e.key==='D')&&(e.metaKey||e.ctrlKey)){e.preventDefault();toggleMode();}
-    return; // let all other keys type normally
-  }
+  if((e.key==='d'||e.key==='D')&&(e.metaKey||e.ctrlKey)){e.preventDefault();toggleMode();return;}
+  if(e.target===ta){if(e.key==='Escape')ta.blur();return;}
   if(e.key==='j'||e.key==='J'||e.key==='ArrowRight')show(idx+1);
   else if(e.key==='k'||e.key==='K'||e.key==='ArrowLeft')show(idx-1);
-  else if(e.key==='d'||e.key==='D')toggleMode();
 });
 boot();
 </script>
