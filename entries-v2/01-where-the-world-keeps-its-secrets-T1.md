@@ -1,9 +1,11 @@
 Here I am, scribbling away in my journal. The scent is a peculiar mix of damp earth and something I have no better word for than draconic; not fiery, mind you, but warm and ancient, like sunlight on old stone. If you were to ask me exactly where I am, Cassius, I should have to wave my hands vaguely towards the Pacific and change the subject.
 
-Imagine drawing a curled-up serpent on a map, somewhere between New Zealand and South America. No chart shows it. I have looked; I spent eleven days at sea looking. A whole landmass (mountains, rivers, weather of its own) and not one atlas in any library I have ever worked in so much as hints that it exists.
+Aizomea. I have the name now, and a great deal else I did not have a fortnight ago. No chart shows the place. I spent eleven days at sea looking for it, a curled-up serpent of land somewhere between New Zealand and South America, and I am no longer sure that looking is how one finds it.
 
-Its edges are never quite the same from one day to the next. They dissolve into a pearl-grey mist that smells of salt and eucalyptus, and reform, an hour or a day later, as a jagged coastline of deep blue cliffs. From above, the whole thing resembles a contented, slumbering dragon; its spine a range of cobalt mountains, its belly a patchwork of plains and sparkling rivers. I have tried to sketch the coastline twice. Both times it had moved by the time I put my pencil down. I am choosing to find this funny. N.B. It is also, if I think about it for longer than a minute, the most alarming fact I have ever recorded, so I have recorded it once and shall move along.
+Its edges are never the same two mornings together. A pearl-grey mist comes in off the water, smelling of salt and eucalyptus, and takes the whole coastline with it; an hour or a day later it lifts, and the cliffs are standing precisely where they always were. The land does not move. The veil over it does. I have tried to sketch the coast twice, and twice the mist has rubbed it out from under my pencil. I am choosing to find this funny.
 
-The moss is soft underfoot, and somewhere below this ridge a sleeping dragon is rumbling, slow and enormous. It is the most real place I have ever stood, and not a soul at home knows it is here.
+Seen whole, the island has the shape of a sleeping dragon: a spine of cobalt mountains, a belly of plains and bright rivers. I have not seen it whole, and perhaps never shall. One takes a great many things here on faith.
+
+The moss is soft underfoot, and somewhere below this ridge something vast and asleep is rumbling. It is the most real place I have ever stood, and not a soul at home knows it is here.
 
 *Day twelve.*
