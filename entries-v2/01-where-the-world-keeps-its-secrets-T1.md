@@ -4,7 +4,7 @@ Aizomea. I have the name now, and a great deal else I did not have a fortnight a
 
 Its edges are never the same two mornings together. A pearl-grey mist comes in off the water, smelling of salt and eucalyptus, and takes the whole coastline with it; an hour or a day later it lifts, and the cliffs are standing precisely where they always were. The land does not move. The veil over it does. I have tried to sketch the coast twice, and twice the mist has rubbed it out from under my pencil. A continent with no interest in being mapped.
 
-Seen whole, the island has the shape of a sleeping dragon: a spine of cobalt mountains, a belly of plains and bright rivers. I have not seen it whole, and perhaps never shall. One takes a great many things here on faith.
+Seen whole, the island would almost have the shape of a sleeping dragon: a spine of cobalt mountains, a belly of plains and bright rivers. I have not seen it whole, and perhaps never shall. One takes a great many things here on faith.
 
 The moss is soft underfoot, and somewhere below this ridge something vast and asleep is rumbling. It is the most real place I have ever stood, and not a soul at home knows it is here.
 
