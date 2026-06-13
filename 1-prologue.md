@@ -95,6 +95,6 @@ A dragon stepped out of the trees, copper-scaled, wearing a bright red collar, a
 
 That was twenty years ago. I have spent those years reading, translating, travelling, and trying to understand a woman I thought I knew. This book is what I found.
 
-A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote as she lived — not in order, nor to a plan, but as things struck her. I have chosen the entries that best show the world she found, and arranged them by subject rather than by date: less a diary in sequence than a world, assembled from its pieces.
+A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote as she lived: not in order, nor to a plan, but as things struck her. I have chosen the entries that best show the world she found, and arranged them by subject rather than by date: less a diary in sequence than a world, assembled from its pieces.
 
 The rest is hers: the journals, the illustrations, the letters, and all the other knick-knackeries that Lady Indigo Pepper left for us to rediscover. The compass sits open on my desk as I write, its green-gold eye brighter in one particular direction.
