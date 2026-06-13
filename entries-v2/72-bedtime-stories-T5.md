@@ -4,4 +4,4 @@ One dragon arrives every evening at the same family's window. It settles into th
 
 The mother told me she skipped a night once. When she opened the shutters the next morning, the dragon was still there. It had not moved. It was looking at the dark window with the patient, devastated expression of someone who has been stood up. She has not skipped a night since. Next door, it is the father who tells the stories. He does all the voices.
 
-There is a lullaby here that exists in two versions. The mothers sing one. The dragons hum the other. The melody is the same, adapted. A child falling asleep hears both, layered. I heard it from outside a window one evening and had to sit down.
+There is a lullaby here that exists in two versions. The mothers sing one. The dragons hum the other. The melody is the same, adapted. A child falling asleep hears both, layered. *Une berceuse à deux voix.* I heard it from outside a window one evening and had to sit down.
