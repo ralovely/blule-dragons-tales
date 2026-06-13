@@ -29,7 +29,9 @@ span.del{background:var(--del);color:var(--delx);text-decoration:line-through;bo
 span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px}
 body.nodiff span.del{background:none;color:inherit;text-decoration:none;padding:0}
 body.nodiff span.add{background:none;color:inherit;padding:0}
-#foot{padding:6px 18px;border-top:1px solid #e2ddd3;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8a8170}
+#foot{padding:6px 18px;border-top:1px solid #e2ddd3;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8a8170;display:flex;gap:18px;align-items:center}
+#live{margin-left:auto;display:flex;align-items:center;gap:6px}
+#live .pulse{width:7px;height:7px;border-radius:50%;background:#7da37d}
 .empty{color:#8a8170;font-style:italic}
 kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
 </style>
@@ -42,11 +44,15 @@ kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
     <div class="pane"><h2>Original</h2><div class="txt" id="oldt"></div></div>
     <div class="pane"><h2>Edited</h2><div class="txt" id="newt"></div></div>
   </div>
-  <div id="foot"><kbd>J</kbd>/<kbd>→</kbd> next &nbsp;·&nbsp; <kbd>K</kbd>/<kbd>←</kbd> previous &nbsp;·&nbsp; <kbd>D</kbd> toggle highlights &nbsp;·&nbsp; click the list to jump</div>
+  <div id="foot"><span><kbd>J</kbd>/<kbd>→</kbd> next · <kbd>K</kbd>/<kbd>←</kbd> previous · <kbd>D</kbd> toggle highlights · click the list to jump</span><span id="live"><span class="pulse"></span><span id="livetxt">live</span></span></div>
 </div>
 <script>
 const $=id=>document.getElementById(id);
 let FILES=[],OLD=[],NEW=[],idx=0;
+
+const get=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.text():null).catch(()=>null);
+const getOld=f=>get('entries/'+encodeURIComponent(f));
+const getNew=f=>get('entries-v2/'+encodeURIComponent(f));
 
 function tok(t){return t.replace(/\r/g,'').trim().replace(/\n{2,}/g,' ¶ ').split(/\s+/).filter(Boolean);}
 
@@ -89,16 +95,37 @@ function plain(t){
 
 function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
 
-function show(i){
-  idx=Math.max(0,Math.min(FILES.length-1,i));
+function isChg(k){return (OLD[k]??'')!==(NEW[k]??'');}
+
+function sideItemHTML(f,k){
+  const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
+  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}"></span>${mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f}</div>`;
+}
+
+function buildSide(){
+  $('side').innerHTML=FILES.map(sideItemHTML).join('');
+  markActive();
+}
+
+function markActive(){
+  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
+}
+
+function updateSideItem(k){
+  const el=document.querySelector(`#side .it[data-k="${k}"] .dot`);
+  if(el)el.classList.toggle('chg',isChg(k));
+}
+
+function render(resetScroll){
   const f=FILES[idx],o=OLD[idx],n=NEW[idx];
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-(T[-\dT]*\d)\.md$/);
   $('ttl').textContent=mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
-  const chg=(o??'')!==(n??'');
+  const chg=isChg(idx);
   const dw=wc(n)-wc(o), dws=dw===0?'':` (${dw>0?'+':''}${dw})`;
   $('meta').textContent=`${mm?mm[3]:''} · ${wc(o)} → ${wc(n)} words${dws} · entry ${idx+1}/${FILES.length}`;
   $('badge').textContent=chg?'changed':'unchanged';
   $('badge').className='badge'+(chg?' chg':'');
+  const scrolls=[...document.querySelectorAll('.pane')].map(p=>p.scrollTop);
   if(o!=null&&n!=null&&chg){
     const ops=lcsOps(tok(o),tok(n));
     if(ops){$('oldt').innerHTML=rend(ops,'old');$('newt').innerHTML=rend(ops,'new');}
@@ -106,24 +133,65 @@ function show(i){
   }else{
     $('oldt').innerHTML=plain(o);$('newt').innerHTML=plain(n);
   }
-  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
-  const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});
-  document.querySelectorAll('.pane').forEach(p=>p.scrollTop=0);
+  document.querySelectorAll('.pane').forEach((p,i)=>p.scrollTop=resetScroll?0:scrolls[i]);
+  markActive();
+  if(resetScroll){const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});}
+}
+
+function show(i){
+  idx=Math.max(0,Math.min(FILES.length-1,i));
+  render(true);
+}
+
+async function pollCurrent(){
+  if(!FILES.length)return;
+  const k=idx,f=FILES[k];
+  const [o,n]=await Promise.all([getOld(f),getNew(f)]);
+  let changed=false;
+  if(o!==OLD[k]){OLD[k]=o;changed=true;}
+  if(n!==NEW[k]){NEW[k]=n;changed=true;}
+  if(changed&&k===idx){render(false);updateSideItem(k);blip();}
+}
+
+async function pollAll(){
+  const mf=await get('preview-files.json');
+  if(!mf)return;
+  let files;try{files=JSON.parse(mf);}catch(e){return;}
+  const manifestChanged=JSON.stringify(files)!==JSON.stringify(FILES);
+  const [olds,news]=await Promise.all([
+    Promise.all(files.map(getOld)),
+    Promise.all(files.map(getNew))
+  ]);
+  const curName=FILES[idx];
+  FILES=files;OLD=olds;NEW=news;
+  if(manifestChanged){
+    const ni=FILES.indexOf(curName);
+    idx=ni>=0?ni:Math.min(idx,FILES.length-1);
+    buildSide();
+  }else{
+    FILES.forEach((_,k)=>updateSideItem(k));
+  }
+  render(false);
+}
+
+let blipT=null;
+function blip(){
+  $('livetxt').textContent='updated '+new Date().toLocaleTimeString();
+  clearTimeout(blipT);
+  blipT=setTimeout(()=>{$('livetxt').textContent='live';},4000);
 }
 
 async function boot(){
-  FILES=await(await fetch('preview-files.json')).json();
-  const get=async p=>{const r=await fetch(p);return r.ok?await r.text():null;};
+  FILES=await(await fetch('preview-files.json',{cache:'no-store'})).json();
   [OLD,NEW]=await Promise.all([
-    Promise.all(FILES.map(f=>get('entries/'+encodeURIComponent(f)))),
-    Promise.all(FILES.map(f=>get('entries-v2/'+encodeURIComponent(f))))
+    Promise.all(FILES.map(getOld)),
+    Promise.all(FILES.map(getNew))
   ]);
-  $('side').innerHTML=FILES.map((f,k)=>{
-    const chg=(OLD[k]??'')!==(NEW[k]??'');
-    const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
-    return `<div class="it" onclick="show(${k})"><span class="dot${chg?' chg':''}"></span>${mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f}</div>`;
-  }).join('');
-  show(0);
+  buildSide();
+  render(true);
+  setInterval(pollCurrent,1500);
+  setInterval(pollAll,15000);
+  window.addEventListener('focus',pollAll);
 }
 
 document.addEventListener('keydown',e=>{
