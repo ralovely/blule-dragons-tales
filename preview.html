@@ -203,17 +203,24 @@ async function pollCurrent(){
   }
 }
 async function pollAll(){
+  // Maintains other entries' change-dots and the manifest. Never touches the
+  // current entry's panes — pollCurrent owns that, and only redraws on a real
+  // change, so background polling can't yank your scroll position.
   const mf=await get('preview-files.json');
   if(!mf)return;
   let files;try{files=JSON.parse(mf);}catch(e){return;}
+  const curName=FILES[idx], curOLD=OLD[idx], curNEW=NEW[idx];
   const manifestChanged=JSON.stringify(files)!==JSON.stringify(FILES);
   const [olds,news]=await Promise.all([Promise.all(files.map(getOld)),Promise.all(files.map(getNew))]);
-  const curName=FILES[idx];
-  if(dirty&&FILES[idx]){const di=files.indexOf(curName);if(di>=0)news[di]=ta.value;}
   FILES=files;OLD=olds;NEW=news;
-  if(manifestChanged){const ni=FILES.indexOf(curName);idx=ni>=0?ni:Math.min(idx,FILES.length-1);buildSide();}
-  else{FILES.forEach((_,k)=>updateSideItem(k));}
-  if(!dirty)loadEntry();else{renderLeft();renderMeta();}
+  const ci=FILES.indexOf(curName);
+  if(ci>=0){OLD[ci]=curOLD;NEW[ci]=curNEW;}   // leave current entry to pollCurrent (keeps scroll/caret)
+  if(manifestChanged){
+    if(ci>=0){idx=ci;buildSide();}                                   // list changed, current entry stays put
+    else{idx=Math.min(idx,FILES.length-1);buildSide();loadEntry();}  // current file gone: navigate
+  }else{
+    FILES.forEach((_,k)=>updateSideItem(k));                         // just refresh the dots
+  }
 }
 
 async function boot(){
