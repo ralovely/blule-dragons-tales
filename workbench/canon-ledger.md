@@ -75,6 +75,8 @@ Entries are **thematically ordered, not chronological** ("This is not a diary in
 2. **Purple stone**: hatchling's gift (35) → "in the trunk when I found it" (35 note) → trunk (P).
 3. **Hana**: baby on Manami's hip (03) → kintsugi apprentice (36).
 4. **River/Kai**: 61 (docks, fourth word) → 62 (volunteering at the docks) → 63 (Manami recognising someone in River) → 65 (dawn surfing, "a language I do not think is entirely Manaïari") → 69 ("River is out. I am not worried.") → 73 (shoulders touching) → 75 (the dark blue cloth, held to her face) → P (Jamie b. 1972; "My father… is somewhere in these pages"). **Never make it explicit.**
+4b. **Prague rock = dragon egg, not blue stone** (prologue: "The rock was not a rock. It was a dormant dragon egg."). Entry 09 must NOT call the Prague hummer a lump of blue stone. Resolution (author-confirmed, 2026-06-13): entry 09 now has Indigo realise it was an egg that *hummed with the same blue note* — connecting egg-hum to blue-stone-resonance perceptually, consistent with entry 33 (egg shells "contain traces of blue stone") and the "hum in pairs" protected line. The blue stone is everywhere yet treated with reverence (NOT "ordinary"); it is "the nearest thing to magic."
+
 5. **"She never stopped writing to him"** (30 note) — licenses all post-1954 Cassius address (1 is T1 and also addresses Cassius — fine, he was alive; 30 T3; "Cassius would mind" planned for T4 per Tic B).
 6. **Entry 56's mid-sentence cut** — protected device; pairs with 54 note (the pressed leaf still green) and 52 note (Jamie walked it too).
 7. **The bird promise** (12: "I should also write about the birds here. Tomorrow.") — deliberate loose thread. **No bird entry. Keep.**
