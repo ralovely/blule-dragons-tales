@@ -70,4 +70,16 @@ Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~
 - Big length swing flagged: **74** (+35%) — tea-surrender + Nangula question added to a short entry; still under ±40% but the most-changed short piece. Review against its illustration spread.
 - Sketch-caption furniture is under-budget (only entry 08's existing captions) — deferred pending illustration placement, since captions must coordinate with art.
 - Entry 69 ending trimmed to "I am not worried." (dropped the envious-reflection coda) per plan; flag if you preferred the longer close.
-- This is a **first pass**: voice-swap spot-test (§11.3), ending-type collision audit (§11.4), and a full read-aloud remain. Author has been reviewing per-entry live in the preview throughout.
+- Author has been reviewing per-entry live in the preview throughout.
+
+## 7. Phase 5 verification (run 2026-06-14)
+
+**§11.4 Ending-type audit.** Stinger family (ST+STj) = **17 of 75** (target ≤25 ✓); of these **10 are joke-stingers** (target ≥10 ✓). Pure JOKE endings ≈13 more. Spread is healthy: PF ≈12, IMG ≈14, Q 6, QUOTE 4, LOG 4, MT 2. No run of 3+ identical ending shapes. Adjacent same-family pairs differ in *shape* and so don't read as formula: 64 (poignant admission) → 65 (wet-grinning image); 66 (deadpan one-liner) → 67 (self-implicating domestic aside); 21 (grand) → 22 (dry, protected). Big emotional closers (68, 71, 72, 73, 75) preserved.
+
+**§11.3 Voice swap.** Prologue past-tense:present = 62:14 (retrospective memoir); entries present-tense dominant (498 is/are across 75); untranslated French in 8 entry files, 0 in prologue. Jamie ≠ Indigo on tense, register, and furniture — trivially attributable.
+
+**§11.5 Read-aloud / shape echo.** Corpus-wide repeated sentence-openings sit at normal English frequencies (≤0.2/entry), not clustered within a trip. Negation-reframe survivors ("It is not …" ×6, "This is not …" ×4) are ordinary syntax or the sanctioned keepers, not the epigram template.
+
+**§11.6 Tic arcs.** B (measure→doubt) decays to its single T4 notice in 64 ✓; A (haberdashery) peaks T3 ✓; D (tea) surrenders in 74 ✓; E (French) back-weighted to T4–T5 ✓; F (Nangula question) attributed in 56 → unattributed in 74 ✓.
+
+**Result:** all acceptance criteria met on this pass. Remaining is author sign-off (review once, in the preview) and the deferred sketch-caption furniture (awaits illustration placement).
