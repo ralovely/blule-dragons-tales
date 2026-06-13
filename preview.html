@@ -14,24 +14,32 @@ body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:#faf8f4;col
 .dot{width:8px;height:8px;border-radius:50%;background:#cfc8b6;flex:none}
 .dot.chg{background:#d97706}
 #main{display:flex;flex-direction:column;overflow:hidden}
-#head{padding:10px 18px;border-bottom:1px solid #e2ddd3;display:flex;align-items:baseline;gap:14px;font-family:ui-sans-serif,system-ui,sans-serif}
+#head{padding:10px 18px;border-bottom:1px solid #e2ddd3;display:flex;align-items:baseline;gap:12px;font-family:ui-sans-serif,system-ui,sans-serif}
 #head h1{font-size:15px;margin:0;font-weight:650}
 #head .meta{font-size:12.5px;color:#6b6353}
+.navbtn{font-family:inherit;font-size:13px;border:1px solid #d8d1c2;background:#f1ece1;color:#4d4738;border-radius:5px;padding:1px 8px;cursor:pointer}
+.navbtn:hover{background:#e7e0d2}
 .badge{font-size:11px;padding:2px 9px;border-radius:99px;background:#eee7d8;color:#6b6353}
 .badge.chg{background:#fdf0d5;color:#92600a}
 #panes{flex:1;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
-.pane{overflow-y:auto;padding:26px 36px 70px}
+.pane{overflow-y:auto;padding:26px 36px 70px;position:relative}
 .pane+.pane{border-left:1px solid #e2ddd3;background:#fffdf9}
-.pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a8170;margin:0 0 16px}
+.pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a8170;margin:0 0 16px;display:flex;gap:8px;align-items:center}
+.mode{font-size:10px;border:1px solid #d8d1c2;border-radius:4px;padding:0 5px;color:#8a8170;background:#f6f2ea}
 .txt{font-size:15.5px;line-height:1.66;max-width:64ch}
 .txt .para{margin:0 0 1em}
 span.del{background:var(--del);color:var(--delx);text-decoration:line-through;border-radius:2px;padding:0 1px}
 span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px}
 body.nodiff span.del{background:none;color:inherit;text-decoration:none;padding:0}
 body.nodiff span.add{background:none;color:inherit;padding:0}
+#edit{display:block;width:100%;max-width:64ch;min-height:calc(100vh - 200px);border:none;outline:none;resize:none;background:transparent;color:#26221a;font-family:Georgia,'Iowan Old Style',serif;font-size:15.5px;line-height:1.66;padding:0}
+#edit:focus{box-shadow:-14px 0 0 -12px #c9a24a}
+.hidden{display:none!important}
 #foot{padding:6px 18px;border-top:1px solid #e2ddd3;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8a8170;display:flex;gap:18px;align-items:center}
-#live{margin-left:auto;display:flex;align-items:center;gap:6px}
-#live .pulse{width:7px;height:7px;border-radius:50%;background:#7da37d}
+#status{margin-left:auto;display:flex;align-items:center;gap:6px}
+#status .pulse{width:7px;height:7px;border-radius:50%;background:#7da37d}
+#status.saving .pulse{background:#d6a52a}
+#status.error .pulse{background:#c0392b}
 .empty{color:#8a8170;font-style:italic}
 kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
 </style>
@@ -39,23 +47,35 @@ kbd{font-family:inherit;background:#eee7d8;border-radius:3px;padding:0 5px}
 <body>
 <div id="side"></div>
 <div id="main">
-  <div id="head"><h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span></div>
+  <div id="head">
+    <button class="navbtn" onclick="show(idx-1)">‹</button>
+    <button class="navbtn" onclick="show(idx+1)">›</button>
+    <h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span>
+  </div>
   <div id="panes">
     <div class="pane"><h2>Original</h2><div class="txt" id="oldt"></div></div>
-    <div class="pane"><h2>Edited</h2><div class="txt" id="newt"></div></div>
+    <div class="pane">
+      <h2>Edited <span class="mode" id="modetag">editing</span></h2>
+      <textarea id="edit" spellcheck="false"></textarea>
+      <div class="txt hidden" id="newt"></div>
+    </div>
   </div>
-  <div id="foot"><span><kbd>J</kbd>/<kbd>→</kbd> next · <kbd>K</kbd>/<kbd>←</kbd> previous · <kbd>D</kbd> toggle highlights · click the list to jump</span><span id="live"><span class="pulse"></span><span id="livetxt">live</span></span></div>
+  <div id="foot">
+    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · <kbd>D</kbd> edit/diff · <kbd>Esc</kbd> leave text box · right pane autosaves</span>
+    <span id="status"><span class="pulse"></span><span id="statustxt">ready</span></span>
+  </div>
 </div>
 <script>
 const $=id=>document.getElementById(id);
 let FILES=[],OLD=[],NEW=[],idx=0;
+let dirty=false, mode='edit', saveTimer=null;
+const ta=$('edit');
 
 const get=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.text():null).catch(()=>null);
 const getOld=f=>get('entries/'+encodeURIComponent(f));
 const getNew=f=>get('entries-v2/'+encodeURIComponent(f));
 
 function tok(t){return t.replace(/\r/g,'').trim().replace(/\n{2,}/g,' ¶ ').split(/\s+/).filter(Boolean);}
-
 function lcsOps(a,b){
   const m=a.length,n=b.length;
   if(m*n>4000000) return null;
@@ -73,86 +93,120 @@ function lcsOps(a,b){
   while(j<n)ops.push(['a',b[j++]]);
   return ops;
 }
-
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
-
-function rend(ops,side){
+function rendDiff(o,n){
+  const ops=lcsOps(tok(o||''),tok(n||''));
+  if(!ops)return plain(n);
   let html='<div class="para">';
   for(const[t,w]of ops){
-    if(side==='old'&&t==='a')continue;
-    if(side==='new'&&t==='d')continue;
     if(w==='¶'){html+='</div><div class="para">';continue;}
     const cls=t==='s'?'':(t==='d'?'del':'add');
     html+=cls?`<span class="${cls}">${esc(w)}</span> `:esc(w)+' ';
   }
   return html+'</div>';
 }
-
 function plain(t){
   if(t==null)return '<div class="empty">— no file —</div>';
   return t.trim().split(/\n{2,}/).map(p=>`<div class="para">${esc(p).replace(/\n/g,'<br>')}</div>`).join('');
 }
-
 function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
-
 function isChg(k){return (OLD[k]??'')!==(NEW[k]??'');}
 
 function sideItemHTML(f,k){
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
   return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}"></span>${mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f}</div>`;
 }
+function buildSide(){$('side').innerHTML=FILES.map(sideItemHTML).join('');markActive();}
+function markActive(){document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));}
+function updateSideItem(k){const el=document.querySelector(`#side .it[data-k="${k}"] .dot`);if(el)el.classList.toggle('chg',isChg(k));}
 
-function buildSide(){
-  $('side').innerHTML=FILES.map(sideItemHTML).join('');
-  markActive();
-}
+function setStatus(cls,txt){const s=$('status');s.className=cls;$('statustxt').textContent=txt;}
 
-function markActive(){
-  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
-}
-
-function updateSideItem(k){
-  const el=document.querySelector(`#side .it[data-k="${k}"] .dot`);
-  if(el)el.classList.toggle('chg',isChg(k));
-}
-
-function render(resetScroll){
-  const f=FILES[idx],o=OLD[idx],n=NEW[idx];
+function renderMeta(){
+  const f=FILES[idx],o=OLD[idx];
+  const cur=mode==='edit'?ta.value:NEW[idx];
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-(T[-\dT]*\d)\.md$/);
   $('ttl').textContent=mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
-  const chg=isChg(idx);
-  const dw=wc(n)-wc(o), dws=dw===0?'':` (${dw>0?'+':''}${dw})`;
-  $('meta').textContent=`${mm?mm[3]:''} · ${wc(o)} → ${wc(n)} words${dws} · entry ${idx+1}/${FILES.length}`;
+  const chg=(o??'')!==(cur??'');
+  const dw=wc(cur)-wc(o), dws=dw===0?'':` (${dw>0?'+':''}${dw})`;
+  $('meta').textContent=`${mm?mm[3]:''} · ${wc(o)} → ${wc(cur)} words${dws} · entry ${idx+1}/${FILES.length}`;
   $('badge').textContent=chg?'changed':'unchanged';
   $('badge').className='badge'+(chg?' chg':'');
-  const scrolls=[...document.querySelectorAll('.pane')].map(p=>p.scrollTop);
-  if(o!=null&&n!=null&&chg){
-    const ops=lcsOps(tok(o),tok(n));
-    if(ops){$('oldt').innerHTML=rend(ops,'old');$('newt').innerHTML=rend(ops,'new');}
-    else{$('oldt').innerHTML=plain(o);$('newt').innerHTML=plain(n);}
-  }else{
-    $('oldt').innerHTML=plain(o);$('newt').innerHTML=plain(n);
-  }
-  document.querySelectorAll('.pane').forEach((p,i)=>p.scrollTop=resetScroll?0:scrolls[i]);
+}
+
+function renderLeft(){$('oldt').innerHTML=plain(OLD[idx]);}
+
+function applyMode(){
+  $('modetag').textContent=mode;
+  if(mode==='edit'){ta.classList.remove('hidden');$('newt').classList.add('hidden');}
+  else{ta.classList.add('hidden');$('newt').classList.remove('hidden');$('newt').innerHTML=rendDiff(OLD[idx],NEW[idx]);}
+}
+
+function loadEntry(){
+  ta.value=NEW[idx]??'';
+  dirty=false;
+  renderLeft();
+  applyMode();
+  renderMeta();
   markActive();
-  if(resetScroll){const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});}
+  const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});
+  document.querySelectorAll('.pane').forEach(p=>p.scrollTop=0);
 }
 
 function show(i){
-  idx=Math.max(0,Math.min(FILES.length-1,i));
-  render(true);
+  flush();
+  i=Math.max(0,Math.min(FILES.length-1,i));
+  if(i===idx&&FILES.length){ // same entry, just ensure loaded
+    idx=i;loadEntry();return;
+  }
+  idx=i;loadEntry();
 }
 
+// ---- saving ----
+function scheduleSave(){
+  dirty=true;
+  renderMeta();
+  setStatus('saving','editing…');
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(()=>doSave(idx,ta.value),1500);
+}
+function flush(){
+  if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}
+}
+function doSave(k,text){
+  setStatus('saving','saving…');
+  fetch('entries-v2/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text})
+    .then(r=>{
+      if(!r.ok)throw new Error(r.status);
+      NEW[k]=text;
+      if(k===idx&&ta.value===text)dirty=false;
+      updateSideItem(k);
+      if(k===idx)renderMeta();
+      setStatus('','saved '+new Date().toLocaleTimeString());
+    })
+    .catch(e=>setStatus('error','save failed ('+e.message+')'));
+}
+
+ta.addEventListener('input',scheduleSave);
+ta.addEventListener('blur',flush);
+
+// ---- live reload ----
 async function pollCurrent(){
   if(!FILES.length)return;
   const k=idx,f=FILES[k];
   const [o,n]=await Promise.all([getOld(f),getNew(f)]);
-  let changed=false;
-  if(o!==OLD[k]){OLD[k]=o;changed=true;}
-  if(n!==NEW[k]){NEW[k]=n;changed=true;}
-  if(changed&&k===idx){render(false);updateSideItem(k);blip();}
+  if(o!==OLD[k]){OLD[k]=o;if(k===idx){renderLeft();renderMeta();updateSideItem(k);}}
+  if(n!==NEW[k]){
+    NEW[k]=n;
+    if(k===idx&&!dirty){            // only refresh editor when you have no unsaved edits
+      ta.value=n??'';
+      if(mode==='diff')applyMode();
+      renderMeta();
+      setStatus('','updated '+new Date().toLocaleTimeString());
+    }
+    updateSideItem(k);
+  }
 }
-
 async function pollAll(){
   const mf=await get('preview-files.json');
   if(!mf)return;
@@ -163,22 +217,11 @@ async function pollAll(){
     Promise.all(files.map(getNew))
   ]);
   const curName=FILES[idx];
+  if(dirty&&FILES[idx]){const di=files.indexOf(curName);if(di>=0)news[di]=ta.value;} // don't clobber unsaved
   FILES=files;OLD=olds;NEW=news;
-  if(manifestChanged){
-    const ni=FILES.indexOf(curName);
-    idx=ni>=0?ni:Math.min(idx,FILES.length-1);
-    buildSide();
-  }else{
-    FILES.forEach((_,k)=>updateSideItem(k));
-  }
-  render(false);
-}
-
-let blipT=null;
-function blip(){
-  $('livetxt').textContent='updated '+new Date().toLocaleTimeString();
-  clearTimeout(blipT);
-  blipT=setTimeout(()=>{$('livetxt').textContent='live';},4000);
+  if(manifestChanged){const ni=FILES.indexOf(curName);idx=ni>=0?ni:Math.min(idx,FILES.length-1);buildSide();}
+  else{FILES.forEach((_,k)=>updateSideItem(k));}
+  if(!dirty)loadEntry();else{renderLeft();renderMeta();}
 }
 
 async function boot(){
@@ -188,16 +231,22 @@ async function boot(){
     Promise.all(FILES.map(getNew))
   ]);
   buildSide();
-  render(true);
+  loadEntry();
+  setStatus('','ready');
   setInterval(pollCurrent,1500);
   setInterval(pollAll,15000);
   window.addEventListener('focus',pollAll);
 }
 
 document.addEventListener('keydown',e=>{
+  const inText=e.target===ta;
+  if(inText){
+    if(e.key==='Escape'){ta.blur();}
+    return; // let all other keys type normally
+  }
   if(e.key==='j'||e.key==='J'||e.key==='ArrowRight')show(idx+1);
   else if(e.key==='k'||e.key==='K'||e.key==='ArrowLeft')show(idx-1);
-  else if(e.key==='d'||e.key==='D')document.body.classList.toggle('nodiff');
+  else if(e.key==='d'||e.key==='D'){flush();mode=mode==='edit'?'diff':'edit';applyMode();renderMeta();}
 });
 boot();
 </script>
