@@ -2,7 +2,7 @@
 
 Consult this **before opening each file** in Phase 3; re-grep after each batch (§2 patterns). No entry is finished until its neighbours have been checked for ending-type collisions.
 
-**EM-DASH RULE (author, 2026-06-13): avoid em-dashes (`---`/`—`) throughout.** They are an AI tell, and a typographic instrument — someone writing a journal by hand wouldn't reach for them. Replace with comma, semicolon, colon, parentheses, or a full stop; restructure if none fits. The double-dash parenthetical (`--- x ---`) is banned outright. Budget: a stray single dash may survive only where speech rhythm truly demands it (target ≤4 across the whole corpus; baseline in untouched originals: 36 — sweep each batch as it's edited). The "Later —" addendum device becomes "Later:". Parentheses are period-correct for Indigo's asides and are Jamie's documented tic — prefer them.
+**EM-DASH RULE (author, 2026-06-13): avoid em-dashes (`---`/`—`) throughout.** They are an AI tell, and a typographic instrument — someone writing a journal by hand wouldn't reach for them. Replace with comma, semicolon, colon, parentheses, or a full stop; restructure if none fits. The double-dash parenthetical (`--- x ---`) is banned outright. Budget: a stray single dash may survive only where speech rhythm truly demands it (target ≤4 across the whole corpus; baseline in untouched originals: 36 — sweep each batch as it's edited). The addendum device is written "P.S." (author, 2026-06-13 — never an explicit "Later"; fits her letter-leaning journal voice). Vary occasionally with a bare "Evening." or "Next morning." so the marker itself doesn't become a template. Parentheses are period-correct for Indigo's asides and are Jamie's documented tic — prefer them.
 
 **Ending types:** PF plain fact · MT mid-thought stop · LOG logistics/domestic · Q unanswered question · JOKE joke with no moral · QUOTE someone else's words · IMG sensory image · ST aphorism/stinger (STj = joke-stinger, counts toward the stinger budget).
 **Budget check:** ST/STj total = 17 of ≤25 (10 are jokes ✓). No two consecutive entries share a type. JOKE and STj are distinct types but where they sit adjacent (33/34, 37/38, 45/46, 59/60) vary the register: one situational, one aphoristic.
@@ -20,7 +20,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 | 01 | T1 | std, dateline ends it | LOG | B: keep day-marker | Fix 6 ("brand new landmass" → new to her/the maps). Fix 20 default: retune ending — less breezy, first note of unease; "*Day twelve.*" stays as the closer. Cut "delights in being just beyond definition" polish. |
 | 02 | T1 | std, dated (Day three) | PF | B: counting (three days, scale); first strike-through (~~word~~) | Fix 20 default: one orienting opening sentence. Fix 9: "built for someone broader, taller" = FIRST occurrence, keep. De-tick: 3× "as if", 2× "It is not", "furniture delivered to the wrong address" keep (good). Trim closing stinger to plain fact. |
 | 03 | T1 | std | STj | D: "I do, however, miss tea" keep; italic-distrust: "the village does not have a *leader*" fits the authority para | Fix 8: south-of-France HERE is the duplicate to vary (keep 41's). De-tick "the way" ×2 (the ship/wind one may stay if it earns it). Keep "known to bite" ending. |
-| 04 | T1 | std, list-inflected + Later — close | IMG | B: three-weeks count, N.B. word-list (DONE); binomial went to 07 | Heaviest "something closer to" file (×3 — keep ≤1). End on warm-path image, not "shape of what I am missing". |
+| 04 | T1 | std, list-inflected + P.S. close | IMG | B: three-weeks count, N.B. word-list (DONE); binomial went to 07 | Heaviest "something closer to" file (×3 — keep ≤1). End on warm-path image, not "shape of what I am missing". |
 | 05 | T1 | std | Q | C: ANCHOR (sorry to rock/trees/doorframes — keep verbatim in spirit); F: "I wonder if Nangula was better at this" keep | End on the unexplained blue fingertips as open question. "Like hearing colour" quote stays mid-entry. De-tick 2× "as if". |
 | 06 | T1 | std-short | QUOTE | — | '"Dinner," someone said.' — keep ending. Light touch overall. |
 | 07 | T1 | std | IMG | B: cave measurements; Latin binomial abandoned mid-word (here if not 04) | Replace "what can only be described as" + "jar of sweets" simile-stinger with direct image of floating islands. |
@@ -96,7 +96,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 ## Furniture placement summary (lumpy by design)
 
 - **Strike-throughs (5–8):** 02, 09, 30, 50, 68 (+1 optional in T5 if natural). Never typos — visible thinking only.
-- **"Later —" addenda:** 16, 53, optional 35 (65's fix-12 addendum no longer needed — resolved by rename).
+- **"P.S." addenda** (the after-the-entry postscript device): 04 (done), 16, 53, optional 35 (65's fix-12 addendum no longer needed — resolved by rename).
 - **Sketch captions (4–6, coordinate with illustration placement):** 08 (existing ×3), 47, 50, 74.
 - **Interrupted entries:** 12 (existing "Tomorrow."), 56 (protected cut), one optional new in 45 or 27.
 - **Italic-distrusted words:** 03 (*leader*), 17 (*wares*), 24 (*ready*), 10 (*valuable*) — 3–4 of these.

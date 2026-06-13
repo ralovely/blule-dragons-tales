@@ -155,7 +155,7 @@ Judgment audit per batch; vary counts (1, 2, 4, 7, none); the "third example eat
 Baseline: 36 across original entries, 11 in the (pre-sweep) prologue. Target: ≤4 survivors corpus-wide, single dashes only, speech-rhythm or signature cases only; never the double-dash parenthetical. Substitutes: comma, semicolon, colon, parentheses, full stop. Swept per batch. Sanctioned survivor #1: the signature dash in the protected note, "… — Indy" (prologue).
 
 ### 6.12 Journal furniture baselines (to add per §4.2 — currently near-zero)
-Strike-throughs: 0 (target 5–8). "Later —" addenda: 0 (target several, uneven). Sketch captions "[written beneath a drawing: …]": 0 explicit (08 is implicitly captions; target 4–6, coordinate with illustration placement). Interrupted entries: 1-ish (12's "Tomorrow."). Datelines/weather: 5 day-markers in T1 (01–04, 10), none elsewhere. Underlined-distrusted words (italics): occasional (*leader* not yet present).
+Strike-throughs: 0 (target 5–8). "P.S." addenda (post-entry postscripts; author chose "P.S." over "Later", 2026-06-13): 0 (target several, uneven). Sketch captions "[written beneath a drawing: …]": 0 explicit (08 is implicitly captions; target 4–6, coordinate with illustration placement). Interrupted entries: 1-ish (12's "Tomorrow."). Datelines/weather: 5 day-markers in T1 (01–04, 10), none elsewhere. Underlined-distrusted words (italics): occasional (*leader* not yet present).
 
 ## 7. Trip rosters (by filename tag)
 

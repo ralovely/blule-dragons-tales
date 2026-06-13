@@ -20,4 +20,4 @@ The word for "blue" and the word for "home" are nearly identical. The tonal diff
 
 I am learning this language the way one learns to swim: badly, in public, swallowing a great deal of water. Being bilingual helps; the French half of my brain is more willing to bend than the English half, which keeps insisting on rules. I catch myself thinking in it sometimes, just for a moment, before the English rushes back in. I am not yet fluent. I may never be.
 
-Later: coming home in the dark tonight, no lantern, I read the path through my boot soles. Warm, warmer, almost hot at the turning to the communal kitchen. The more a route is walked, the warmer its stones keep. I missed my own doorstep twice. It is the coldest thing on the street.
+P.S. Coming home in the dark tonight, no lantern, I read the path through my boot soles. Warm, warmer, almost hot at the turning to the communal kitchen. The more a route is walked, the warmer its stones keep. I missed my own doorstep twice. It is the coldest thing on the street.
