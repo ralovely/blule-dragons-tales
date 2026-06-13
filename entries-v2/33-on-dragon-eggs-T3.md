@@ -1,6 +1,6 @@
 I have spent some time now studying dragon eggs, and the first thing to say is that there is no such thing as a dragon egg. There are hundreds of kinds, and they share almost nothing with each other.
 
-Some are stone-hard. Some are rubbery. Some are soft and velvety, like the skin of a peach. Most are heavy, far heavier than they look, as if packed with everything the dragon will eventually become. I tried to lift one once and could not get it off the ground. A live egg is warm and has a faint pulse you can feel in your palms, slow and steady.
+Some are stone-hard. Some are rubbery. Some are soft and velvety, like the skin of a peach. Most are heavy, far heavier than they look, packed with all the dragon has yet to become. I tried to lift one once and could not get it off the ground. A live egg is warm and has a faint pulse you can feel in your palms, slow and steady.
 
 There is one kind that floats. The shell contains traces of blue stone, enough to make it lighter than air. In a cave, it drifts to the ceiling and stays there, bobbing gently, like a balloon at the end of a party. Untethered outdoors, it will rise steadily until it is a speck against the sky. The Manaïari keep them on strings, tied to a stone or a low branch, where they hover at head height, turning slowly in whatever breeze passes through. I saw a row of them outside a house once, tethered to a railing, bumping softly against each other. The woman who lived there said two of them had been floating there for years. The third, she added, had started to kick.
 

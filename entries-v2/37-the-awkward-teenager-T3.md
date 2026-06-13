@@ -1,6 +1,6 @@
 Mes petits monstres, you will appreciate this one.
 
-I have written at length about hatchlings, and it is easy to do so, because hatchlings are ridiculous and perfect and one cannot help but love them. Nobody warns you about what comes next.
+I have written at length about hatchlings, and it is easy to do so, because hatchlings are ridiculous and perfect and one cannot help but love them. No one warns you about what comes next.
 
 Adolescent dragons grow in bursts, and the bursts are not always symmetrical. One wing will outpace the other for weeks. A tail doubles in length overnight whilst its owner is still turning corners at yesterday's radius. They crash into things. They knock over market stalls. The Manaïari have a specific word for the sound of a teenage dragon misjudging a doorway. I heard it four times before lunch.
 

@@ -1,6 +1,6 @@
-The legends are---as usual---entirely wrong: Dragons do not hoard gold.
+The legends are, as usual, entirely wrong: dragons do not hoard gold.
 
-They very much hoard, but instead of cold, lifeless metal, they collect what can only be described as piles of worthless knick-knackery. Trinkets. Bric-a-brac, as my mother would say. Not a single piece of gold among any of them (despite the stuff being everywhere else on this island).
+They very much hoard, but instead of cold, lifeless metal, they collect piles of worthless knick-knackery. Trinkets. Bric-a-brac, as my mother would say. Not a single piece of gold among any of them (despite the stuff being everywhere else on this island).
 They hoard memories.
 
 From a young age, they keep their "treasure" in a seemingly random pile in their cave, yet they know exactly what is where, down to the last pebble. To them, it is the most precious thing in the world: their life story, their identity. You could tell everything about a dragon's personality just by 'reading' its nest. Was it a traveller? a parent? a romantic? a prankster?
