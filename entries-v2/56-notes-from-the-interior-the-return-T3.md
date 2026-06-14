@@ -4,10 +4,10 @@ We covered, Manami estimates, perhaps a fifth of the northern half. A fifth. And
 
 There is a dragon in our village I have walked past a hundred times without paying attention. It sits in different spots throughout the day, head tilted, still. I used to think it was dozing. After the journey, I watched it properly. It is not dozing. It is listening. It moves every hour, settling into a new position, adjusting the tilt of its head like someone finding the sweet spot in a concert hall.
 
-I followed it to its cave. Inside: nothing. No nest, no objects, no pebbles, no trinkets, no stolen cooking pots. Bare stone walls, worn smooth. I stood in the centre and clapped once. The sound came back to me three times, each echo cleaner than the last. Perfect acoustics. That is what it has been collecting. Not objects. Sound. The cave is its instrument, and it has spent years, maybe decades, finding the right one. What is it *for*? That was Nangula's question, not mine; it was always hers.
+I followed it to its cave. Inside: nothing. No nest, no objects, no pebbles, no trinkets, no stolen cooking pots. Bare stone walls, worn smooth. I stood in the centre and clapped once. The sound came back to me three times, each echo cleaner than the last. Perfect acoustics. That is what it has been collecting. Not objects. Sound. The cave is its instrument, and it has spent years, maybe decades, finding the right one.
 
 The best collection of nothing I have ever heard.
 
-On the last ridge before home, I passed a dragon sitting alone, head tilted back, staring straight up at empty sky. It stayed like that for an hour. When it left, another took its place. Same ridge, same angle, same nothing overhead. I watched three of them take turns through the afternoon.
+On the last ridge before home, I passed a dragon sitting alone, head tilted back, staring straight up at empty sky. It stayed like that for an hour. When it left, another took its place. Same ridge, same angle, same nothing overhead. I watched three of them take turns through the afternoon. What is it *for*? Nangula's question, not mine, though I have caught myself asking it more and more.
 
 Behind the waterfall near the second village, there is a cave. The walls are covered in
