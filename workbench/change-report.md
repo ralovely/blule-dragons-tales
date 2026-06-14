@@ -34,7 +34,7 @@ Distribution is lumpy by design: most files now show zeroes; survivors cluster i
 | 10 | Economy contradiction (17 & 61 vs 10) | ✅ 17: strikethrough "~~merchants~~ men" (subtle, per author) |
 | 11 | Entry 18 sleep/nod paradox | ✅ NO CHANGE (author decision; paradox preserved) |
 | 12 | Entry 65 "second visit" | ✅ file retagged `T3-T4`→`T3-T5` (author-approved rename); phrase kept |
-| 13 | Entry 47 scale contradiction | ✅ "dining table" → "a continent in miniature" (vast; echoes Aizomea-the-dragon-continent) |
+| 13 | Entry 47 scale contradiction | ✅ "dining table" → "the size of a bus" (keeps the whole-country-yet-small paradox, but big enough for the meadow/sapling/tenant; "bus" period-fine for 1955) |
 | 14 | Entry 9 riding vs 18 carrying | ✅ NO CHANGE (author decision) |
 | 15 | Untagged entries (14,15,24–27) | ✅ filename tags satisfy (author-confirmed) |
 | 16 | Prologue estate location | ✅ estate English; mother's family Côte Basque (author amendment) |
