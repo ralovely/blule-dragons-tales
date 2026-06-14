@@ -8,6 +8,6 @@ I followed it to its cave. Inside: nothing. No nest, no objects, no pebbles, no 
 
 The best collection of nothing I have ever heard.
 
-On the last ridge before home, I passed a dragon sitting alone, head tilted back, staring straight up at empty sky. It stayed like that for an hour. When it left, another took its place. Same ridge, same angle, same nothing overhead. I watched three of them take turns through the afternoon. What is it *for*? Nangula's question, not mine, though I have caught myself asking it more and more.
+On the last ridge before home, I passed a dragon sitting alone, head tilted back, staring straight up at empty sky. It stayed like that for an hour. When it left, another took its place. Same ridge, same angle, same nothing overhead. I watched three of them take turns through the afternoon.
 
 Behind the waterfall near the second village, there is a cave. The walls are covered in

@@ -2,9 +2,12 @@
 
 Running log of anything that looks like an error or needs a decision outside the agent's mandate (plan §9: "Anything else that looks like an error: log it, don't fix it").
 
-## Open queries
+## Open queries / TODO
 
-*(none)*
+1. **Nangula's presence — rework the whole approach (author, 2026-06-14).** The Tic-F device (attributing sideways questions to Nangula, e.g. "Nangula's question, not mine") reads wrong: it implies a shared field conversation about Aizomea, but Nangula died **1935**, before Indigo's first trip (1938), and kept the island secret from her — they never discussed these dragons. Removed from entry 56.
+   - **New direction:** convey Nangula's presence by **addressing an entry or two directly to her**, the way Indigo addresses Cassius (entry 1, 30). Decide which. Candidates where her legacy already sits: 05 (Listeners — "I wonder if Nangula was better at this"), 24 ("I wonder if Nangula had one"), 43 (dragons die — "part of her is in these mountains"), or a dedicated beat ("Nangula — you knew all this, and never said"). The natural content: what Nangula knew and withheld, the guardianship she handed on, grief.
+   - **Review under the new lens, keep/rework/cut:** entry 20's "Nangula would have asked the better question. She always asked the one I had not thought to." (milder — invokes her canon habit of sideways questions, not an Aizomea conversation); and entry 74's now-orphaned unattributed "What is it *for*?" (works fine as Indigo's own musing; no longer a callback).
+   - Original Tic-F arc (attribution → unattributed payoff in 74) is **shelved** pending this.
 
 ## Length-change flags (±40% or ultra-short conversions)
 
