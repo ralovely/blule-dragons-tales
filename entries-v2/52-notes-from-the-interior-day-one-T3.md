@@ -4,7 +4,7 @@ The continent, she tells me, takes roughly twenty days to cross on foot. Fifteen
 
 *(Editor's note: Having walked a fair portion of it myself, I believe this is generous. The landmass is closer to a hundred miles across. The southern half remains unmapped.)*
 
-By midday we had reached a settlement tucked into a fold of hillside, smaller than ours. We stopped to refill our water and I nearly set down my bag on what I thought was a scorched log. It was not a log. It was a young dragon, le pauvre, and it was having a bad day.
+By midday we had reached a settlement tucked into a fold of hillside, smaller than ours. We stopped to refill our water and I nearly set down my bag on what I thought was a scorched log. It was not a log. It was a young dragon and it was having a bad day. *Le pauvre.*
 
 It hiccupped. A jet of flame shot sideways and caught my bag strap. Manami put it out with her foot, without pausing in what she was saying. The dragon stared at me with the round, horrified eyes of someone who has just sneezed on a stranger. It hiccupped again and set fire to a fern. A woman emerged from the nearest house carrying a bucket of sand, tossed it on the fern without breaking stride, and went back inside.
 
