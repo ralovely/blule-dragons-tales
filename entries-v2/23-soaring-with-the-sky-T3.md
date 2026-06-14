@@ -24,4 +24,4 @@ The Manaïari do not fly *through* the air. They fly *with* it. I saw the grandm
 
 Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, did not teach the Manaïari physics. They taught them a language.
 
-I asked Manami if she flies. She looked at me for a long moment, then went back to mending her net. I did not ask again.
+I asked Manami if she flies. She looked at me as if I'd asked whether she breathes.
