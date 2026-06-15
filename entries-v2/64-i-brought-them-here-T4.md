@@ -4,4 +4,6 @@ The village remembered me, which I did not expect. People nodded as we arrived. 
 
 The Hiccupper is still here. It came up to me. Crossed the clearing without hesitation, lowered its head, and nudged my hand with its snout. I have been gone eight years. It has not forgotten. I do not know how it knew me. By smell, perhaps. By something else, perhaps.
 
-It has, in the eight years since I last saw it, grown considerably and learned some control. The scorch circle around its resting spot is smaller. The sand buckets are still there, but they look less used. It still slips. While we were watching, it hiccupped once, a small flame that singed a patch of grass. It looked at the grass. The embarrassment was gentler this time. Less anguish, more resignation. I did not measure the scorch circle. It did not occur to me. Cassius would mind.
+It has, in the eight years since I last saw it, grown considerably and learned some control. The scorch circle around its resting spot is smaller. The sand buckets are still there, but they look less used. It still slips. While we were watching, it hiccupped once, a small flame that singed a patch of grass. It looked at the grass. The embarrassment was gentler this time. Less anguish, more resignation.
+
+P.S. I did not measure the scorch circle. I have only just noticed. Cassius would mind.

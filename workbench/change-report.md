@@ -63,7 +63,7 @@ Distribution is lumpy by design: most files now show zeroes; survivors cluster i
 
 ## 5. Furniture added
 
-Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~ sense), 68 (~~It is my own.~~). · P.S. addenda: 04, 53. · N.B. measurements: 01, 02, 04, 09, 19, 34. · Editor's notes preserved/added: 26, 28, 30, 31, 35, 52, 54, 66 (new, fix 22).
+Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~ sense), 68 (~~It is my own.~~). · P.S. addenda: 04, 53, 64 (the measuring-notice, as an after-the-fact realisation). · N.B. measurements: 01, 02, 04, 09, 19, 34. · Editor's notes preserved/added: 26, 28, 30, 31, 35, 52, 54, 66 (new, fix 22).
 
 ## 6. Outstanding / for author review
 
