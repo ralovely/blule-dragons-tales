@@ -9,7 +9,7 @@ References are `entry#` (files in `entries/`) or `P` (prologue).
 |---|---|---|
 | ~1901 | Indigo born (dies 1985 aged 84) | P, 28 note |
 | ~1907 | Aged six, meets the "hill" — offers it a button; names it Lady Chestnut | P |
-| — | Father English (bookish); mother French (Montmartre flat, dinner-party-for-fourteen). Childhood split: winters at the English estate; summers with the mother's people on the **Côte Basque** or at the Montmartre flat. (Fix 16 resolved; author amended Brittany → Côte Basque, 2026-06-12 — note this roots Indigo's south-of-France familiarity, cf. entries 3/41 and fix 8.) | P |
+| — | Father English (bookish); mother French (Montmartre flat, dinner-party-for-fourteen). Childhood split: winters at the English estate; summers with the mother's people on the **Côte Basque** (specifically **Saint-Jean-de-Luz**, named in entry 65) or at the Montmartre flat. (Fix 16 resolved; author amended Brittany → Côte Basque, 2026-06-12 — roots Indigo's south-of-France familiarity, cf. entries 3/41 and fix 8. Entry 65's childhood-coast comparison switched Normandy → "the bay at Saint-Jean-de-Luz", 2026-06-15, for biographical consistency.) | P |
 | — | Biology at Oxford; one of three women in the department | P |
 | 1920s | Leaves England; travels Eastern Europe, South America, Asia Minor, chasing dragon stories | P |
 | — | Meets Cassius Worthington at a lecture series, Muséum National d'Histoire Naturelle, Paris | P |

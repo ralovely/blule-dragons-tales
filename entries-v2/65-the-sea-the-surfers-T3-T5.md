@@ -8,6 +8,6 @@ They surf together. Humans and dragons, side by side, riding the same wave, adju
 
 There are waves that only dragons can ride. Enormous, deep-ocean swells that break against the outer cliffs. The Manaïari sit on the rocks and watch them as you would a sunset. The dragons ride them for what looks like hours, carving lines across faces of water the height of buildings.
 
-Every morning, before the fishing starts, the first surfers are in the water. It is the quietest part of the day. I went once, at Manami's insistence. I cannot surf. I sat on the board in the shallows and watched the others. The water was warm. A dragon surfaced beside me, looked at me, and dived under again. I stayed for an hour. The Normandy coast of my childhood was never like this. Nothing was. I did not catch a wave. I caught something else.
+Every morning, before the fishing starts, the first surfers are in the water. It is the quietest part of the day. I went once, at Manami's insistence. I cannot surf. I sat on the board in the shallows and watched the others. The water was warm. A dragon surfaced beside me, looked at me, and dived under again. I stayed for an hour. The bay at Saint-Jean-de-Luz was never like this. Nothing was. I did not catch a wave. I caught something else.
 
 River, on her second visit, took to it immediately. She says she is learning. From what I can see, she has already learnt. Kai takes her out at dawn. They come back wet and grinning and speaking a language I do not think is entirely Manaïari.
