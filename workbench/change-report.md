@@ -56,7 +56,7 @@ Distribution is lumpy by design: most files now show zeroes; survivors cluster i
 
 - **A haberdashery:** peaks in T3 (17 thimble, 29 tears/mended, 36 kintsugi, 38), present T1/T2 (09, 12, 18 buttoned-fog), into T4/T5 (61 button, 74). 
 - **B measure→doubt:** heavy T1 (01,02,04,07,09,10,19), thinning T2/T3, dies with the single T4 notice in **64** ("I seem to have stopped measuring things. Cassius would mind.").
-- **C apologies:** 05 (anchor), 10 (river), 53 (cliff), 67 (the weather — escalation).
+- **C apologies:** 05 (anchor), 10 (river), 53 (cliff). [Weather-escalation beat tried in 67, removed — came from nowhere, author 2026-06-15. Tic carried fine by the three.]
 - **D tea:** grievances 03/17/34 → **surrender in 74** ("I call it tea now, and mean it").
 - **E French:** back-weighted; existing + 52 (le pauvre), 72 (une berceuse à deux voix).
 - **F Nangula question:** attributed in 56 → **final UNATTRIBUTED use in 74** ("What is it *for*?") — the rereader's payoff.
