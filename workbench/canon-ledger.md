@@ -85,7 +85,7 @@ Entries are **thematically ordered, not chronological** ("This is not a diary in
 10. **Teeth** (28 + note) ↔ P (d. 1985).
 11. **Lady Chestnut button** (P, age six) ↔ Tic A's root ↔ Jamie's closing inheritance moment (fix 19).
 12. **Knick-knackeries echo**: dragon hoards (42) ↔ P's closing "knick-knackeries" — keep the echo (fix 19).
-13. **Editor's notes inventory**: 26, 28, 30, 31, 35, 52, 54 (+ 66's bracketed working notes → convert to Jamie footnote, fix 22). All keep their function: Jamie intruding on Indigo's pages.
+13. **Editor's notes inventory**: 26, 28, 30, 31, 35, 52, 54. All keep their function: Jamie intruding on Indigo's pages. (Entry 66's bracketed notes are the *author's* production/layout notes, not editor's notes — fix 22 void, left in place.)
 
 ## 5. Protected lines (verbatim; locations)
 

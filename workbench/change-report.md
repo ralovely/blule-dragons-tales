@@ -43,7 +43,7 @@ Distribution is lumpy by design: most files now show zeroes; survivors cluster i
 | 19 | Prologue "take my hand" ending | ✅ replaced; ends on the compass/object (inherited-tic scene cut per author, shortened to 2 sentences) |
 | 20 | Entries 1 & 2 tonal lurch | ✅ in-place default: 1's ending less breezy; 2's orienting opener (no layout swap) |
 | 21 | Entry 9 colour-repetition seam | ✅ committed as deliberate journal-repetition w/ strike-throughs (author later dropped the Prague line entirely) |
-| 22 | Entry 66 bracketed working notes | ✅ converted to a single Jamie editorial footnote |
+| 22 | Entry 66 bracketed working notes | ⊘ N/A — author clarified (2026-06-15) these are the **author's own production/layout notes** ("[replace the intro with annotated illustrations?]", "[make a wet journal entry here]"), NOT Indigo's marginalia. Left in place for layout; no Jamie footnote. |
 
 ## 3. File / spread integrity
 
@@ -63,7 +63,7 @@ Distribution is lumpy by design: most files now show zeroes; survivors cluster i
 
 ## 5. Furniture added
 
-Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~ sense), 68 (~~It is my own.~~). · P.S. addenda: 04, 53, 64 (the measuring-notice, as an after-the-fact realisation). · N.B. measurements: 01, 02, 04, 09, 19, 34. · Editor's notes preserved/added: 26, 28, 30, 31, 35, 52, 54, 66 (new, fix 22).
+Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~ sense), 68 (~~It is my own.~~). · P.S. addenda: 04, 53, 64 (the measuring-notice, as an after-the-fact realisation). · N.B. measurements: 01, 02, 04, 09, 19, 34. · Editor's notes preserved (all original): 26, 28, 30, 31, 35, 52, 54.
 
 ## 6. Outstanding / for author review
 
