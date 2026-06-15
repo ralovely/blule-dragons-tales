@@ -6,4 +6,4 @@ Sleep is different here too. No alarms. No schedules. People sleep when they are
 
 Children here are not afraid of the dark. I find this remarkable. In England, children need nightlights. Here, a child will wander outside at midnight to look at the stars with the casual confidence of someone checking the weather. The dark is not the enemy. It is the other half of the day.
 
-The house is quiet tonight. River is out. I am not worried.
+The house is quiet tonight. River is out. I am not worried. I am not anything, except perhaps a little envious of how simple it looks from the outside, and how complicated I know it must be on the inside.

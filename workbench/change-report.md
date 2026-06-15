@@ -69,7 +69,7 @@ Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~
 
 - Big length swing flagged: **74** (+35%) — tea-surrender + Nangula question added to a short entry; still under ±40% but the most-changed short piece. Review against its illustration spread.
 - Sketch-caption furniture is under-budget (only entry 08's existing captions) — deferred pending illustration placement, since captions must coordinate with art.
-- Entry 69 ending trimmed to "I am not worried." (dropped the envious-reflection coda) per plan; flag if you preferred the longer close.
+- Entry 69 ending: the envious-reflection coda was trimmed, then RESTORED (author 2026-06-15) — it's tied to the River/Kai thread and Indigo's deux-vies conflict, not generic profundity.
 - Author has been reviewing per-entry live in the preview throughout.
 
 ## 7. Phase 5 verification (run 2026-06-14)
