@@ -89,8 +89,8 @@ Filename convention: `NN-slug-Tn.md`. Numeric prefix = fixed entry order; suffix
 **Ultra-shorts (protected, never lengthen):** 11, 22, 48, 57, 73.
 **Out of scope (do not touch):** `0-ToC.md`, `0-timeline.md`, `2-aizomea.md`, `3-colophon.md`.
 
-## New entries (§7a) — none yet
+## New entries (§7a)
 
 | # | Filename | Trip | Justification ref | Paintable moment | Status |
 |---|---|---|---|---|---|
-| — | — | — | — | — | — |
+| 74a | 74a-the-compass-T5.md | T5 | change-report §8 (Nangula address + compass succession; closes the guardianship arc) | The compass open on the desk at night: the green-gold eye bright in lamplight, an old hand beside it. | **STATUS: draft — author approval pending** |

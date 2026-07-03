@@ -82,4 +82,8 @@ Strike-throughs (visible thinking): 02, 09, 17 (~~merchants~~), 50 (~~nonsense~~
 
 **§11.6 Tic arcs.** B (measure→doubt) decays to its single T4 notice in 64 ✓; A (haberdashery) peaks T3 ✓; D (tea) surrenders in 74 ✓; E (French) back-weighted to T4–T5 ✓; F (Nangula question) attributed in 56 → unattributed in 74 ✓.
 
+## 8. New entry (§7a): 74a-the-compass-T5.md — justification
+
+One new entry (of the permitted 3–4; the only candidate that cleared all gates). **Gap served:** the Nangula rework (Tic F was shelved as canon-unsafe) left two needs — Indigo addressing Nangula directly (done lightly in 31) and the compass-succession beat the author requested: Indigo at 70, final trip, wondering who carries the compass after her, with the reader knowing it will be the unborn Jamie. Nothing in the existing 75 could host this without overloading protected 75. **Paintable moment:** the compass open on the desk at night, green-gold eye in lamplight, an old hand beside it. **No new facts:** the compass, its eye, and Nangula's years of waiting-to-choose are all prologue canon; River's manner of holding things echoes 75 without advancing River/Kai. **Voice:** T5 (present, spare, letter-mode); ends domestic, no ending-type collision (74 Q → 74a LOG → 75 STj). ~85 words, `STATUS: draft — author approval pending`.
+
 **Result:** all acceptance criteria met on this pass. Remaining is author sign-off (review once, in the preview) and the deferred sketch-caption furniture (awaits illustration placement).

@@ -91,6 +91,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 | 72 | T5 | std-short | ST | E: untranslated French candidate | BIG-FIVE: keeps weight ("had to sit down"). T5 pass: fragments, present. |
 | 73 | T5 | ultra — PROTECTED | PF | — | Do not touch. |
 | 74 | T5 | std-short | Q | F: FINAL UNATTRIBUTED use — "What is it *for*?" no attribution, rereader's reward; caption candidate "[beneath a drawing of a fog rabbit]" | Keep "It is probably nonsense." inside the open question close. Don't resolve the conjecture. |
+| 74a | T5 | NEW (§7a) — ultra-short letter to Nangula | LOG | Compass succession beat (author, 2026-07-03): posthumous address; she watches how people hold things (River: "as if they had been lent to her"); reader knows the heir is the unborn Jamie. Ends domestic ("put it away") — no clash with 74 (Q) or 75 (STj). No new facts: compass/eye/waiting-to-choose all canon. |
 | 75 | T5 | std — PROTECTED substantially | STj | E: *Deux vies* keep | Touch only for de-tick if unavoidable. Blue cloth, windowsill, packing — exact. The model for T5. |
 
 ## Furniture placement summary (lumpy by design)
