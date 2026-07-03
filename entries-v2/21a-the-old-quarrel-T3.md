@@ -1,5 +1,3 @@
-STATUS: draft — author approval pending
-
 There is an old dragon in the square with four long scars down his left flank, straight and parallel and gone pale with age. Not hunters' work; I know that catalogue by heart. Claws made those, and no small ones.
 
 I asked Manami, once, at the racks. "He went south once," she said, and in passing let two fingers rest on one of the cords: an ugly knot, two strands forced through each other, singed at one end. She did not take it down.
