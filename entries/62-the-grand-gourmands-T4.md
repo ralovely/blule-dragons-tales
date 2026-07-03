@@ -1,7 +1,0 @@
-Dragons love ice cream. This is not a metaphor or an anthropomorphism. They love it the way I love a good book: without reservation, without judgement, and to the exclusion of all other priorities.
-
-The island's signature flavour is blue stone. The dust is ground to a fine powder, stirred into a base of coconut milk and honey, and flash-frozen by an ice dragon whose involvement in the process can only be described as supervisory. It tastes of almost nothing at first. Then something cold and mineral blooms at the back of your throat, like licking a clean river stone on a winter morning. We ate three bowls each. The Manaïari considered this restrained. River went back for a fourth. She has been volunteering at the docks every morning this week. She has never shown interest in fishing before.
-
-For the dragons perched on the high ledges, ice cream is delivered by catapult. Great frozen spheres launched into the air, caught mid-flight in open jaws. The aim is remarkably good. Remarkably, not perfectly. I watched one sphere sail wide and explode against a cliff face. A dragon who had nothing to do with the transaction licked the cliff for the rest of the afternoon.
-
-Dragons also get brain freeze. The expression is unmistakable. Eyes wide, jaw frozen open, a look of profound betrayal directed at no one in particular. They do not learn from this. They never eat more slowly. I watched one dragon get brain freeze three times in a single sitting. Each time, it looked up at the sky as though the sky were somehow responsible.
