@@ -1,4 +1,4 @@
-I have spent some time now studying dragon eggs, and the first thing to say is that there is no such thing as a dragon egg. There are hundreds of kinds, and they share almost nothing with each other.
+The first thing to say about dragon eggs is that there is no such thing as a dragon egg. There are hundreds of kinds, and they share almost nothing with each other.
 
 Some are stone-hard. Some are rubbery. Some are soft and velvety, like the skin of a peach. Most are heavy, far heavier than they look, packed with all the dragon has yet to become. I tried to lift one once and could not get it off the ground. A live egg is warm and has a faint pulse you can feel in your palms, slow and steady.
 

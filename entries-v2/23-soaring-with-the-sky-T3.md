@@ -2,7 +2,7 @@
 
 I stood on a cliff today and very nearly forgot to breathe. Below, a young woman stood at the edge, clad in a harness of leather and shimmering blue metal ribs. She wasn't preparing to jump, not really. She was waiting.
 
-A huge dragon lumbered up from the valley floor and launched into the sky with a downbeat of its wings that shook the rock I stood on. And in that precise moment, the woman simply... fell. For a terrifying second, she plunged towards the rocks. But then the vortex of air left by the dragon caught her, a dandelion seed in an invisible hand, and she was thrown upwards, laughing, into the sun. The dragon glanced back, and I could have sworn it winked.
+A huge dragon lumbered up from the valley floor and launched into the sky with a downbeat of its wings that shook the rock I stood on. And in that precise moment, the woman simply... fell. For a terrifying second, she plunged towards the rocks. But then the vortex of air left by the dragon caught her like a dandelion seed and threw her upwards, laughing, into the sun. The dragon glanced back.
 
 **The Village Fling**
 

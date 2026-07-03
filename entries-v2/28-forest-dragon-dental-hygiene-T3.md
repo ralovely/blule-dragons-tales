@@ -1,4 +1,4 @@
-Dental hygiene is, improbably, one of the great cultural achievements of Aizomea. You can tell it is morning in the forest district by the blue bubbles rising through the canopy.
+You can tell it is morning in the forest district by the blue bubbles rising through the canopy.
 
 The forest dragons brush their teeth every morning with a paste of chewed grass, fresh mint, and blue stone dust. They learnt the brushing from the Manaïari, who use a simple twig and take a minute or two about it. The blue stone was the dragons' own addition. They chew for twenty minutes. They have developed a technique involving three jaw rotations and a tongue sweep that I cannot replicate despite trying. Manami finds the whole thing mildly insulting. "We taught them," she says. "Now they act as if we do it wrong."
 
