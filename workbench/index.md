@@ -93,4 +93,4 @@ Filename convention: `NN-slug-Tn.md`. Numeric prefix = fixed entry order; suffix
 
 | # | Filename | Trip | Justification ref | Paintable moment | Status |
 |---|---|---|---|---|---|
-| 74a | 74a-the-compass-T5.md | T5 | change-report §8 (Nangula address + compass succession; closes the guardianship arc) | The compass open on the desk at night: the green-gold eye bright in lamplight, an old hand beside it. | **STATUS: draft — author approval pending** |
+| 74a | 74a-the-compass-T5.md | T5 | change-report §8 (Nangula address + compass succession; closes the guardianship arc) | The compass open on the desk at night: the green-gold eye bright in lamplight, an old hand beside it. | **APPROVED** (author edited & removed draft header, 2026-07-03) |
