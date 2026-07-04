@@ -34,6 +34,8 @@ References are `entry#` (files in `entries/`) or `P` (prologue).
 
 Entries are **thematically ordered, not chronological** ("This is not a diary in sequence", P) — day-markers need not ascend with entry numbers.
 
+**PENDING AUTHOR REVIEW → canon (2026-07-04):** full per-entry chronology with proposed dates lives in `chronology.md` — trip windows (T1 arrive 9 Mar 1938 / T2 Jun–Oct 1948 / T3 Mar 1955–Apr 1956 / T4 Jun–Oct 1963 / T5 Apr–Sep 1971), in-trip ordering, the annual humming season ~8 Nov, and the T1 voyage out (England mid-Jan 1938, NZ Shipping Co liner via Panama and Pitcairn, Wellington ~5 weeks later, twice across the Date Line). Once the author signs off, promote those tables and the voyage into this ledger as fixed canon.
+
 ## 2. People
 
 - **Lady Indigo Pepper ("Indy")** — biologist; English father, French mother; bilingual (French = childhood tongue); the only outsider on Aizomea since Nangula; broke her wrist in her second month (29); joined the tooth-brushing line (28); owns an amulet, gifted by an elder woman (26); blue-stained fingertips (05, 09); pockets gold (10); keeps the purple stone (35); windowsill row of gifted objects (12 → 75).

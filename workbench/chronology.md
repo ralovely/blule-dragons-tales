@@ -7,6 +7,8 @@ Entry numbers are the **new canonical 01–77**. Dates are proposals for author 
 | Trip | Arrival (day 1) | Departure | Duration | Basis |
 |---|---|---|---|---|
 | T1 | **9 March 1938** | ~28 January 1939 | ~11 months | "lasted nearly a year" (prologue); sails from Wellington, 11 days at sea (entry 19) → departs Wellington ~26 Feb 1938 |
+
+**The voyage out (T1, proposed):** departs England ~**mid-January 1938** on a New Zealand Shipping Company liner (a "Rangi" boat), London → Curaçao → Panama Canal → the mid-Pacific call off **Pitcairn Island** (islanders rowing out to trade at the rail) → **Wellington, ~mid-late February** after ~5 weeks at sea. Leaves English winter, arrives New Zealand late summer — which is why the early island entries are all warm sun. A fortnight in Wellington to find a captain; departs 26 Feb; 11 days; wakes on Aizomea 9 March. **Date Line note:** she crosses it twice in opposite directions — westbound from Panama the liner *skips* a day; eastbound out of Wellington the fishing boat *repeats* one. Period diarists always recorded this ("two Tuesdays"); available as one dry dating joke if ever wanted.
 | T2 | **2 June 1948** | ~11 October 1948 | ~4½ months | no canon constraint; proposed shorter, sparer trip |
 | T3 | **14 March 1955** | ~30 April 1956 | ~13½ months | "a longer stay, a deeper one" (prologue) |
 | T4 | **5 June 1963** | **12 October 1963** (entry 69 = departure morning) | ~4 months | with Cendre & River |
