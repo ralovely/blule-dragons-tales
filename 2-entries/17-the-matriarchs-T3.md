@@ -1,3 +1,5 @@
+*2nd August 1955*
+
 **On Mending**
 
 They have no courts of law here, no bewigged judges or stern-faced constables. When a dispute arises, it is not a case to be won, but a tear to be mended. The task falls to certain women, known for little more than their patience and their skill with a teapot. (I say teapot. It is in fact a shallow clay bowl of something thick, spiced, and savoury that no self-respecting Englishwoman would call tea. I call it tea. The ritual is the same.) They bring the aggrieved parties together not to argue, but to do. To repair a sail, to bake bread, to re-sole a perfectly good shoe that didn't need re-soling.

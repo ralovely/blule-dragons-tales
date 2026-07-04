@@ -1,3 +1,5 @@
+*14th December 1955*
+
 Manami's house has four of them. Repaired dragon eggshells, displayed on a high shelf, each one glowing faintly blue along its cracks. I mistook them for pottery the first time. They are not pottery. They are birth records.
 
 After a hatching, every fragment of shell is gathered and reassembled with a paste of crushed blue stone and tree resin, applied with a fine brush, filling every crack and seam. When it dries, the shell is whole again, but the breaks remain visible, glowing. You can read the birth in the pattern. A violent kick leaves jagged lines. A slow emergence leaves long, graceful curves. The bouncy egg I saw the children playing with left a web of tiny fractures so fine it looked like lace.

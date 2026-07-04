@@ -1,3 +1,5 @@
+*18th October 1955*
+
 Sixteen days. Twelve villages. Four notebooks full. My feet ache in places I did not know feet could ache.
 
 We covered, Manami estimates, perhaps a fifth of the northern half. A fifth. And every valley held something I had not seen in the one before. Different dragons, different shapes, different sizes, different habits. I have been cataloguing variations like stars. There are always more. And the south, the whole forbidden south, remains untouched, unseen, full of whatever it is that does not want to be known. I think about it more than I should.

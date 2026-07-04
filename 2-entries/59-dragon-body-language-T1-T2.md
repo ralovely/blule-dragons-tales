@@ -1,3 +1,5 @@
+*4th August 1948*
+
 I have had to unlearn most of what I thought I knew about reading animals.
 
 The first time a dragon bared its teeth at me, I backed into a wall. It took a full week before someone explained that baring teeth is how they say hello. By then I had greeted approximately forty dragons by retreating in terror. I have been making up for it since.

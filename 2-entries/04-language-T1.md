@@ -1,3 +1,5 @@
+*5th April 1938*
+
 *Day twenty-eight.*
 
 The language here sounds like water over stones. Lots of vowels, soft consonants, a rhythm that rises and falls without ever quite hurrying. It is, I think, a language designed to be overheard by sleeping dragons. There is even a formal register, spoken more softly and slowly, used only near dragons, out of respect for the Listeners who might be working nearby.

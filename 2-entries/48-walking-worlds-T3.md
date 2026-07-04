@@ -1,3 +1,5 @@
+*22nd March 1956*
+
 I spent an entire day following one. It moved so slowly I had to remind myself it was moving at all, a vast, low creature whose back had become a meadow. Grasses grew along its spine. Tiny white flowers I couldn't identify clustered between the shoulder blades. A sapling, no taller than my forearm, leaned slightly with each step, correcting itself as the dragon shifted weight, like a sailor riding a swell. Butterflies orbited it. I counted seventeen species of plant in an hour and stopped counting only because I ran out of page.
 
 The relationship, I have come to understand, is not accidental. The algae that coat the lower scales clean them, slowly digesting the grime and parasites that would otherwise accumulate. The mushrooms that sprout along the flanks do something similar, breaking down dead scale and returning nutrients to the living surface beneath. The tiny insects pollinate the flowers, and the flowers produce a nectar that pools in the grooves between scales. Everything feeds everything else. It is biology so circular that you could watch it for a week and still not be sure who is doing whom the favour.

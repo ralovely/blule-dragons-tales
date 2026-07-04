@@ -1,6 +1,6 @@
-# chronology.md — dating the 77 entries (proposal, 2026-07-04)
+# chronology.md — dating the 77 entries
 
-Entry numbers are the **new canonical 01–77**. Dates are proposals for author review; nothing stamped into entry files yet.
+Entry numbers are the **new canonical 01–77**. **STATUS: dates APPLIED to all 77 entries (2026-07-04)** as an italic dateline prepended to each file, period ordinal format ("*11th March 1938*"). T1's existing "*Day N.*" markers kept alongside (her double bookkeeping: calendar + arrival count) — prune in review if it reads doubled. This table is the source of truth; adjust here first if any date changes during review.
 
 ## Proposed trip windows (assumptions — please confirm/adjust)
 

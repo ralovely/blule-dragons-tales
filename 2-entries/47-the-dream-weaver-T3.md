@@ -1,3 +1,5 @@
+*15th March 1956*
+
 I woke with a sore back, a mild confusion about whether I had legs, and the faint, irrational certainty that I had been useful. The confusion wore off by evening. The certainty has not.
 
 I had been dream-fishing. The children have a game: you find a sleeping dragon, lie down beside it, close your eyes, and wait. Most of the time, nothing happens. You just have a nap, which is its own reward. But once in a while, something catches. It doesn't work with every dragon, or every person, or every afternoon. Manami says some people are better at it than others, and children are better than adults, and tired people are better than alert ones, which may be why it tends to happen after lunch. The catch, when it comes, is not a story. It is a sensation. You don't dream about the dragon. You dream as the dragon. And whatever the dragon is dreaming, you become.

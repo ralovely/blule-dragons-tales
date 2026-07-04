@@ -1,3 +1,5 @@
+*20th July 1938*
+
 This morning I watched a woman sit with her hand flat against a dragon's flank for the better part of an hour. Neither moved. The dragon's breathing was slow and deep, warm enough to shift the grass. When the woman finally stood, she walked straight to the village well, lowered a bucket, and brought it back. The dragon drank. Nobody had said a word.
 
 Dragons do not speak. I need to write that down plainly, because I spent my first months here waiting for them to. I talked to dozens, in English, in French, in what little Manaïari I've picked up. They listened. They always listen. You would swear on your life they understand every syllable. But they never answer. Not in language. Not once.

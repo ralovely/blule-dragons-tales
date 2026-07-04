@@ -1,3 +1,5 @@
+*13th October 1955*
+
 Everything here is wet. The floors are wet. My notebooks are wet. I am wet. The lagoon village is built on stilts over a shallow bay, and the entire structure moves with the tide. Through the gaps in the floorboards I can see water, and through the water I can see dragons. I have been gripping the railing since I arrived. The children run between platforms barefoot and laughing. I hate them, gently.
 
 Manami says there is a village further north that moves entirely. Follows a herd of grazing dragons, packs up every few months, relocates. I asked if we could visit. She said "next time," which in Manami's vocabulary sits somewhere between "perhaps" and "absolutely not."

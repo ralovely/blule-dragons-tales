@@ -1,3 +1,5 @@
+*9th October 1955*
+
 We slept in the open last night. No village. No walls.
 
 It was not the same as night at "home". No voices carrying, no firelight. Just the dark, and the things in it. I could hear breathing from several directions at once. None of it human. Something moved through the trees behind us around midnight, close enough to shift the branches overhead. We did not look. We did not speak. We lay still until it passed.

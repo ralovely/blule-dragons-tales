@@ -1,3 +1,5 @@
+*20th March 1938*
+
 Here I am, scribbling away in my journal. The scent is a peculiar mix of damp earth and something I have no better word for than draconic; not fiery, mind you, but warm and ancient, like sunlight on old stone. If you were to ask me exactly where I am, Cassius, I should have to wave my hands vaguely towards the Pacific and change the subject.
 
 Aizomea. I have the name now, and a great deal else I did not have a fortnight ago. No chart shows the place. I went looking for it across half an ocean, somewhere between New Zealand and South America, and I am no longer sure that looking is how one finds it.

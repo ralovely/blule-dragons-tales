@@ -1,3 +1,5 @@
+*27th July 1938*
+
 The Listeners use touch. But there is a second tradition, older and more public, that uses sound.
 
 The instruments are simple. Hollowed seashells that produce a single clear note. Smooth river stones clicked together in rhythms. Feathers drawn across taut string to make a hum so faint I can barely hear it, though the dragons hear it from across a valley. And gourds, grown from seeds the Japanese settlers carried with them, dried and filled with seeds or pebbles or, in the rarest cases, blue stone dust. A gourd filled with blue stone dust sounds like the voice of the stone, bottled.

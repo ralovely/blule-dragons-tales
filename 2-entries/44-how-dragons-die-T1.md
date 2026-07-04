@@ -1,3 +1,5 @@
+*17th August 1938*
+
 I have been asking how dragons die. It is not a question the Manaïari enjoy, though not because it is sad. It is because the answer is not one answer.
 
 Some fade. Over weeks, they grow quieter. They eat less. Their colour pales. The Listeners say the dragon's presence thins, until one morning the flank is cool. It is not sudden, and not violent. It is a long exhale that, at some point, does not draw back in.

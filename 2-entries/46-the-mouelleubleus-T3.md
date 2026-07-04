@@ -1,3 +1,5 @@
+*8th March 1956*
+
 There is blue dust on my notebook again. A young dragon rubbed against my bag this morning, and now everything in it has a faint blue cast. My pencils. My spare shirt. The sandwich I was saving for later.
 
 The Manaïari call them the Mouelleubleus. I asked Manami to translate. She said it means, roughly, "the soft blue ones," then paused and admitted it also sounds like the noise a cat makes when it is unimpressed. She suspects a child coined it. I suspect she is right.

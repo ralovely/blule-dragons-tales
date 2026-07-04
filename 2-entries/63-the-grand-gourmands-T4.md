@@ -1,3 +1,5 @@
+*26th June 1963*
+
 Dragons love ice cream. This is not a metaphor or an anthropomorphism. They love it without reservation, without judgement, and to the exclusion of all other priorities. It is more or less how I love a good book.
 
 The island's signature flavour is blue stone. The dust is ground to a fine powder, stirred into a base of coconut milk and honey, and flash-frozen by an ice dragon whose involvement in the process is best called supervisory. It tastes of almost nothing at first. Then something cold and mineral blooms at the back of your throat, like licking a clean river stone on a winter morning. We ate three bowls each. The Manaïari considered this restrained. River went back for a fourth. She has been volunteering at the docks every morning this week. She has never shown interest in fishing before.

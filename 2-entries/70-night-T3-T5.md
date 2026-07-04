@@ -1,3 +1,5 @@
+*14th July 1971*
+
 When the sun sets, the world changes entirely. There is no artificial light here beyond fire and blue stone. The crafted stone glows faintly in the dark: the pendants around every neck, the inlays in walls, the tools and cooking pots and thimbles. Enough to find your way. Not enough to read by. Colours disappear. Shapes simplify. The dragons become silhouettes. The first few nights, I was frightened. Then I realised the dark here is not empty. It is full.
 
 Full of sound, mostly. Dragon breathing is a bass note under everything, slow and vast. Insects. The distant sea. The creak of wings overhead, the soft thud of something enormous landing carefully somewhere I cannot see. Some species are nocturnal, and they move through the dark by senses I do not have. On full-moon nights, the blue stone in the mountains and the paths glows brighter, answering the moonlight. I went walking once under a full moon and felt as though I were moving through a painting someone had forgotten to finish. All outline, no fill, and somehow more beautiful for it.

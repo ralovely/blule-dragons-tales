@@ -1,3 +1,5 @@
+*15th September 1948*
+
 The coast is where the secret ends. You can stand on the beach and see the wall of mist a few hundred yards out, a clean line between this world and the one I came from. I go there sometimes when I need to remember that the rest of the world exists. It helps less than it used to.
 
 I am not always alone when I come. There is a young man I see sometimes, standing at the water's edge, looking out. Not at the sea. Past it. Manami says a few leave. Most come back.

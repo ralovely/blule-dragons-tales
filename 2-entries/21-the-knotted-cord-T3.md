@@ -1,3 +1,5 @@
+*5th September 1955*
+
 The children have been running about all week with fistfuls of what looks like captured clouds: wisps of impossible colour spilling onto the paths. It is dragon-nest fuzz, shed by the young ones, and the women spin it into thread whilst murmuring songs that have no words.
 
 They are preparing for the Knotted Cord.

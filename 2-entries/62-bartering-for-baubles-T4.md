@@ -1,3 +1,5 @@
+*19th June 1963*
+
 I am holding a pebble. It is perfectly round, grey, and according to Manami, rather valuable. She raised both eyebrows when she saw it, which is more alarm than I have ever seen her show. Something to do with its weight, or its colour, or possibly the roundness. She wasn't entirely clear, and I suspect the economy here resists explanation on purpose.
 
 I got it from a dragon.

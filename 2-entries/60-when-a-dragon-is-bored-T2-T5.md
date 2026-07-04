@@ -1,3 +1,5 @@
+*14th July 1948*
+
 My darlings, if you ever wonder where you get it from, read this.
 
 I have, after considerable fieldwork, compiled an unofficial guide to the stages of dragon boredom. I offer it here as a public service.

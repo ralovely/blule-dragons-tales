@@ -1,3 +1,5 @@
+*18th June 1948*
+
 To the Manaïari, a shared meal can solve almost anything. A diplomatic incident, a broken heart, a philosophical impasse: all are best addressed around a hearth. Their entire culture seems to be a grand, joyful conspiracy of food. Harvesting it, preparing it, serving it.
 
 I visited a restaurant yesterday with Manami, carved directly into a cliff face. She ordered for both of us without asking. Mon Dieu, the food! Humans occupied the terraces while their dragon companions perched on wider ledges below, their magnificent heads rising up to become part of the dinner party. The heat from the dragons rose gently through the stone, warming the terraces from below, and conversation bounced off the rock walls in a cheerful, incomprehensible roar. The kitchen behind it was communal, enormous, with stone counters at two heights.

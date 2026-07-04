@@ -1,3 +1,5 @@
+*11th March 1938*
+
 *Day three.*
 
 Three days now, and my hand is at last steady enough to set things down in order. I do not know the name of this place. I am writing this because if I do not write it down, I will convince myself it is not real. I am a scientist. The notebook is the only tool I have that still works.

@@ -1,3 +1,5 @@
+*25th January 1956*
+
 Courtship among the fire-breathing species is, essentially, arson.
 
 The male spends days assembling a structure from whatever burns well. Dry grass, shed bark, stolen rope, the odd fence post. Aesthetic quality is irrelevant. What matters is combustibility. He lays this offering at the feet of the female. She inspects it. If she approves, she incinerates it with a single, concentrated breath. The bigger the fire, the better. If she walks away, he must dismantle the whole thing and start over. I watched one male build and rebuild four times in a single week. By the end he looked less like a suitor and more like a man who has been asked to repaint the kitchen. The ice dragons, meanwhile, spend the entire courtship season on fire duty, dousing the inevitable bush fires with expressions of weary contempt.

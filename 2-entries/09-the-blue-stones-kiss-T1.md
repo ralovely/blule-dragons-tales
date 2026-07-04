@@ -1,3 +1,5 @@
+*29th June 1938*
+
 It started with a colour. A blue so deep and resonant it seemed to hum. I first noticed it in the mountains: impossibly tall, thin spires, drawn out at the tips like thread off a spindle. At their base, the rock is pale, ordinary granite. But the higher one looks, the deeper the blue becomes, until the very peaks are a vivid ultramarine, stained by something no longer quite there. Whatever gave them that colour has long since risen further, into the sky. The mountains are just the memory of it, stretched thin and left behind.
 
 But the blue is not only in the rock. It is everywhere.

@@ -1,3 +1,5 @@
+*1st March 1956*
+
 The legends are, as usual, entirely wrong: dragons do not hoard gold.
 
 They very much hoard, but instead of cold, lifeless metal, they collect piles of worthless knick-knackery. Trinkets. Bric-a-brac, as my mother would say. Not a single piece of gold among any of them (despite the stuff being everywhere else on this island).

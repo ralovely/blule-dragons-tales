@@ -1,3 +1,5 @@
+*23rd February 1956*
+
 Each cave takes the shape of its occupant. The walls are worn smooth where a flank has pressed against them nightly. The floor is scooped where a tail curls. You can walk into an empty cave and know, from the grooves and the faint smell, what lived there and roughly how long ago it left.
 
 There are, broadly, three kinds. High caves in the mountain faces, open to the wind, favoured by the flying species. Forest caves at ground level, damp and overgrown, where the entrance is sometimes hidden by vines and you don't realise you've walked into someone's home until someone clears their throat. And deep caves, far underground, where the blue stone in the walls glows brighter the further you descend. I visited one that was lit entirely by the stone, no sunlight and no fire, just blue everywhere, the whole cave a hollowed sapphire.

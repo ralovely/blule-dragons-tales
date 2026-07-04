@@ -1,3 +1,5 @@
+*11th May 1938*
+
 Today I witnessed something few in the world have (I seem to be saying that often lately, but this one feels different): I saw a dragon hatch.
 
 It was also one of the funniest scenes. In a stone courtyard hemmed in by house walls on three sides, children were playing a game I'd describe as a mix of rugby and football, with the added twist of trying to get as many bounces off the walls as possible. It took me a few minutes to realise the 'ball' was, in fact, an egg. A dragon egg.

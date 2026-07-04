@@ -1,3 +1,5 @@
+*13th July 1955*
+
 I am writing this from the ledge of the big pool, holding the notebook clear of the water, and the steam is curling the page as I go. A fire dragon lies along the far side with its chin half-sunk, keeping the whole thing warm. Every few minutes it exhales, the surface shivers, and forty people and six dragons sigh at once.
 
 The baths were here long before the Manaïari. Certain fire dragons had taken to heating still pools with their breath, slowly, patiently, and the others came to soak. It is the island's oldest institution, and it has nothing to do with being clean. Dragons who keep to themselves all year sit shoulder to shoulder in warm water and do nothing at all, together. They are doing it now, on the far side, with their eyes shut.

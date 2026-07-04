@@ -1,3 +1,5 @@
+*27th March 1938*
+
 One does not argue with a mountain, and the Manaïari seem to have built their entire philosophy on this simple, irrefutable fact. When one shares a home with dragons, the petty squabbles of humankind must seem rather small. Two men were disagreeing loudly over the placement of a fishing net this morning. A dragon yawned (a real yawn, the kind that rearranges the wind) and both men looked at each other, shrugged, and went for lunch. Problem solved.
 
 Manami, the woman assigned to show me around (or, more likely, to keep me from wandering into something I shouldn't), is a head taller than me, and I am not short. She has the kind of shoulders that make doorframes seem like a suggestion. The first morning, she handed me a basket of fruit to carry. I took it with both hands. She'd been holding it in one, while also holding her daughter, Hana. I saw her later that afternoon at the docks, directing a fishing crew with the same calm she uses on me. She is not my guide. She has a life. I am, at best, an addition to it.

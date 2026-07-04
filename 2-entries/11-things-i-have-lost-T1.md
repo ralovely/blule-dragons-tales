@@ -1,3 +1,5 @@
+*16th November 1938*
+
 Things I have lost since arriving:
 Two pencils.
 A brass button.

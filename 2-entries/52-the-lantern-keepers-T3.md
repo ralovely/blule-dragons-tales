@@ -1,3 +1,5 @@
+*11th April 1956*
+
 On foggy nights, certain dragons glow. A warm amber light seeps through their belly scales, soft enough to read by, steady enough to follow home. They hover above the island paths, perfectly still, and if you happen to look up and catch one's eye, it drifts a little higher, pretending you were not meant to notice. The Manaïari call them Lantern Keepers, though the dragons themselves seem to find the role beneath comment.
 
 I climbed a hill one evening to see them from above. It had been raining, and the fog was thick enough to lose your hand in. But from the hilltop, the Lantern Keepers traced every path on the island in floating amber dots. The village below had disappeared entirely. Only the lights remained, suspended in the grey, a constellation that someone had dropped on the ground and forgotten to pick up. I sat there a long time. I have seen few things here more beautiful, or more private.

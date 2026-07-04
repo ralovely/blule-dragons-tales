@@ -1,3 +1,5 @@
+*11th January 1956*
+
 Mes petits monstres, you will appreciate this one.
 
 I have written at length about hatchlings, and it is easy to do so, because hatchlings are ridiculous and perfect and one cannot help but love them. No one warns you about what comes next.

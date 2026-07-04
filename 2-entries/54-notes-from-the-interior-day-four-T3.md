@@ -1,3 +1,5 @@
+*6th October 1955*
+
 My knees would like it noted, for the record, that they did not agree to this.
 
 The cliff village is carved vertically into a limestone face. Terraces, rooms, stairways, all going up. Dragons perch on the wide ledges at every level, tails hanging down like bunting. The only way up, if you are not a dragon, is a series of handholds worn smooth by centuries of use. Manami climbed it the way one climbs a staircase. I climbed it the way one climbs a cliff. Because it is one. I apologised to it twice on the way up, once for what I had called it.

@@ -1,3 +1,5 @@
+*7th August 1963*
+
 I took Cendre and River to the hillside settlement today. The one with the fire dragon.
 
 The village remembered me, which I did not expect. People nodded as we arrived. A woman brought us food before we asked. Cendre studied the fireproofed thatch with his hands behind his back, the way his father used to examine a bookshelf. River was gone within the hour, somewhere down the path, talking to people I did not know.

@@ -1,3 +1,5 @@
+*21st September 1955*
+
 **The Dragon's Sneeze**
 
 I stood on a cliff today and very nearly forgot to breathe. Below, a young woman stood at the edge, clad in a harness of leather and shimmering blue metal ribs. She wasn't preparing to jump, not really. She was waiting.
