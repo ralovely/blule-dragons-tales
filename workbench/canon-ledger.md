@@ -54,6 +54,24 @@ Entries are **thematically ordered, not chronological** ("This is not a diary in
 - **Margaret** — dragon wearing spider-lace since Tuesday (08).
 - Unnamed but fixed: the Boulderback critic (21); the knot-keeper with dinner-plate hands (21); the harbour master with the flute (17, 65); the backwards walker (16); the boulder-impersonator ("It ate the sign", 40); the dock critic (40); the white night-watcher in the square (40); the bell dragon (59); the laundry-nest dragon (59); the sound-collector (56); the meadow-back and its cat-sized tenant (47); the violet-flower eater (53); the dental inspector (28); Hans the Hunter dynasty (31).
 
+## 2b. Birthdays & death days (years in **bold** = fixed canon; specific days = PROPOSED 2026-07-04, pending author sign-off)
+
+| Character | Born | Died | Alignments with dated entries (opportunities, not yet written in) |
+|---|---|---|---|
+| **Indigo Pepper** | 9 June **1901** | 21 October **1985** (aged 84 ✓) | Entry 12 ("Nothing of note happened today…") dated 9 Jun 1955 = **her 54th birthday** — the driest possible joke, stated or not. She turns 70 on 9 Jun 1971, mid-T5 ✓ prologue's "she was seventy". |
+| **Cassius Worthington** | 3 March 1894 | 17 November **1954** | Entry 31 (the collective sigh — her letter to him, "Cassius, you would have measured it") dated 17 Nov 1955 = **the first anniversary of his death**. Unstated, devastating. |
+| **Nangula Sossusvlei** | ~1876 ("an older woman" in Prague) | 11 August **1935**, Namibia | Entry 44 ("I have been asking how dragons die…", 17 Aug 1938) sits **the week after her third anniversary** — quietly explains why she's asking; "Nangula died three years ago" ✓ exact. |
+| **Cendre** | 14 February 1931 | 30 July 1994, in his sleep ("a few months later") | Rock-collecting schoolboy in 1938 (entries 9, 10) ✓. |
+| **River** | 7 August 1933 | 5 March 1994, plane crash, Pacific | Entry 65 ("I brought them here", 7 Aug 1963) = **her 30th birthday** — the hillside outing as a birthday treat. Her 38th (7 Aug 1971) falls between entries 75 and 76 in T5. Aged 4 when addressed in entry 35 (1938) ✓. |
+| **Jamie** | 26 March **1972** | — | Conceived on Aizomea during T5 (Jun–Sep 1971) ✓ arithmetic. Protection Act same year (prologue). |
+| **Manami** | 16 August 1908 | alive through T5 | Entry 23 ("Manami and I disagreed today… She is always right.") dated 16 Aug 1955 = **her birthday**. Optional, wicked. |
+| **Hana** | May 1937 | — | Baby on the hip, March 1938 ✓; kintsugi apprentice at 18 in 1955 ✓. |
+| **Kai** | 1 December 1940 | — | "Young fisherman" at 22 in 1963 ✓; 30 in 1971; Jamie's father (implied, never stated). |
+| **Lady Chestnut** | age unknown (100+ by ~2005, prologue) | — | **Naming day: 30 April 1907** — the button, the six-year-old, the gingerbread steam. A date Indigo might privately keep. |
+| Gerald | — | — | Appears on her roof T3 1955; biography otherwise a mystery, which is the point. |
+
+River/Cendre death dates are the freest proposals (canon says only: River vanished, Cendre "a few months later", both before Jamie finds the trunk ~2005). None of the alignment mentions exist in entry text yet — they are opportunities to weigh entry by entry.
+
 ## 3. World mechanics (must survive verbatim in meaning)
 
 - **The compass**: sphere the size of a tangerine, carved dragon scales, blue-tinged metal band etched with stars, opens like a locket; inside a dragon's eye, green-gold, slit pupil; you look *through* it and one slice of horizon is brighter/more vivid — turn until the colours sing (P, 19). It does not point north; "It was looking" — likely the blue stone's call (31).
