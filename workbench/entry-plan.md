@@ -121,3 +121,60 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 
 T1 batch 1: 01–09 · T1 batch 2: 10, 11, 19, 20, 32, 34, 35, 43, 58, 70 · T2: 13, 18, 31 (+T2 halves of 32/58/59) · T3 batch 1: 12, 14–17, 21–28 · T3 batch 2: 29, 30, 33, 36–42 · T3 batch 3: 45–57 · T3 batch 4: 65, 69 (T3 halves) · T4: 61–64, 66–68 · T5: 44, 59 (T5 half), 60, 65 (River/Kai para), 71, 72, 74, 75 (73 untouched).
 After every batch: re-grep §2 patterns on the batch's files + self-audit for newly introduced repetitions; check neighbour ending-types; commit `Tn batch i/j: entries … — <what>`.
+
+
+---
+
+# APPENDIX: Tic inventory (moved from canon-ledger.md, 2026-07-04)
+
+Editing telemetry, not canon — relocated so the ledger stays pure world-truth. **All entry numbers below are OLD (pre-renumbering) numbers**; mapping at the bottom of index.md.
+
+## Tic inventory — baselines → targets (per-file; verify *lumpy* distribution)
+
+Grep figures from the pre-edit corpus (`entries/*.md` + prologue). Healthy end-state: zeroes in most files, clusters in a few.
+
+### 6.1 `the way (a|an|one|old|two) ` similes — baseline 22 → target ≤9
+02:1 03:2 04:1 05:1 15:1 16:1 18:1 31:1 32:1 39:1 41:2 44:1 47:1 49:1 52:1 53:1 56:1 59:1 65:1
+Protected keeps: librarian shushing (39), sheepdog farmer (32), **one** south-of-France grandmothers (41 — the other duplicate is in 03, see fix 8). Replacements, where any, from Indigo's domains (§4.3); prefer deletion.
+
+### 6.2 "It is not / it is not" reframes — baseline 16 (incl. variants) → target ≤4, never two in one trip
+02:2 09:1 17:1 18:2 21:1 24:1 28:1 36:2 41:1 43:2 56:1
+Flagship offender: 18 "It is not magic. It is logistics." Keep only the funny ones.
+
+### 6.3 `No x. No y.` paired fragments — baseline 7 → target ≤2
+12:1 31:1 41:1 49:1 54:1 56:1 69:1
+
+### 6.4 "as if" — baseline 31 (29 in entries, 2 prologue) → target ≤12
+02:3 03:1 04:1 05:2 07:1 09:2 17:1 20:1 23:1 26:1 28:1 31:2 33:1 34:1 41:1 43:1 44:1 46:1 51:1 63:1 65:1 69:1 P:2
+
+### 6.5 "something close(r) to" — baseline 7 → target ≤2
+04:3 14:1 21:1 50:1 58:1
+
+### 6.6 "I can only describe" — baseline 4 → target ≤1
+13:1 41:1 59:1 63:1 (also "what can only be described" in 07, 42 — count with this family)
+
+### 6.7 quiet/soft/gentle/small as default intensifiers — baseline ~19–22 ("quiet" lines: 22) → target ≤8
+02:1 09:2 12:2 14:1 17:1 19:1 20:1 21:1 26:1 32:2 43:1 47:1 51:1 65:1 68:1 69:1 P:3 — replace with specific sensory detail or nothing.
+
+### 6.8 Sentence-initial "Nobody" — baseline 24 → target ≤8
+04:1 05:1 09:1 10:1 13:1 15:2 16:1 18:1 20:1 24:1 28:2 29:2 35:1 36:1 37:1 39:1 55:1 P:1
+
+### 6.9 Aphoristic stinger endings — baseline ~60/75 → target ≤25 (≥10 of them jokes)
+Assigned per entry in `entry-plan.md`. Big emotional entries (68, 71, 72, 73, 75) keep their weight.
+
+### 6.10 Comic triples (exactly three escalating examples) — baseline: majority of entries → target ≤30 entries
+Judgment audit per batch; vary counts (1, 2, 4, 7, none); the "third example eaten by a hatchling" gag at most once.
+
+### 6.11 Pepper tic kit budgets (§4.3) — existing canon instances
+- **A. Haberdashery/mending** (budget 12–15, peak T3): existing — P button origin; 09 seamstresses' thimbles; 12 "stopped caring about buttons"; 17 "Justice… not a sword, but a thimble" + mending women; 18 (—); 21 "threading a needle"; 36 kintsugi mending; 61 brass-button trade; 65 repaired boards; 75 mending theme implicit.
+- **B. Measure-then-doubt** (8–10 in T1, decaying; dead by T4, noticed once): existing — 10 (valuations), 19 (day counts), 35 ("four minutes flat"), 47 ("counted seventeen species" — canon, T3), 52 (arithmetic), 55 (sixteen days/twelve villages/four notebooks). T1 needs more (02, 04, 07, 09); the single T4 notice ("I did not measure it… Cassius would mind") to be placed — candidate: 64.
+- **C. Apologising to objects** (4–6, one escalation to weather): existing — 05 (rock, trees, doorframes: the anchor). Add ~3–4; weather apology once, late.
+- **D. Tea jurisprudence** (3–4 grievances + one surrender T4/T5): existing — 03 ("I do, however, miss tea"), 17 ("I say teapot… I call it tea"), 34 ("what passes for tea here"), 65 (tea-as-simile). Surrender to be placed — candidate: 62 or 72.
+- **E. French slippage** (existing + ~6, back-weighted T4–T5): existing — 03 *bon vivants*, 13 *Mon Dieu*, 37 *Mes petits monstres*, 54 *C'est beau*, 68 *le mal du pays*, 75 *Deux vies*. Keep all.
+- **F. The Nangula question — SHELVED / reworking (author, 2026-06-14).** Attributing sideways questions to Nangula reads like a shared Aizomea conversation that never happened (she died 1935, before T1; kept the island secret). Removed the added instance from 56. New direction: address an entry or two *to* Nangula (cf. Cassius addresses) — see queries-for-author.md TODO. Existing soft references stay for now (05 "I wonder if Nangula was better at this", 24 "I wonder if Nangula had one", 43 "part of her is in these mountains"); review 20 ("Nangula would have asked the better question") and 74's orphaned "What is it *for*?" under the new approach.
+
+### 6.12a Em-dashes (`---`/`—`) — author rule 2026-06-13: avoid
+Baseline: 36 across original entries, 11 in the (pre-sweep) prologue. Target: ≤4 survivors corpus-wide, single dashes only, speech-rhythm or signature cases only; never the double-dash parenthetical. Substitutes: comma, semicolon, colon, parentheses, full stop. Swept per batch. Sanctioned survivor #1: the signature dash in the protected note, "… — Indy" (prologue).
+
+### 6.12 Journal furniture baselines (to add per §4.2 — currently near-zero)
+Strike-throughs: 0 (target 5–8). "P.S." addenda (post-entry postscripts; author chose "P.S." over "Later", 2026-06-13): 0 (target several, uneven). Sketch captions "[written beneath a drawing: …]": 0 explicit (08 is implicitly captions; target 4–6, coordinate with illustration placement). Interrupted entries: 1-ish (12's "Tomorrow."). Datelines/weather: 5 day-markers in T1 (01–04, 10), none elsewhere. Underlined-distrusted words (italics): occasional (*leader* not yet present).
