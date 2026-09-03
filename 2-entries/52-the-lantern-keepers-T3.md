@@ -4,4 +4,4 @@ On foggy nights, certain dragons glow. A warm amber light seeps through their be
 
 I climbed a hill one evening to see them from above. It had been raining, and the fog was thick enough to lose your hand in. But from the hilltop, the Lantern Keepers traced every path on the island in floating amber dots. The village below had disappeared entirely. Only the lights remained, suspended in the grey, a constellation that someone had dropped on the ground and forgotten to pick up. I sat there a long time. I have seen few things here more beautiful, or more private.
 
-A child told me later, with great confidence, that the Lantern Keepers are not guiding anyone. They are afraid of the dark. They hover above the paths because it means someone will always be walking beneath them, and they glow because they are nervous. I wonder which of us is afraid of the dark.
+A child told me later, with great confidence, that the Lantern Keepers are afraid of the dark. They hover above the paths because it means someone will always be walking beneath them, and they glow because they are nervous.
