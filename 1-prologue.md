@@ -3,7 +3,7 @@ Prologue - The Accidental Inheritance
 
 It's hard to talk about dragons without talking about Lady Indigo Pepper. Or Indy, like I used to call her. Lady Pepper was my grandmother, and I like to think I was her favourite grandchild, which is not such a stretch, given I was the only one.
 
-I should start with the house: not where the story begins, but where I found it.
+I should start with the house. It is where I found the story. Its beginning lies elsewhere.
 
 The door stuck, the way it always had. Inside, the house smelled of dust and something underneath the dust that was hers. The little table where we'd had tea parties with impossibly tiny sandwiches was still there, still set for two. The bannister I used to slide down was still smooth on the underside, where a hundred descents had polished it. She used to pretend to be furious.
 
@@ -47,13 +47,13 @@ As she was packing up, feeling dejected, an older woman approached. She didn't l
 
 The rock was not a rock. It was a dormant dragon egg.
 
-They found each other again and again over the years, in the strangest places: a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched. Have you considered that it's not a knot for a rope, but a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere, let alone to Aizomea.
+They found each other again and again over the years, in the strangest places: a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched. Have you considered it as a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere, let alone to Aizomea.
 
 Nangula had known all along. She had been waiting for the right person to show it to, and she had decided that person was Indy; the years of sideways questions were her way of making sure.
 
 ---
 
-Nangula died in 1935. The final clue was not a letter or a map, but an object Indy already possessed: a solid piece of dark wood carved into a sleeping dragon, a gift from Nangula that had sat on her desk for years, beautiful and impenetrable.
+Nangula died in 1935. The final clue had been sitting on Indy's desk for years: a solid piece of dark wood carved into a sleeping dragon, beautiful, impenetrable, and given to her by Nangula.
 
 A few weeks later, a small, jewel-toned dragon landed on Indy's windowsill. A creature she knew only from Nangula's most secret sketches. It looked at the wooden carving and began to hum a single, pure note. A hairline seam appeared in the sculpture, and a section slid open. Inside: a strange metal box and the tightly rolled scrolls of Nangula's life's work.
 
@@ -75,7 +75,7 @@ Her public work made her the foremost authority on dragons in the world. But her
 
 My mother and uncle followed in her footsteps, both becoming explorers. My mother vanished during an expedition, in a plane crash over the Pacific. On my birthdays she used to wake me at first light, and we would cut the cake hours early, just the two of us, and eat the first slices sitting on the kitchen floor. My uncle Cendre died a few months later, in his sleep. When his rooms were cleared there was a row of stones on his desk, arranged by size; I know now where two of them came from. I was the only one left.
 
-My father, whom I never knew growing up, is somewhere in these pages. I did not understand that until I read them. I have since met him. That story is not for this book, but it is the reason I could write it.
+My father, whom I never knew growing up, is somewhere in these pages. I did not understand that until I read them. I have since met him. That story belongs elsewhere. It is also the reason I could write this one.
 
 ---
 
@@ -95,6 +95,6 @@ A dragon stepped out of the trees, copper-scaled, wearing a bright red collar, a
 
 That was twenty years ago. I have spent those years reading, translating, travelling, and trying to understand a woman I thought I knew. This book is what I found.
 
-A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote as she lived: not in order, nor to a plan, but as things struck her. I have chosen the entries that best show the world she found, and arranged them by subject rather than by date: less a diary in sequence than a world, assembled from its pieces.
+A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote as she lived: out of order, without a plan, whenever things struck her. I have chosen the entries that best show the world she found, and arranged them by subject: a world assembled from its pieces.
 
 The rest is hers: the journals, the illustrations, the letters, and all the other knick-knackeries that Lady Indigo Pepper left for us to rediscover. The compass sits open on my desk as I write, its green-gold eye brighter in one particular direction.
