@@ -4,7 +4,7 @@ Some dragons leave. The fact surprised me. I had spent so long thinking of Aizom
 
 They go for all sorts of reasons, or for no reason at all. Some are curious. Some are restless. One, Manami told me, left because it didn't like the weather. The Fog-Weavers make no effort to stop them. There is a particular tilt to a dragon's flight that signals intention, and the mist parts. They leave without ceremony or permission. Some stay away for years. Some for centuries. One, I am told, departed roughly five hundred years ago and came back smelling faintly of olive oil. It settled into its old sleeping spot and took up where it had left off five centuries before.
 
-The Manaïari believe dragons follow the blue stone's call across oceans, a frequency too low for human ears that carries like a pulse through the water. A lighthouse you hear rather than see. I think your compass works on the same principle. The eye that brought me here was not pointing north. It was looking.
+The Manaïari believe dragons follow the blue stone's call across oceans, a frequency too low for human ears that carries like a pulse through the water. A lighthouse you hear rather than see. I think your compass works on the same principle. The eye that brought me here never cared for north. It was looking.
 
 I have spent years cataloguing dragons outside of Aizomea. You spent decades at it before me, Nangula, and never once let slip where they were all coming home to. Before us both, centuries of mythology: sea serpents in naval logs, gargoyles that turned out not to be stone, carved dragon prows on merchant ships. We knew they were real. My bestiary has begun to look like Aizomea's guest book.
 
