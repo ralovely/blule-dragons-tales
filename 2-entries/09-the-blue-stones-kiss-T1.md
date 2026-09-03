@@ -2,15 +2,15 @@
 
 It started with a colour. A blue so deep and resonant it seemed to hum. I first noticed it in the mountains: impossibly tall, thin spires, drawn out at the tips like thread off a spindle. At their base, the rock is pale, ordinary granite. But the higher one looks, the deeper the blue becomes, until the very peaks are a vivid ultramarine, stained by something no longer quite there. Whatever gave them that colour has long since risen further, into the sky. The mountains are just the memory of it, stretched thin and left behind.
 
-But the blue is not only in the rock. It is everywhere.
+The blue has escaped the rock. It is everywhere.
 
 It's in the subtle, iridescent sheen of the seasoning a Manaïari child playfully sprinkled on a sleeping dragon's snout. It's in the glow of the pendants worn by everyone, a private star against the skin. I've seen it in the glint of a cooking pot, or in the thimbles of seamstresses stitching festival cloaks with shed dragon scales.
 
-The blue is more than a pigment; it is a presence. A stone, they tell me, a collaboration between the sky-borne dragons and the earth-bound Manaïari. It is both commonplace and uncanny.
+They tell me the blue comes from a stone gathered by the sky-borne dragons and the earth-bound Manaïari together. It is ground into kitchens and worn against skin, yet it vibrates in my palm.
 
-I find myself looking for it everywhere now, this thread of blue that stitches a world together. I have a hundred questions. It just sits there, vibrating faintly. I keep coming back to the colour ~~luminous~~ ~~singing~~ (there is no word that holds it). I have written about it three times now and each time it sounds wrong. 
+I look for it everywhere now. I have a hundred questions. It just sits there, vibrating faintly. I keep coming back to the colour ~~luminous~~ ~~singing~~ (there is no word that holds it). I have written about it three times now and each time it sounds wrong.
 
-One of the harvesters let me hold a raw stone today. It was heavier than it looked, and cool; noticeably cool, the cold of altitude still on it. When I gave it back, my fingertips were blue. I licked my thumb and rubbed. Nothing. Manami laughed. She held up her own hands, palms out, a faint, permanent blue soaked into the skin like a dye that had forgotten how to leave. All the harvesters have them, she said. You can spot one across a crowded market by the colour of her hands. It doesn't wash off. It isn't meant to.
+One of the harvesters let me hold a raw stone today. It was heavier than it looked, and cool; noticeably cool, the cold of altitude still on it. When I gave it back, my fingertips were blue. I licked my thumb and rubbed. Nothing. Manami laughed. She held up her own hands, palms out, a faint, permanent blue soaked into the skin like a dye that had forgotten how to leave. All the harvesters have them, she said. You can spot one across a crowded square by the colour of her hands. It does not wash off. Manami seemed puzzled that I thought it ought to.
 
 I spoke with them afterwards. They were just back, their faces flushed from the wind and altitude, carrying baskets filled with what looked like ordinary, dull blue rocks. It is only when you hold one that you feel a faint, latent vibration. I have taken three samples. One for the laboratory. Two because Cendre collects rocks and I cannot help myself. N.B. By my hand-scale the stone weighs half again what granite would at that size. I shall want a proper balance. I shall likely have to build one myself.
 
