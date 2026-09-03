@@ -6,7 +6,7 @@ I watched it work through an entire pen of goats this morning. It latched onto t
 
 I can already hear some future colleague insisting that dragons, being non-mammalian, cannot possibly drink milk. To which I say: come here, watch a hatchling drain a goat in four minutes flat, and then explain to the hatchling that it is doing something biologically impossible. I am sure it will be fascinated.
 
-There is also a tree here whose sap is thick, white, and sweet, and which the Manaïari call dragon milk. The hatchlings are mad for it. I was given a gourd of the stuff and told to try feeding one myself. I sat on the ground and held the gourd out. The dragon approached with the caution of something that suspects a trap but is too hungry to care. It drank the entire gourd in one long, unbroken gulp, then sat back and looked at me. Not with gratitude, exactly. With assessment. Then it walked off. I assumed that was the end of it.
+There is also a tree here whose sap is thick, white, and sweet, and which the Manaïari call dragon milk. The hatchlings are mad for it. I was given a gourd of the stuff and told to try feeding one myself. I sat on the ground and held the gourd out. The dragon approached with the caution of something that suspects a trap but is too hungry to care. It drank the entire gourd in one long, unbroken gulp, then sat back and looked at me with frank assessment. Then it walked off. I assumed that was the end of it.
 
 Ten minutes later, it came back carrying a small purple stone in its mouth, which it dropped in my lap and left again. I looked at the stone. I looked at the dragon. I looked at the woman who had been watching.
 
