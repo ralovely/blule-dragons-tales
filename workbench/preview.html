@@ -82,7 +82,7 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
 </div>
 <script>
 const $=id=>document.getElementById(id);
-let FILES=[],OLD=[],NEW=[],idx=0;
+let FILES=[],OLD=[],NEW=[],LOADS=[],idx=0;
 let dirty=false, mode='diff', saveTimer=null;   // mode: 'diff' | 'plain' (left pane only)
 const ta=$('edit');
 
@@ -163,12 +163,38 @@ function renderMeta(){
   $('badge').textContent=chg?'changed':'unchanged';
   $('badge').className='badge'+(chg?' chg':'');
 }
+function ensureEntry(k){
+  if(OLD[k]!==undefined&&NEW[k]!==undefined)return Promise.resolve();
+  if(!LOADS[k]){
+    LOADS[k]=Promise.all([getOld(FILES[k]),getNew(FILES[k])]).then(([o,n])=>{
+      OLD[k]=o;NEW[k]=n;updateSideItem(k);
+    });
+  }
+  return LOADS[k];
+}
 function loadEntry(){
+  const k=idx;
+  if(OLD[k]===undefined||NEW[k]===undefined){
+    ta.value='';dirty=false;renderLeft();renderMeta();markActive();
+    setStatus('saving',`loading entry ${k+1}…`);
+    ensureEntry(k).then(()=>{if(idx===k){loadEntry();setStatus('','ready');}});
+    return;
+  }
   ta.value=NEW[idx]??'';
   dirty=false;
   renderLeft();renderMeta();markActive();
   const act=document.querySelector('#side .it.act');if(act)act.scrollIntoView({block:'nearest'});
   document.querySelectorAll('.pane').forEach(p=>p.scrollTop=0);
+}
+async function hydrateEntries(){
+  let next=0;
+  const worker=async()=>{
+    while(next<FILES.length){
+      const k=next++;
+      await ensureEntry(k);
+    }
+  };
+  await Promise.all([worker(),worker(),worker(),worker()]);
 }
 function show(i){flush();idx=Math.max(0,Math.min(FILES.length-1,i));loadEntry();}
 function toggleMode(){mode=mode==='diff'?'plain':'diff';renderLeft();}
@@ -236,8 +262,11 @@ async function boot(){
     $('baseheading').textContent=`${meta.baseRef} baseline`;
     $('modetag').title=`plain ${meta.baseRef} / word-diff vs working tree (⌘/Ctrl+D)`;
   }
-  [OLD,NEW]=await Promise.all([Promise.all(FILES.map(getOld)),Promise.all(FILES.map(getNew))]);
-  buildSide();loadEntry();setStatus('','ready');
+  OLD=new Array(FILES.length);NEW=new Array(FILES.length);LOADS=new Array(FILES.length);
+  buildSide();setStatus('saving','loading first entry…');
+  await ensureEntry(0);
+  loadEntry();setStatus('','ready');
+  hydrateEntries();
   setInterval(pollCurrent,1500);
   setInterval(pollAll,15000);
   window.addEventListener('focus',pollAll);
