@@ -1,6 +1,6 @@
 *13th March 1938*
 
-I found gold in the riverbed on my fifth day. Not flakes. Chunks. I picked one up. It was the size of my fist. I stood there holding it, heart pounding, until a child walked past, looked at me, looked at the rock, and kept walking with the expression of someone who has just watched an adult do something pointless.
+I found chunks of gold in the riverbed on my fifth day. I picked one up. It was the size of my fist. I stood there holding it, heart pounding, until a child walked past, looked at me, looked at the rock, and kept walking with the expression of someone who has just watched an adult do something pointless.
 
 There is gold everywhere. The paths in some parts of the village are paved with it, because it was the flattest stone available when a stretch got muddy. I noticed it in the walls of the communal kitchen, pressed into the gaps between stones as mortar. The children use nuggets as game tokens. I watched a girl flick a piece worth a small English house off the edge of a terrace and into the grass below. Nobody went to look for it.
 
