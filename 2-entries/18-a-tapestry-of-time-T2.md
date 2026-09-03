@@ -2,7 +2,7 @@
 
 I have been here long enough now to understand how the island keeps itself hidden. The answer is logistics, of all things, divided among the dragons like chores on a rota.
 
-The fog comes first. A species of dragon the Manaïari call the Fog-Weavers produces it: a deep, rolling mist that rings the entire coast and, on the thick days, buttons the whole valley shut. From the outside, it looks like bad weather. From the inside, it is perfectly clear. I walked to the shore once and stood at the border. On my side, a sunny afternoon. On the other side, a storm that wasn't a storm. The division was sharp enough to put your hand through.
+The fog comes first. A species of dragon the Manaïari call the Fog-Weavers produces it: a deep, rolling mist that rings the entire coast and, on the thick days, buttons the whole valley shut. From the outside, it looks like bad weather. From the inside, it is perfectly clear. I walked to the shore once and stood at the border. My left hand was in a sunny afternoon; my right disappeared into a storm. The division was that sharp.
 
 Above the fog, sentinels. Dragons with vision sharp enough to spot a ship at a distance I could not estimate. They watch the ocean the way the harbour master watches the fleet.
 
