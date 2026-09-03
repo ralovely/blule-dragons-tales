@@ -67,16 +67,16 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
   </div>
   <div id="panes">
     <div class="pane">
-      <h2>Original <span class="mode" id="modetag" onclick="toggleMode()" title="plain original / word-diff vs edited (⌘/Ctrl+D)">diff</span></h2>
+      <h2>Git baseline <span class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</span></h2>
       <div class="txt" id="oldt"></div>
     </div>
     <div class="pane">
-      <h2>Edited</h2>
+      <h2>Working tree</h2>
       <textarea id="edit" spellcheck="false"></textarea>
     </div>
   </div>
   <div id="foot">
-    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · click <b>diff/plain</b> label (or <kbd>⌘/Ctrl+D</kbd>) to toggle the left pane · <kbd>Esc</kbd> leaves the text box · right pane autosaves</span>
+    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · click <b>diff/plain</b> (or <kbd>⌘/Ctrl+D</kbd>) to toggle the baseline pane · <kbd>Esc</kbd> leaves the text box · working tree autosaves</span>
     <span id="status"><span class="pulse"></span><span id="statustxt">ready</span></span>
   </div>
 </div>
@@ -99,8 +99,8 @@ function toggleTheme(){
 applyTheme((()=>{try{return localStorage.getItem('aizomea-theme');}catch(e){return null}})()||'light');
 
 const get=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.text():null).catch(()=>null);
-const getOld=f=>get('entries/'+encodeURIComponent(f));
-const getNew=f=>get('entries-v2/'+encodeURIComponent(f));
+const getOld=f=>get('/api/original/'+encodeURIComponent(f));
+const getNew=f=>get('/api/current/'+encodeURIComponent(f));
 
 function tok(t){return t.replace(/\r/g,'').trim().replace(/\n{2,}/g,' ¶ ').split(/\s+/).filter(Boolean);}
 function lcsOps(a,b){
@@ -181,7 +181,7 @@ function scheduleSave(){
 function flush(){if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}}
 function doSave(k,text){
   setStatus('saving','saving…');
-  fetch('entries-v2/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text})
+  fetch('/api/current/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text})
     .then(r=>{if(!r.ok)throw new Error(r.status);
       NEW[k]=text;if(k===idx&&ta.value===text)dirty=false;updateSideItem(k);
       setStatus('','saved '+new Date().toLocaleTimeString());})
@@ -206,7 +206,7 @@ async function pollAll(){
   // Maintains other entries' change-dots and the manifest. Never touches the
   // current entry's panes — pollCurrent owns that, and only redraws on a real
   // change, so background polling can't yank your scroll position.
-  const mf=await get('preview-files.json');
+  const mf=await get('/api/files');
   if(!mf)return;
   let files;try{files=JSON.parse(mf);}catch(e){return;}
   const curName=FILES[idx], curOLD=OLD[idx], curNEW=NEW[idx];
@@ -224,7 +224,17 @@ async function pollAll(){
 }
 
 async function boot(){
-  FILES=await(await fetch('preview-files.json',{cache:'no-store'})).json();
+  const [filesResponse,metaResponse]=await Promise.all([
+    fetch('/api/files',{cache:'no-store'}),
+    fetch('/api/meta',{cache:'no-store'})
+  ]);
+  if(!filesResponse.ok)throw new Error('could not load entry list');
+  FILES=await filesResponse.json();
+  if(metaResponse.ok){
+    const meta=await metaResponse.json();
+    document.title=`Aizomea — ${meta.baseRef} / working tree`;
+    $('modetag').title=`plain ${meta.baseRef} / word-diff vs working tree (⌘/Ctrl+D)`;
+  }
   [OLD,NEW]=await Promise.all([Promise.all(FILES.map(getOld)),Promise.all(FILES.map(getNew))]);
   buildSide();loadEntry();setStatus('','ready');
   setInterval(pollCurrent,1500);
