@@ -8,4 +8,4 @@ I showed them to Manami that evening. She studied the first page for a long mome
 
 "That one says the hunting is good to the east."
 
-I had been reading them backwards. All of them. Four pages of perfectly transcribed ~~nonsense~~ sense, held the wrong way up. Which I suppose is a fair summary of my early years here.
+I had read them all backwards. Four pages of perfectly transcribed ~~nonsense~~ sense, held the wrong way up. I turned the sketchbook round and began again.
