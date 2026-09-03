@@ -2,7 +2,7 @@
 
 **The Dragon's Sneeze**
 
-I stood on a cliff today and very nearly forgot to breathe. Below, a young woman stood at the edge, clad in a harness of leather and shimmering blue metal ribs. She wasn't preparing to jump, not really. She was waiting.
+I stood on a cliff today and very nearly forgot to breathe. Below, a young woman stood at the edge, clad in a harness of leather and shimmering blue metal ribs. She was waiting for the dragon.
 
 A huge dragon lumbered up from the valley floor and launched into the sky with a downbeat of its wings that shook the rock I stood on. And in that precise moment, the woman simply... fell. For a terrifying second, she plunged towards the rocks. But then the vortex of air left by the dragon caught her like a dandelion seed and threw her upwards, laughing, into the sun. The dragon glanced back.
 
@@ -10,7 +10,7 @@ A huge dragon lumbered up from the valley floor and launched into the sky with a
 
 In the canyons on the other side of the spire, they don't ask the dragons or the earth for a lift. They ask the trees. The Manaïari have woven a monstrous slingshot between two ancient, rubbery trees. It takes a whole team of laughing men and women, chanting in rhythm, to pull the thing taut.
 
-Today's flyer was a grandmother, strapped into the leather pouch with the calm dignity of someone boarding a train. An elder woman gave a final shout, the rope was cut, and with a deep, resonant *thrum* that vibrated in my chest, the grandmother was flung into the sky. Not with a scream, but with a delighted 'Wheee!' that echoed off the canyon walls.
+Today's flyer was a grandmother, strapped into the leather pouch with the calm dignity of someone boarding a train. An elder woman gave a final shout, the rope was cut, and with a deep, resonant *thrum* that vibrated in my chest, the grandmother was flung into the sky. Her delighted 'Wheee!' echoed off the canyon walls.
 
 **The Earth's Hiccup**
 
@@ -22,8 +22,8 @@ I watched a man in a sleek, insect-like glider stand perfectly still in a launch
 
 However they leave the ground, it strikes me now, the launch is the unimportant part. It is merely the opening line of a conversation.
 
-The Manaïari do not fly *through* the air. They fly *with* it. I saw the grandmother from the canyon adjust the tips of her glider's wings, just slightly, to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
+The Manaïari attend to the air as they fly. I saw the grandmother from the canyon adjust the tips of her glider's wings, just slightly, to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
 
-Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, did not teach the Manaïari physics. They taught them a language.
+Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, taught them a language of air. The physics followed.
 
 I asked Manami if she flies. She looked at me as if I'd asked whether she breathes.
