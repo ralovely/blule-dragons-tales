@@ -4,7 +4,7 @@ Gerald update. He slept on the roof again last night. He has not moved since yes
 
 There is also a dragon I keep seeing asleep in different places: by the river this morning, at the market yesterday, on a rooftop the day before. It appears to be the same dragon. I have never seen it move or wake. I am beginning to wonder whether there is one of it at all.
 
-The woman next door has been explaining to a dragon, at length and with considerable passion, why the cooking pot should be moved to the other side of the fire. The dragon is asleep. She does not appear to notice, or care. This happens constantly. The Manaïari hold entire conversations with dragons who are visibly not paying attention, interpreting a yawn as disagreement and a tail-flick as consent. They know perfectly well that dragons do not speak. They talk to them anyway.
+The woman next door has been explaining to a dragon, at length and with considerable passion, why the cooking pot should be moved to the other side of the fire. The dragon is asleep. She does not appear to notice, or care. This happens constantly. The Manaïari hold entire conversations with dragons who are visibly not paying attention, interpreting a yawn as disagreement and a tail-flick as consent. They talk quite happily to creatures unable to answer in words.
 
 Once a month, a dragon walks backwards through the village. It takes the same route at the same time of day. The Manaïari step aside for it without looking up, as they would for a passing cart. It walks with perfect confidence, never bumping into anything, following a path it seems to know by heart. I have asked about it twice and received the same shrug. I have stopped asking.
 
