@@ -68,7 +68,7 @@ These constraints apply to every pass.
 - Apply the em-dash and addendum rules in `entry-plan.md`: no parenthetical double dashes; target at most four genuine speech-rhythm dashes across the corpus; use `P.S.`, with occasional `Evening.` or `Next morning.`, rather than an editorial `Later` template.
 - Keep a pass-specific change log containing file, stable phrase anchor, original problem, intervention, reason, canon class, ledger action, chronology action and protected-status check.
 - Keep all research notes, decision dossiers, ledgers, change logs and other editorial artefacts under `workbench/`.
-- Commit one approved pass at a time. Stage explicit paths only, inspect the staged diff, and never absorb unrelated working-tree changes into an editorial commit.
+- Work on `editorial/full-plan`, forked from `main`. Within each pass, commit every edited story file separately; finish the pass with one workbench/ledger/chronology commit. Stage explicit paths only, inspect the staged diff, and never absorb unrelated working-tree changes into an editorial commit.
 
 ## Pass order and dependencies
 
@@ -85,7 +85,7 @@ These constraints apply to every pass.
 | 9 | Japanese–Aizomean cultural relationship | Applies the agreed direction to the small number of affected passages. |
 | 10 | Regression and read-aloud audit | Ensures later passes have not restored AI patterns or flattened voices. |
 
-Each pass should be approved before the next begins. Changes discovered during one pass but belonging to another should be logged, not silently fixed.
+The author authorised autonomous execution of the whole plan on 3 September 2026. No pass-by-pass pause is required. Changes discovered during one pass but belonging to another should be logged, not silently fixed.
 
 ---
 
@@ -932,5 +932,5 @@ Operational rules:
 - use the preview to assess wording, rhythm and word-count changes, not as the sole place to manage canon;
 - the editor deliberately writes only existing files in `2-entries/`; it cannot create entries or update ledgers;
 - when a preview edit changes canon or time, make the corresponding ledger or chronology edit before committing;
-- after review, stage explicit files, inspect `git diff --cached`, run the pass checks and commit the approved pass as one coherent unit;
+- after review, stage explicit files, inspect `git diff --cached`, run the pass checks and commit each edited story file separately; finish with one pass-closing workbench/ledger/chronology commit;
 - leave unrelated pre-existing modifications and deletions unstaged.
