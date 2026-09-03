@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Local before/after server for the Aizomea entry preview.
 
-The preview compares a fixed Git baseline (HEAD by default) with the editable
-working-tree files in ../2-entries/.
+The preview compares the main branch (by default) with the editable
+working-tree files in ../2-entries/. The branch is resolved on every poll, so
+committing on main makes the panes converge without restarting the server;
+committing on an editorial branch leaves the comparison against main intact.
 
 GET /api/files             -> current canonical entry filenames
 GET /api/meta              -> baseline and path information
@@ -12,7 +14,7 @@ PUT /api/current/<file>    -> atomically updates the working-tree file
 
 Run: python3 preview-server.py [port] [base-ref]
      default port: 8765
-     default base-ref: HEAD
+     default base-ref: main
 """
 
 import http.server
@@ -28,7 +30,7 @@ import urllib.parse
 WORKBENCH_DIR = os.path.dirname(os.path.abspath(__file__))
 STORY_DIR = os.path.dirname(WORKBENCH_DIR)
 ENTRIES_DIR = os.path.join(STORY_DIR, "2-entries")
-BASE_REF = sys.argv[2] if len(sys.argv) > 2 else "HEAD"
+BASE_REF = sys.argv[2] if len(sys.argv) > 2 else "main"
 
 
 def git(*args):
@@ -40,12 +42,28 @@ def git(*args):
     )
 
 
-resolved = git("rev-parse", "--verify", f"{BASE_REF}^{{commit}}")
-if resolved.returncode:
-    message = resolved.stderr.decode("utf-8", errors="replace").strip()
-    raise SystemExit(f"Cannot resolve Git baseline {BASE_REF!r}: {message}")
-BASE_COMMIT = resolved.stdout.decode("ascii").strip()
+BASE_COMMIT = None
 BASELINE_CACHE = {}
+
+
+def baseline_commit():
+    """Resolve the comparison branch and invalidate stale cached originals."""
+    global BASE_COMMIT  # noqa: PLW0603
+    resolved = git("rev-parse", "--verify", f"{BASE_REF}^{{commit}}")
+    if resolved.returncode:
+        message = resolved.stderr.decode("utf-8", errors="replace").strip()
+        raise RuntimeError(f"Cannot resolve Git baseline {BASE_REF!r}: {message}")
+    commit = resolved.stdout.decode("ascii").strip()
+    if commit != BASE_COMMIT:
+        BASE_COMMIT = commit
+        BASELINE_CACHE.clear()
+    return commit
+
+
+try:
+    baseline_commit()
+except RuntimeError as exc:
+    raise SystemExit(str(exc)) from exc
 
 
 def entry_names():
@@ -72,9 +90,10 @@ def validated_name(raw):
 
 
 def baseline_bytes(name):
-    """Load a baseline file once; the before pane stays fixed while editing."""
+    """Load a file from the latest commit on the comparison branch."""
+    commit = baseline_commit()
     if name not in BASELINE_CACHE:
-        result = git("show", f"{BASE_COMMIT}:2-entries/{name}")
+        result = git("show", f"{commit}:2-entries/{name}")
         BASELINE_CACHE[name] = result.stdout if result.returncode == 0 else None
     return BASELINE_CACHE[name]
 
@@ -99,10 +118,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
 
         if path == "/api/meta":
+            commit = baseline_commit()
             self.send_json(
                 {
                     "baseRef": BASE_REF,
-                    "baseCommit": BASE_COMMIT,
+                    "baseCommit": commit,
                     "entriesDirectory": ENTRIES_DIR,
                 }
             )
@@ -178,7 +198,7 @@ if __name__ == "__main__":
     os.chdir(WORKBENCH_DIR)
     server = http.server.ThreadingHTTPServer(("127.0.0.1", port), Handler)
     print(f"preview server: http://localhost:{port}/preview.html")
-    print(f"before: {BASE_REF} ({BASE_COMMIT[:10]})")
+    print(f"before: live {BASE_REF} ({baseline_commit()[:10]})")
     print(f"edited: {ENTRIES_DIR}")
     try:
         server.serve_forever()

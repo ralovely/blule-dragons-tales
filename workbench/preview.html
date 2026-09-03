@@ -67,7 +67,7 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
   </div>
   <div id="panes">
     <div class="pane">
-      <h2>Git baseline <span class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</span></h2>
+      <h2><span id="baseheading">Git baseline</span> <span class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</span></h2>
       <div class="txt" id="oldt"></div>
     </div>
     <div class="pane">
@@ -233,6 +233,7 @@ async function boot(){
   if(metaResponse.ok){
     const meta=await metaResponse.json();
     document.title=`Aizomea — ${meta.baseRef} / working tree`;
+    $('baseheading').textContent=`${meta.baseRef} baseline`;
     $('modetag').title=`plain ${meta.baseRef} / word-diff vs working tree (⌘/Ctrl+D)`;
   }
   [OLD,NEW]=await Promise.all([Promise.all(FILES.map(getOld)),Promise.all(FILES.map(getNew))]);

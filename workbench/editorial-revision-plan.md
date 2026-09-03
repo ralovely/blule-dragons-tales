@@ -914,21 +914,21 @@ The log should record decisions, not merely changed files. This will make later 
 
 ## Preview and commit workflow
 
-The workbench preview compares a fixed Git baseline with the live canonical entries. From the repository root (`story/`), run:
+The workbench preview compares the live `main` branch with the working tree. From the repository root (`story/`), run:
 
 ```sh
 python3 workbench/preview-server.py 8765
 ```
 
-Then open `http://127.0.0.1:8765/preview.html`. The left pane reads each original from the commit resolved when the server starts; the right pane reads and autosaves the corresponding file in `2-entries/`. The file list is generated dynamically, so renumbering or moving the old `entries`/`entries-v2` directories no longer breaks it. An optional second argument selects a different baseline, for example:
+Then open `http://127.0.0.1:8765/preview.html`. The left pane follows `main`; the right pane reads and autosaves the corresponding file in `2-entries/`. A commit made on `main` therefore makes the panes converge without a restart, while commits made on an editorial branch remain visible against `main`. The file list is generated dynamically, so renumbering or moving the old `entries`/`entries-v2` directories no longer breaks it. An optional second argument selects a different comparison branch or ref, for example:
 
 ```sh
-python3 workbench/preview-server.py 8765 HEAD^
+python3 workbench/preview-server.py 8765 another-branch
 ```
 
 Operational rules:
 
-- start a fresh server at the beginning of a pass so its baseline cannot move beneath the comparison;
+- leave the server running across edits and commits; its baseline follows the selected branch automatically;
 - use the preview to assess wording, rhythm and word-count changes, not as the sole place to manage canon;
 - the editor deliberately writes only existing files in `2-entries/`; it cannot create entries or update ledgers;
 - when a preview edit changes canon or time, make the corresponding ledger or chronology edit before committing;
