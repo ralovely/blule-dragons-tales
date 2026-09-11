@@ -9,27 +9,37 @@
   --bg:#faf8f4;--fg:#26221a;--side:#f4f1ea;--sideHover:#ece7dc;--sideAct:#e3dccb;
   --border:#e2ddd3;--muted:#8a8170;--meta:#6b6353;--rightbg:#fffdf9;
   --del:#fbe4e4;--delx:#a13030;--add:#e2f2e6;--addx:#1c6b35;
-  --chip:#eee7d8;--chipx:#6b6353;--dot:#cfc8b6;--dotchg:#d97706;
+  --chip:#eee7d8;--chipx:#6b6353;--dot:#cfc8b6;--dotchg:#d97706;--dotreview:#3d9658;
   --navbg:#f1ece1;--navborder:#d8d1c2;--badgechg:#fdf0d5;--badgechgx:#92600a;--accent:#c9a24a;
 }
 body.dark{
   --bg:#1a1815;--fg:#e7e1d5;--side:#211e1a;--sideHover:#2a2622;--sideAct:#37312a;
   --border:#332e28;--muted:#928979;--meta:#a89e8c;--rightbg:#1f1c18;
   --del:#3c2222;--delx:#e79a9a;--add:#1d3324;--addx:#90d3a4;
-  --chip:#2c2822;--chipx:#b3a994;--dot:#4a443a;--dotchg:#e08a2a;
+  --chip:#2c2822;--chipx:#b3a994;--dot:#4a443a;--dotchg:#e08a2a;--dotreview:#62b77a;
   --navbg:#2a2620;--navborder:#3b352d;--badgechg:#3a3017;--badgechgx:#e3bd63;--accent:#c9a24a;
 }
 body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:var(--bg);color:var(--fg);display:grid;grid-template-columns:270px 1fr;height:100vh}
 #side{border-right:1px solid var(--border);overflow-y:auto;background:var(--side);padding:8px 0;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px}
-#side .it{padding:4px 12px;cursor:pointer;display:flex;gap:8px;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--meta)}
+#side .it{padding:4px 12px;cursor:pointer;display:flex;gap:8px;align-items:center;white-space:nowrap;color:var(--meta)}
 #side .it:hover{background:var(--sideHover)}
 #side .it.act{background:var(--sideAct);font-weight:600;color:var(--fg)}
+.entry-name{min-width:0;overflow:hidden;text-overflow:ellipsis}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--dot);flex:none}
 .dot.chg{background:var(--dotchg)}
-#main{display:flex;flex-direction:column;overflow:hidden}
-#head{padding:10px 18px;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:12px;font-family:ui-sans-serif,system-ui,sans-serif}
-#head h1{font-size:15px;margin:0;font-weight:650}
+.dot.reviewed{background:var(--dotreview)}
+#main{display:flex;flex-direction:column;overflow:hidden;min-width:0}
+#head{padding:10px 18px;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:12px;font-family:ui-sans-serif,system-ui,sans-serif;white-space:nowrap;overflow:hidden}
+#head h1{font-size:15px;margin:0;font-weight:650;min-width:0;overflow:hidden;text-overflow:ellipsis}
 #head .meta{font-size:12.5px;color:var(--meta)}
+.review-switch{width:36px;height:20px;position:relative;flex:none;align-self:center;cursor:pointer}
+.review-switch input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;z-index:1;cursor:pointer}
+.review-switch .track{position:absolute;inset:0;border-radius:99px;background:var(--dotchg);box-shadow:inset 0 0 0 1px rgba(80,55,15,.14);transition:background .16s ease}
+.review-switch .track::after{content:'';position:absolute;width:14px;height:14px;left:3px;top:3px;border-radius:50%;background:#fffdf9;box-shadow:0 1px 3px rgba(0,0,0,.32);transition:transform .16s ease}
+.review-switch input:checked+.track{background:var(--dotreview)}
+.review-switch input:checked+.track::after{transform:translateX(16px)}
+.review-switch input:focus-visible+.track{outline:2px solid var(--accent);outline-offset:2px}
+.review-switch input:disabled+.track{opacity:.45}
 .navbtn{font-family:inherit;font-size:13px;border:1px solid var(--navborder);background:var(--navbg);color:var(--meta);border-radius:5px;padding:1px 8px;cursor:pointer}
 .navbtn:hover{background:var(--sideHover)}
 #themebtn{margin-left:auto;align-self:center}
@@ -60,6 +70,10 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
 <div id="side"></div>
 <div id="main">
   <div id="head">
+    <label class="review-switch" title="Mark this version as reviewed">
+      <input id="review-toggle" type="checkbox" aria-label="Reviewed" onchange="setReviewed(idx,this.checked,this)">
+      <span class="track"></span>
+    </label>
     <button class="navbtn" onclick="show(idx-1)">‹</button>
     <button class="navbtn" onclick="show(idx+1)">›</button>
     <h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span>
@@ -82,8 +96,9 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
 </div>
 <script>
 const $=id=>document.getElementById(id);
-let FILES=[],OLD=[],NEW=[],LOADS=[],idx=0;
+let FILES=[],OLD=[],NEW=[],LOADS=[],REVIEWED=[],idx=0;
 let dirty=false, mode='diff', saveTimer=null;   // mode: 'diff' | 'plain' (left pane only)
+const EDIT_SEQ={};
 const ta=$('edit');
 
 // ---- theme ----
@@ -138,15 +153,68 @@ function plain(t){
 }
 function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
 function isChg(k){return (OLD[k]??'')!==(NEW[k]??'');}
+function isReviewed(k){return Boolean(REVIEWED[k]);}
 
 function sideItemHTML(f,k){
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
-  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}"></span>${mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f}</div>`;
+  const label=mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f;
+  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}${isReviewed(k)?' reviewed':''}"></span><span class="entry-name">${esc(label)}</span></div>`;
 }
 function buildSide(){$('side').innerHTML=FILES.map(sideItemHTML).join('');markActive();}
-function markActive(){document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));}
-function updateSideItem(k){const el=document.querySelector(`#side .it[data-k="${k}"] .dot`);if(el)el.classList.toggle('chg',isChg(k));}
+function markActive(){
+  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
+  updateReviewToggle();
+}
+function updateReviewToggle(){
+  const box=$('review-toggle');
+  box.checked=isReviewed(idx);
+  box.parentElement.title=box.checked?'Mark as not reviewed':'Mark this version as reviewed';
+}
+function updateSideItem(k){
+  const item=document.querySelector(`#side .it[data-k="${k}"]`);if(!item)return;
+  const dot=item.querySelector('.dot');
+  dot.classList.toggle('chg',isChg(k));
+  dot.classList.toggle('reviewed',isReviewed(k));
+  if(k===idx)updateReviewToggle();
+}
 function setStatus(cls,txt){$('status').className=cls;$('statustxt').textContent=txt;}
+
+async function setReviewed(k,on,box){
+  const f=FILES[k];
+  box.disabled=true;
+  try{
+    if(on&&k===idx&&dirty){
+      clearTimeout(saveTimer);
+      while(dirty){
+        const text=ta.value;
+        if(!await doSave(k,text))throw new Error('save failed');
+        if(ta.value===text)break;
+      }
+    }
+    const editSeq=EDIT_SEQ[f]||0;
+    const r=await fetch('/api/review/'+encodeURIComponent(f),{
+      method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({reviewed:on})
+    });
+    if(!r.ok)throw new Error(r.status);
+    const result=await r.json();
+    const liveK=FILES.indexOf(f);
+    if(result.reviewed&&(EDIT_SEQ[f]||0)!==editSeq){
+      // The user began editing while the mark request was in flight. Keep the
+      // dot orange and clear the now-stale server record as well.
+      await fetch('/api/review/'+encodeURIComponent(f),{
+        method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({reviewed:false})
+      });
+      if(liveK>=0){REVIEWED[liveK]=false;updateSideItem(liveK);}
+      return;
+    }
+    if(liveK>=0){REVIEWED[liveK]=result.reviewed;updateSideItem(liveK);}
+    setStatus('',result.reviewed?'marked reviewed':'review cleared');
+    if(result.reviewed&&FILES[idx]===f)show(idx+1);
+  }catch(e){
+    box.checked=isReviewed(k);
+    setStatus('error','review update failed ('+e.message+')');
+  }finally{box.disabled=false;}
+}
 
 function renderLeft(){
   $('modetag').textContent=mode;
@@ -205,17 +273,25 @@ function toggleMode(){mode=mode==='diff'?'plain':'diff';renderLeft();}
 
 // ---- saving ----
 function scheduleSave(){
-  dirty=true;renderLeft();renderMeta();setStatus('saving','editing…');
+  dirty=true;
+  EDIT_SEQ[FILES[idx]]=(EDIT_SEQ[FILES[idx]]||0)+1;
+  if(REVIEWED[idx]){REVIEWED[idx]=false;updateSideItem(idx);}
+  renderLeft();renderMeta();setStatus('saving','editing…');
   clearTimeout(saveTimer);saveTimer=setTimeout(()=>doSave(idx,ta.value),1500);
 }
 function flush(){if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}}
-function doSave(k,text){
+async function doSave(k,text){
   setStatus('saving','saving…');
-  fetch('/api/current/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text})
-    .then(r=>{if(!r.ok)throw new Error(r.status);
-      NEW[k]=text;if(k===idx&&ta.value===text)dirty=false;updateSideItem(k);
-      setStatus('','saved '+new Date().toLocaleTimeString());})
-    .catch(e=>setStatus('error','save failed ('+e.message+')'));
+  try{
+    const r=await fetch('/api/current/'+encodeURIComponent(FILES[k]),{method:'PUT',headers:{'Content-Type':'text/markdown'},body:text});
+    if(!r.ok)throw new Error(r.status);
+    NEW[k]=text;if(k===idx&&ta.value===text)dirty=false;
+    REVIEWED[k]=false;
+    updateSideItem(k);setStatus('','saved '+new Date().toLocaleTimeString());
+    return true;
+  }catch(e){
+    setStatus('error','save failed ('+e.message+')');return false;
+  }
 }
 ta.addEventListener('input',scheduleSave);
 ta.addEventListener('blur',flush);
@@ -227,7 +303,7 @@ async function pollCurrent(){
   const [o,n]=await Promise.all([getOld(f),getNew(f)]);
   if(o!==OLD[k]){OLD[k]=o;if(k===idx){renderLeft();renderMeta();updateSideItem(k);}}
   if(n!==NEW[k]){
-    NEW[k]=n;
+    NEW[k]=n;REVIEWED[k]=false;
     if(k===idx&&!dirty){ta.value=n??'';renderLeft();renderMeta();setStatus('','updated '+new Date().toLocaleTimeString());}
     updateSideItem(k);
   }
@@ -236,15 +312,16 @@ async function pollAll(){
   // Maintains other entries' change-dots and the manifest. Never touches the
   // current entry's panes — pollCurrent owns that, and only redraws on a real
   // change, so background polling can't yank your scroll position.
-  const mf=await get('/api/files');
+  const [mf,rf]=await Promise.all([get('/api/files'),get('/api/reviews')]);
   if(!mf)return;
-  let files;try{files=JSON.parse(mf);}catch(e){return;}
-  const curName=FILES[idx], curOLD=OLD[idx], curNEW=NEW[idx];
+  let files,reviews;try{files=JSON.parse(mf);reviews=rf?JSON.parse(rf):[];}catch(e){return;}
+  const curName=FILES[idx], curOLD=OLD[idx], curNEW=NEW[idx], curReviewed=REVIEWED[idx];
   const manifestChanged=JSON.stringify(files)!==JSON.stringify(FILES);
   const [olds,news]=await Promise.all([Promise.all(files.map(getOld)),Promise.all(files.map(getNew))]);
-  FILES=files;OLD=olds;NEW=news;
+  FILES=files;OLD=olds;NEW=news;REVIEWED=files.map(f=>reviews.includes(f));
   const ci=FILES.indexOf(curName);
   if(ci>=0){OLD[ci]=curOLD;NEW[ci]=curNEW;}   // leave current entry to pollCurrent (keeps scroll/caret)
+  if(ci>=0&&dirty)REVIEWED[ci]=curReviewed;   // typing immediately invalidates its review dot
   if(manifestChanged){
     if(ci>=0){idx=ci;buildSide();}                                   // list changed, current entry stays put
     else{idx=Math.min(idx,FILES.length-1);buildSide();loadEntry();}  // current file gone: navigate
@@ -254,12 +331,14 @@ async function pollAll(){
 }
 
 async function boot(){
-  const [filesResponse,metaResponse]=await Promise.all([
+  const [filesResponse,metaResponse,reviewsResponse]=await Promise.all([
     fetch('/api/files',{cache:'no-store'}),
-    fetch('/api/meta',{cache:'no-store'})
+    fetch('/api/meta',{cache:'no-store'}),
+    fetch('/api/reviews',{cache:'no-store'})
   ]);
   if(!filesResponse.ok)throw new Error('could not load entry list');
   FILES=await filesResponse.json();
+  const reviewedNames=reviewsResponse.ok?await reviewsResponse.json():[];
   if(metaResponse.ok){
     const meta=await metaResponse.json();
     document.title=`Aizomea — ${meta.baseRef} / working tree`;
@@ -267,6 +346,7 @@ async function boot(){
     $('modetag').title=`plain ${meta.baseRef} / word-diff vs working tree (⌘/Ctrl+D)`;
   }
   OLD=new Array(FILES.length);NEW=new Array(FILES.length);LOADS=new Array(FILES.length);
+  REVIEWED=FILES.map(f=>reviewedNames.includes(f));
   buildSide();setStatus('saving','loading first entry…');
   await ensureEntry(0);
   loadEntry();setStatus('','ready');
