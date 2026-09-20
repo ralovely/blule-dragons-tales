@@ -52,7 +52,7 @@ Consult this **before opening each file** in Phase 3; re-grep after each batch (
 | 33 | T3 | std | STj | — | Keep "Even, it seems, from the furniture." "There is no such thing as a dragon egg" opener — fine (content contrast, not template). |
 | 34 | T1 | std w/ excited run-on | JOKE | B: add one N.B.; D: "what passes for tea here" keep | Fix 2: delete duplicated six-pages/professors line — keep "wept, or resigned" (the later one), delete the para-11 instance. Fix 4: "soccer" → "football". Hatching = breathless run-on permitted (T1). |
 | 35 | T1 | std | PF | B: "four minutes flat" keep | "I have kept the stone." + editor's note (purple stone → trunk) — exact. Milkman simile: keep (period-domestic, hers). |
-| 36 | T3 | std-short | Q | A: PEAK — kintsugi/mending is the tic's home; Hana apprentice payload exact | "They are not pottery. They are birth records." reframe — this is a candidate KEEPER (funny/earned? it's earned — count toward ≤4) or recast. 2× "It is not" here. End "I wonder which came first." |
+| 36 | T3 | std-short | PF | A: PEAK — kintsugi/mending is the tic's home; Hana apprentice payload exact | The craft reminds Indigo of kintsugi without proposing an Aizomean origin. End "It reminds me of Kintsugi." |
 | 37 | T3 | letter (children) — already | JOKE | E: *Mes petits monstres* keep | "Nobody warns you" → vary. Wet-carpet ending: keep, it's situational. |
 | 38 | T3 | std-short | STj | A: candidate — suitor "asked to repaint the kitchen" is already domestic; one mending image ok | Keep "Apparently, the intention counts." |
 | 39 | T3 | std-short | PF | — | Librarian-shushing simile PROTECTED. End "deemed successful anyway." plain-deadpan. |

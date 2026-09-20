@@ -16,6 +16,8 @@ Entry numbers are the **new canonical 01–77**. **STATUS: dates APPLIED to all 
 
 Fixed island event: **the humming season** recurs annually "around the same date" (entry 27 editor's note) → proposed ~8 November.
 
+Historical anchor: the first settlers arrived in the fifth–sixth centuries. Some came from the Japanese archipelago carrying gourd seeds and communal-bathing customs; on Aizomea those customs met the dragons' older heated-pool practice and developed into the Manaïari form described in entries 06 and 14.
+
 Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = constrained (order, season, references) · **C** = free placement.
 
 ## T1 — 1938 (17 entries)

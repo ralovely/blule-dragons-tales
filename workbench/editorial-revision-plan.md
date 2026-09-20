@@ -828,15 +828,17 @@ Optional fact-checks before final copy-edit:
 
 Treat Aizomea's human culture as descended partly from Japanese settlers who brought knowledge with them, then developed distinct local forms in relationship with dragons. Do not imply that recognisable Japanese traditions were secretly invented in Aizomea and exported back to Japan.
 
-The author has selected the broad direction: inherited, dual culture rather than secret Aizomean origin. Before editing the three passages, record that transmission model in `canon-ledger.md` and reconcile the 5th–6th-century settlement note in `chronology.md`. The exact claims about who arrived, what they brought and what later changed still need to be phrased narrowly enough that this small correction does not invent an unnecessary migration history.
+**Applied 20 September 2026:** entry 14 now makes communal bathing an inheritance brought by settlers from the Japanese archipelago and combined with the dragons' older heated pools. Entry 37 retains comparison with kintsugi while making no priority claim. The transmission model is recorded in `canon-ledger.md` and `chronology.md`.
+
+The author selected inherited, dual culture rather than secret Aizomean origin. The implementation keeps the claims narrow: some settlers came from the Japanese archipelago carrying specific seeds and bathing customs; long development alongside dragons produced the distinct Manaïari forms.
 
 ## Reference inventory
 
 | Location | Current direction | Revised direction |
 |---|---|---|
-| `entry 06:5` | Japanese settlers brought gourd seeds. | Keep. This already presents transmission in the respectful direction. Consider whether the instrument form also combines inherited and dragon-derived practice. |
-| `entry 14:7–9` | A man of Japanese descent leaves Aizomea and takes bath-house culture home, implying an Aizomean origin for Japanese bathing etiquette. | Reverse the history. Settlers recognised the dragon pools through bathing traditions they already carried; generations of shared use produced an Aizomean variation. Remove the claim that Japan received the custom from Aizomea. |
-| `entry 37:11` | `It reminds me of kintsugi. I wonder which came first.` | State or imply that descendants adapted an inherited repair philosophy to dragon eggshell and blue-stone resin. The local craft remains distinctive without claiming priority. |
+| `entry 06:5` | Japanese settlers brought gourd seeds. | Kept. This already presents transmission in the respectful direction. |
+| `entry 14:7–9` | Settlers from the Japanese archipelago bring communal-bathing customs and join the dragons' older heated pools. | Applied. Generations of shared use produce a distinctly Manaïari institution; Japan receives nothing from Aizomea. |
+| `entry 37:11` | `It reminds me of Kintsugi.` | Applied. Comparison remains; the priority question is gone. |
 | Manami, Hana and other names | Japanese-derived names exist beside a distinct Manaïari language. | Treat them as evidence of the agreed dual inheritance, then record the exact linguistic explanation in the canon ledger or its governed character ledger. Do not make every name share one origin by default. |
 
 ## Cultural model to establish
