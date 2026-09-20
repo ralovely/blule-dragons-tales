@@ -15,7 +15,7 @@ Around the outer circle, stone archways housed the racks, hundreds of them, hold
 
 A teenage girl stood first. She spoke of practising a complex, sorrowful tune on her flute, a piece she was immensely proud of. A great Boulderback dragon, known for its granite stoicism, had been listening from a nearby ledge. When she finished her masterpiece, the dragon offered its review: a single, enormous, jaw-stretching yawn. She later saw the same dragon completely mesmerised by a toddler banging a spoon on a pot. The village roared. The knot-keeper, an old man with hands the size of dinner plates, tied a knot with a comical central hole. A knot for 'unimpeachable taste'.
 
-The Boulderback watched from its hill, stony face impassive. Its eye held the bonfire, the sound of the story and the shape of the knot. All of it went into that vast, slow mind.
+The Boulderback watched from its hill, stony face impassive. Its eye held the bonfire, the sound of the story and the shape of the knot. Imprinting. All of it went into that vast, slow mind.
 
 A small boy jumped up next, to tell of losing a shiny button, only for a dragon to return it the next day in a glistening pile containing two shells, a bit of sea glass, and a very confused crab. A quick, tight knot was tied with a tiny pebble worked into it.
 

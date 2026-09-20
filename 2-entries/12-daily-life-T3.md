@@ -1,6 +1,6 @@
 *9th June 1955*
 
-Nothing of note happened today. There were no hatchings or ceremonies, and no dragon did anything I have not seen before. I had breakfast, walked to the ridge, sat in the sun, talked with the neighbours, ate something I cannot spell the name of, watched the stars come out. A quiet day. I thought I might write about it.
+Nothing of note happened today. There were no hatchings or ceremonies, and no dragon did anything I have not seen before. I had breakfast, walked to the ridge, sat in the sun, talked with the neighbours, ate something I cannot spell the name of, watched the stars come out. A quiet day. Perhaps the best kind. So I thought I might write about the ordinary instead, since the ordinary here is extraordinary enough.
 
 I sleep in a small stone house at the edge of the village. It was built for someone taller. The doorframe is generous. The bed is generous. Everything here is generous. The roof is flat, which I have learnt means "dragons may land." A small dragon has taken to sleeping on mine. I did not invite it. It arrived one night and stayed. It snores. I have named it Gerald.
 

@@ -1,8 +1,8 @@
 *9th February 1956*
 
-Age makes dragons more themselves. It does very little for their wisdom.
+Old dragons, I have decided, are not wise. They are simply old, and have had more time to become themselves.
 
-The oldest dragon in the village is also the most shameless cheat at every game the Manaïari play. Board games, dice, children's guessing games. She wins them all by methods nobody can quite prove are dishonest. She has been alive for centuries. She has had time to perfect the art. The children adore her. The adults are suspicious. River would be on the dragon's side. She always takes the side of the one having the most fun. Cunning, with a very long head start.
+The oldest dragon in the village is also the most shameless cheat at every game the Manaïari play. Board games, dice, children's guessing games. She wins them all by methods nobody can quite prove are dishonest. She has been alive for centuries. She has had time to perfect the art. The children adore her. The adults are suspicious. River would be on the dragon's side. She always takes the side of the one having the most fun. Cunning, with a very long head start. Not wise.
 
 There is one who has spent fifty years pretending to be a boulder. Travellers sit on it to rest. It waits, sometimes for hours, then shifts. Just slightly. Just enough. The scream, apparently, never gets old. The Manaïari put a sign up. It ate the sign.
 

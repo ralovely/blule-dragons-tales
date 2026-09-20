@@ -8,6 +8,6 @@ The view from the top is worth the legs. The forest we walked through stretches 
 
 On the way up I passed a dragon on a ledge that I would, in any other context, have described as terrifying. Enormous jaw. Heavy brow. The physique of something designed to be feared. It opened its mouth as I edged past. I braced for a roar. What came out was a single, perfect flute note. High, clear, beautiful. A bird landed on its nose. Another on its shoulder. It closed its mouth. It did not seem surprised. I think this happens often.
 
-The forest below has a dragon that eats only violet flowers. I watched it reject a pink one this morning with such visible disdain that I felt sorry for the flower.
+The forest below has a dragon that eats flowers. Only flowers. Only one kind. Only the violet ones. I watched it reject a pink one this morning with such visible disdain that I felt sorry for the flower.
 
 P.S. I was sketching the view from the top when a dragon on the ledge below breathed on my open watercolour. The warm air dried the paint before I could stop it. The colours bloomed strangely, bleeding into each other in ways I would never have chosen. It was, I am forced to admit, better than what I had intended. I tried to get the dragon to do it again. It walked away.

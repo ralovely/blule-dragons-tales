@@ -1,6 +1,6 @@
 *28th January 1956*
 
-The ice dragons started the fire brigade because someone had to, and they have never forgiven the fire-breathers for making it necessary.
+The ice dragons started the fire brigade because someone had to, and they were the only ones who could. They have never forgiven the fire-breathers for making it necessary, though.
 
 During courtship season, they patrol in pairs. Some walk slow, deliberate circuits of the village. Others fly wide loops over the valleys, scanning for smoke. Their technique is a short, controlled blast of frost aimed at the base of the fire. Efficient. Precise. Joyless. They extinguish bush fires the way a librarian shushes a talker.
 

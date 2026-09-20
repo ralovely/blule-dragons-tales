@@ -8,4 +8,4 @@ Given how rarely dragons are born, a house with four eggs on its shelf might rep
 
 I watched a woman work on one for an entire afternoon. Her hands were steady, her brush strokes precise, her concentration total. Hana, Manami's daughter, now a young woman herself, sat beside her learning the strokes. There are perhaps three people in the village trusted with the task. The skill is earned over years.
 
-It reminds me of kintsugi. I wonder which came first.
+It reminds me of Kintsugi.

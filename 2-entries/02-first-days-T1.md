@@ -1,7 +1,5 @@
 *11th March 1938*
 
-*Day three.*
-
 Three days now, and my hand is at last steady enough to set things down in order. I do not know the name of this place. I am writing this because if I do not write it down, I will convince myself it is not real. I am a scientist. The notebook is the only tool I have that still works.
 
 I woke in a room I did not recognise. Stone ceiling. A bed too large for me, built for someone broader, taller. The air smelled of wet stone and something warm I had no name for. Something was breathing on the other side of the wall; slowly, deeply, on a scale I could feel through the floor.
@@ -10,4 +8,4 @@ I was outside within the hour. A dragon was sleeping in the path. Just lying the
 
 A woman found me standing in the middle of a path, staring. She introduced herself as Manami, in slow but clear English, and handed me a bowl of something warm. She showed me the water, the place where I could wash, and assured me that nobody here would hurt me. When I said Nangula's name, she went quiet for a moment, then nodded, and that appeared to settle the question of me. She sat with me while I ate. It was the best thing I have ever tasted. My mother would have understood this meal. I would like to say I received this with dignity.
 
-Three days in, and I am only beginning to understand where I am. There are hundreds of dragons here, living alongside humans, and neither party finds the arrangement worth remarking on. They sleep in the paths and the children climb over them. They eat beside the cooking fires. This morning a pair of them argued over a sunny spot on a rock with the petty energy of two cats disputing a windowsill. I watched them for half an hour.
+Three days in, and I am only beginning to understand where I am. There are hundreds of dragons here, living alongside humans, and neither party finds the arrangement worth remarking on. They sleep in the paths and the children climb over them. They eat beside the cooking fires. This morning a pair of them argued over a sunny spot on a rock with the petty energy of two cats disputing a windowsill. I watched them for half an hour. I have a great deal to unlearn.

@@ -22,8 +22,8 @@ I watched a man in a sleek, insect-like glider stand perfectly still in a launch
 
 However they leave the ground, it strikes me now, the launch is the unimportant part. It is merely the opening line of a conversation.
 
-The Manaïari attend to the air as they fly. I saw the grandmother from the canyon adjust the tips of her glider's wings, just slightly, to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
+The Manaïari do not fly *through* the air. They fly *with* it. I saw the grandmother from the canyon adjust the tips of her glider's wings, just slightly, to ask a thermal for a little more height. I saw the woman from the cliff lean into a crosswind, listening to its suggestion before offering her own.
 
-Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, taught them a language of air. The physics followed.
+Their gliders, with those intricate blue metal frames, seem to be extensions of their own senses. The dragons, I believe, taught them a language. The physics followed.
 
 I asked Manami if she flies. She looked at me as if I'd asked whether she breathes.
