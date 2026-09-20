@@ -11,6 +11,7 @@
   --del:#fbe4e4;--delx:#a13030;--add:#e2f2e6;--addx:#1c6b35;
   --chip:#eee7d8;--chipx:#6b6353;--dot:#cfc8b6;--dotchg:#d97706;--dotreview:#3d9658;
   --navbg:#f1ece1;--navborder:#d8d1c2;--badgechg:#fdf0d5;--badgechgx:#92600a;--accent:#c9a24a;
+  --rail:#ede7da;--railmark:#c88124;--card:#fffaf0;--shadow:rgba(70,55,30,.16);
 }
 body.dark{
   --bg:#1a1815;--fg:#e7e1d5;--side:#211e1a;--sideHover:#2a2622;--sideAct:#37312a;
@@ -18,6 +19,7 @@ body.dark{
   --del:#3c2222;--delx:#e79a9a;--add:#1d3324;--addx:#90d3a4;
   --chip:#2c2822;--chipx:#b3a994;--dot:#4a443a;--dotchg:#e08a2a;--dotreview:#62b77a;
   --navbg:#2a2620;--navborder:#3b352d;--badgechg:#3a3017;--badgechgx:#e3bd63;--accent:#c9a24a;
+  --rail:#29251f;--railmark:#dfa04a;--card:#29241c;--shadow:rgba(0,0,0,.35);
 }
 body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:var(--bg);color:var(--fg);display:grid;grid-template-columns:270px 1fr;height:100vh}
 #side{border-right:1px solid var(--border);overflow-y:auto;background:var(--side);padding:8px 0;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px}
@@ -45,18 +47,55 @@ body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:var(--bg);c
 #themebtn{margin-left:auto;align-self:center}
 .badge{font-size:11px;padding:2px 9px;border-radius:99px;background:var(--chip);color:var(--chipx)}
 .badge.chg{background:var(--badgechg);color:var(--badgechgx)}
-#panes{flex:1;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+#panes{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr);overflow:hidden;min-height:0}
 .pane{overflow-y:auto;padding:26px 36px 70px;position:relative}
-.pane+.pane{border-left:1px solid var(--border);background:var(--rightbg)}
-.pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;display:flex;gap:8px;align-items:center}
+#working-pane{border-left:1px solid var(--border);background:var(--rightbg)}
+.pane h2{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:-26px 0 0;padding:26px 0 16px;display:flex;gap:8px;align-items:center;position:sticky;top:-26px;z-index:1;background:var(--bg)}
+#working-pane h2{background:var(--rightbg)}
 .mode{font-size:10px;border:1px solid var(--navborder);border-radius:4px;padding:1px 6px;color:var(--muted);background:var(--chip);cursor:pointer;user-select:none;letter-spacing:0;text-transform:none}
 .mode:hover{background:var(--sideHover);color:var(--fg)}
-.txt{font-size:15.5px;line-height:1.66;max-width:64ch}
+.txt{font-size:15.5px;line-height:1.66;max-width:64ch;white-space:pre-wrap;overflow-wrap:break-word}
 .txt .para{margin:0 0 1em}
-span.del{background:var(--del);color:var(--delx);text-decoration:line-through;border-radius:2px;padding:0 1px}
-span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px}
+span.del{background:var(--del);color:var(--delx);text-decoration:line-through;border-radius:2px}
+span.add{background:var(--add);color:var(--addx);border-radius:2px}
+span.del[data-hunk],span.add[data-hunk]{cursor:pointer;box-shadow:inset 0 -1px transparent}
+span.del[data-hunk]:hover,span.add[data-hunk]:hover,span.del.active-change,span.add.active-change{box-shadow:inset 0 -2px var(--accent)}
 #edit{display:block;width:100%;max-width:64ch;min-height:calc(100vh - 200px);border:none;outline:none;resize:none;background:transparent;color:var(--fg);font-family:Georgia,'Iowan Old Style',serif;font-size:15.5px;line-height:1.66;padding:0}
 #edit:focus{box-shadow:-14px 0 0 -12px var(--accent)}
+#change-rail{position:relative;background:var(--rail);border-left:1px solid var(--border);border-right:1px solid var(--border);font-family:ui-sans-serif,system-ui,sans-serif;z-index:3}
+#rail-track{position:absolute;inset:48px 0 20px}
+.rail-marker{position:absolute;left:50%;width:10px;height:10px;padding:0;border:0;border-radius:50%;background:var(--railmark);transform:translate(-50%,-50%);cursor:pointer;box-shadow:0 0 0 2px var(--rail)}
+.rail-marker:hover,.rail-marker.active{width:15px;height:15px;background:var(--accent);box-shadow:0 0 0 2px var(--rail),0 2px 8px var(--shadow)}
+#rail-total{position:absolute;top:13px;left:50%;transform:translateX(-50%);min-width:20px;text-align:center;color:var(--meta);font-size:10px;font-variant-numeric:tabular-nums}
+.margin-eraser{position:absolute;left:5px;width:25px;height:25px;padding:0;border:1px solid var(--navborder);border-radius:50%;background:var(--rightbg);color:var(--badgechgx);font:15px/1 ui-sans-serif,system-ui,sans-serif;cursor:pointer;z-index:4;box-shadow:0 2px 8px var(--shadow);opacity:.38;transform:translateY(-50%) scale(.9);transition:opacity .12s ease,transform .12s ease}
+#working-pane:hover .margin-eraser,.margin-eraser:focus-visible{opacity:1;transform:translateY(-50%) scale(1)}
+.margin-eraser:hover{background:var(--badgechg)}
+#text-mirror{position:fixed;left:-100000px;top:0;visibility:hidden;white-space:pre-wrap;overflow-wrap:break-word;font-family:Georgia,'Iowan Old Style',serif;font-size:15.5px;line-height:1.66;padding:0;border:0}
+#drawer{border-top:1px solid var(--border);background:var(--side);font-family:ui-sans-serif,system-ui,sans-serif;flex:none}
+#drawer-toggle{width:100%;height:34px;padding:0 18px;border:0;background:transparent;color:var(--meta);display:flex;align-items:center;gap:9px;cursor:pointer;font:12px ui-sans-serif,system-ui,sans-serif;text-align:left}
+#drawer-toggle:hover{background:var(--sideHover)}
+#drawer-toggle .drawer-count{font-weight:650;color:var(--fg)}
+#drawer-toggle .chevron{margin-left:auto;transition:transform .16s ease}
+#drawer.open #drawer-toggle .chevron{transform:rotate(180deg)}
+#drawer-body{display:none;max-height:34vh;border-top:1px solid var(--border);padding:12px 16px 15px}
+#drawer.open #drawer-body{display:block}
+.drawer-tools{display:flex;align-items:center;gap:7px;margin-bottom:10px;color:var(--muted);font-size:11px}
+.drawer-tools .navbtn:last-child{margin-left:auto}
+#change-cards{display:flex;gap:10px;overflow-x:auto;padding:1px 1px 8px;scroll-snap-type:x proximity}
+.change-card{flex:0 0 min(360px,75vw);border:1px solid var(--border);border-radius:8px;background:var(--card);padding:10px;scroll-snap-align:start;cursor:pointer;box-shadow:0 1px 2px var(--shadow)}
+.change-card.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 3px 12px var(--shadow)}
+.card-head{display:flex;align-items:center;gap:7px;margin-bottom:8px;color:var(--meta);font-size:11px}
+.card-head strong{color:var(--fg)}
+.card-head .card-revert{margin-left:auto}
+.card-line{display:grid;grid-template-columns:18px 1fr;gap:5px;margin-top:4px;font-family:Georgia,'Iowan Old Style',serif;font-size:13px;line-height:1.35}
+.card-line .sign{font-family:ui-monospace,monospace;font-weight:700}
+.card-line.before{color:var(--delx)}
+.card-line.after{color:var(--addx)}
+.card-copy{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:pre-wrap}
+.card-empty{font-style:italic;color:var(--muted)}
+#toast{position:fixed;left:50%;bottom:46px;transform:translateX(-50%) translateY(10px);z-index:20;background:var(--fg);color:var(--bg);border-radius:7px;padding:8px 10px 8px 13px;box-shadow:0 5px 20px rgba(0,0,0,.28);font:12px ui-sans-serif,system-ui,sans-serif;display:flex;align-items:center;gap:12px;opacity:0;pointer-events:none;transition:opacity .15s ease,transform .15s ease}
+#toast.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+#toast button{border:0;border-radius:4px;padding:3px 7px;background:var(--accent);color:#241d0e;font:600 11px ui-sans-serif,system-ui,sans-serif;cursor:pointer}
 #foot{padding:6px 18px;border-top:1px solid var(--border);font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:var(--muted);display:flex;gap:18px;align-items:center}
 #status{margin-left:auto;display:flex;align-items:center;gap:6px}
 #status .pulse{width:7px;height:7px;border-radius:50%;background:#7da37d}
@@ -64,6 +103,22 @@ span.add{background:var(--add);color:var(--addx);border-radius:2px;padding:0 1px
 #status.error .pulse{background:#c0392b}
 .empty{color:var(--muted);font-style:italic}
 kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
+@media(max-width:900px){
+  body{grid-template-columns:1fr}
+  #side{display:none}
+  #head .meta{display:none}
+}
+@media(max-width:640px){
+  #head{padding:8px 10px;gap:7px}
+  #panes{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr)}
+  .pane{padding:20px 18px 50px}
+  .pane h2{margin:-20px 0 0;padding:20px 0 12px;top:-20px}
+  #rail-track{inset:42px 0 16px}
+  .margin-eraser{left:0;width:19px;height:19px;font-size:12px}
+  #foot{padding:5px 10px;font-size:10px;gap:8px}
+  #drawer-body{padding:10px}
+  .change-card{flex-basis:min(320px,86vw)}
+}
 </style>
 </head>
 <body>
@@ -80,24 +135,49 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
     <button class="navbtn" id="themebtn" onclick="toggleTheme()" title="light / dark">🌙 dark</button>
   </div>
   <div id="panes">
-    <div class="pane">
+    <div class="pane" id="baseline-pane">
       <h2><span id="baseheading">Git baseline</span> <span class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</span></h2>
       <div class="txt" id="oldt"></div>
     </div>
-    <div class="pane">
+    <div id="change-rail" aria-label="Change rail">
+      <span id="rail-total">0</span>
+      <div id="rail-track"></div>
+    </div>
+    <div class="pane" id="working-pane">
       <h2>Working tree</h2>
+      <div id="eraser-layer"></div>
       <textarea id="edit" spellcheck="false"></textarea>
+      <div id="text-mirror" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div id="drawer">
+    <button id="drawer-toggle" type="button" onclick="toggleDrawer()" aria-expanded="false">
+      <span class="drawer-count" id="drawer-count">No changes</span>
+      <span>Review changes</span>
+      <span class="chevron">⌃</span>
+    </button>
+    <div id="drawer-body">
+      <div class="drawer-tools">
+        <button class="navbtn" type="button" onclick="stepChange(-1)">‹ change</button>
+        <button class="navbtn" type="button" onclick="stepChange(1)">change ›</button>
+        <span id="change-position"></span>
+        <button class="navbtn" id="revert-selected" type="button" onclick="revertSelected()" disabled>Revert selected</button>
+      </div>
+      <div id="change-cards"></div>
     </div>
   </div>
   <div id="foot">
-    <span><kbd>J</kbd>/<kbd>K</kbd> or <kbd>‹</kbd><kbd>›</kbd> navigate · click <b>diff/plain</b> (or <kbd>⌘/Ctrl+D</kbd>) to toggle the baseline pane · <kbd>Esc</kbd> leaves the text box · working tree autosaves</span>
+    <span><kbd>J</kbd>/<kbd>K</kbd> navigate entries · <kbd>[</kbd>/<kbd>]</kbd> navigate changes · <kbd>R</kbd> reverts the active change · working tree autosaves</span>
     <span id="status"><span class="pulse"></span><span id="statustxt">ready</span></span>
   </div>
 </div>
+<div id="toast"><span id="toast-text"></span><button type="button" onclick="undoRevert()">Undo</button></div>
 <script>
 const $=id=>document.getElementById(id);
 let FILES=[],OLD=[],NEW=[],LOADS=[],REVIEWED=[],idx=0;
 let dirty=false, mode='diff', saveTimer=null;   // mode: 'diff' | 'plain' (left pane only)
+let DIFF={ops:[],hunks:[]},ACTIVE_CHANGE=0,DRAWER_OPEN=false;
+let SELECTED_CHANGES=new Set(),LAST_REVERT=null,toastTimer=null,eraserFrame=null;
 const EDIT_SEQ={};
 const ta=$('edit');
 
@@ -117,7 +197,12 @@ const get=p=>fetch(p,{cache:'no-store'}).then(r=>r.ok?r.text():null).catch(()=>n
 const getOld=f=>get('/api/original/'+encodeURIComponent(f));
 const getNew=f=>get('/api/current/'+encodeURIComponent(f));
 
-function tok(t){return t.replace(/\r/g,'').trim().replace(/\n{2,}/g,' ¶ ').split(/\s+/).filter(Boolean);}
+function tok(t){
+  const tokens=[];let m;
+  const re=/^\s+|\S+\s*/g;
+  while((m=re.exec(t||''))!==null)tokens.push(m[0]);
+  return tokens;
+}
 function lcsOps(a,b){
   const m=a.length,n=b.length;
   if(m*n>4000000) return null;
@@ -135,21 +220,58 @@ function lcsOps(a,b){
   while(j<n)ops.push(['a',b[j++]]);
   return ops;
 }
-function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
-function rendDiff(o,n){
-  const ops=lcsOps(tok(o||''),tok(n||''));
-  if(!ops)return plain(o);
-  let html='<div class="para">';
-  for(const[t,w]of ops){
-    if(w==='¶'){html+='</div><div class="para">';continue;}
-    const cls=t==='s'?'':(t==='d'?'del':'add');
-    html+=cls?`<span class="${cls}">${esc(w)}</span> `:esc(w)+' ';
+function buildDiff(o,n){
+  const before=o||'',after=n||'';
+  let raw=lcsOps(tok(before),tok(after));
+  if(!raw)raw=[['d',before],['a',after]];
+  const ops=[],hunks=[];
+  let oldPos=0,newPos=0,hunk=null;
+  const finish=()=>{
+    if(!hunk)return;
+    hunk.index=hunks.length;
+    hunks.push(hunk);hunk=null;
+  };
+  for(const[type,text]of raw){
+    if(type==='s'){
+      finish();ops.push({type,text,hunk:null});oldPos+=text.length;newPos+=text.length;continue;
+    }
+    if(!hunk)hunk={oldStart:oldPos,oldEnd:oldPos,newStart:newPos,newEnd:newPos,oldText:'',newText:''};
+    if(type==='d'){hunk.oldText+=text;hunk.oldEnd+=text.length;oldPos+=text.length;}
+    else{hunk.newText+=text;hunk.newEnd+=text.length;newPos+=text.length;}
+    ops.push({type,text,hunk});
   }
-  return html+'</div>';
+  finish();
+  for(const op of ops)if(op.hunk)op.hunk=op.hunk.index;
+  // A word diff often finds a small unchanged island inside one rewritten
+  // sentence. Keep those islands inside a single, human-sized change card.
+  const merged=[],hunkMap=[];
+  for(const h of hunks){
+    const previous=merged[merged.length-1];
+    const oldGap=previous?before.slice(previous.oldEnd,h.oldStart):'';
+    const newGap=previous?after.slice(previous.newEnd,h.newStart):'';
+    if(previous&&oldGap===newGap&&oldGap.length<=36&&!oldGap.includes('\n\n')){
+      previous.oldEnd=h.oldEnd;previous.newEnd=h.newEnd;
+      previous.oldText=before.slice(previous.oldStart,previous.oldEnd);
+      previous.newText=after.slice(previous.newStart,previous.newEnd);
+      hunkMap[h.index]=previous.index;
+    }else{
+      const next={...h,index:merged.length};merged.push(next);hunkMap[h.index]=next.index;
+    }
+  }
+  for(const op of ops)if(op.hunk!==null)op.hunk=hunkMap[op.hunk];
+  return {ops,hunks:merged};
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function rendDiff(model){
+  return model.ops.map(op=>{
+    if(op.type==='s')return esc(op.text);
+    const cls=op.type==='d'?'del':'add';
+    return `<span class="${cls}" data-hunk="${op.hunk}" onclick="focusChange(${op.hunk})">${esc(op.text)}</span>`;
+  }).join('');
 }
 function plain(t){
   if(t==null)return '<div class="empty">— no file —</div>';
-  return t.trim().split(/\n{2,}/).map(p=>`<div class="para">${esc(p).replace(/\n/g,'<br>')}</div>`).join('');
+  return esc(t);
 }
 function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
 function isChg(k){return (OLD[k]??'')!==(NEW[k]??'');}
@@ -178,6 +300,161 @@ function updateSideItem(k){
   if(k===idx)updateReviewToggle();
 }
 function setStatus(cls,txt){$('status').className=cls;$('statustxt').textContent=txt;}
+
+// ---- change review controls ----
+function resizeEditor(){
+  const pane=$('working-pane'),scrollTop=pane.scrollTop;
+  ta.style.height='auto';
+  ta.style.height=Math.max(ta.scrollHeight,pane.clientHeight-100)+'px';
+  pane.scrollTop=scrollTop;
+}
+function changeKind(h){
+  if(h.oldText&&h.newText&&h.oldText.trim()===h.newText.trim())return 'Spacing';
+  if(h.oldText&&h.newText)return 'Replacement';
+  return h.oldText?'Deletion':'Addition';
+}
+function snippet(s,showWhitespace=false){
+  if(showWhitespace){
+    const visible=(s||'').replace(/ /g,'·').replace(/\t/g,'⇥').replace(/\n/g,'↵\n');
+    return visible?esc(visible):'<span class="card-empty">nothing</span>';
+  }
+  const clean=(s||'').replace(/\s+/g,' ').trim();
+  return clean?esc(clean):'<span class="card-empty">nothing</span>';
+}
+function railPosition(h){
+  const length=Math.max(ta.value.length,1);
+  return Math.max(1,Math.min(99,100*(h.newStart+h.newText.length/2)/length));
+}
+function renderRail(){
+  $('rail-total').textContent=DIFF.hunks.length||'0';
+  $('rail-total').title=DIFF.hunks.length?`${DIFF.hunks.length} changes`:'No changes';
+  $('rail-track').innerHTML=DIFF.hunks.map((h,i)=>
+    `<button type="button" class="rail-marker${i===ACTIVE_CHANGE?' active':''}" style="top:${railPosition(h)}%" onclick="focusChange(${i})" aria-label="Change ${i+1}: ${changeKind(h)}" title="${changeKind(h)} ${i+1} of ${DIFF.hunks.length}"></button>`
+  ).join('');
+}
+function cardHTML(h,i){
+  const checked=SELECTED_CHANGES.has(i)?' checked':'';
+  const showWhitespace=changeKind(h)==='Spacing';
+  return `<div class="change-card${i===ACTIVE_CHANGE?' active':''}" data-change="${i}" onclick="focusChange(${i})">
+    <div class="card-head">
+      <input type="checkbox"${checked} aria-label="Select change ${i+1}" onclick="event.stopPropagation()" onchange="toggleSelected(${i},this.checked)">
+      <strong>Change ${i+1}</strong><span>${changeKind(h)}</span>
+      <button type="button" class="navbtn card-revert" onclick="event.stopPropagation();revertChange(${i})" title="Restore this text from the baseline">↶ Revert</button>
+    </div>
+    <div class="card-line before"><span class="sign">−</span><span class="card-copy">${snippet(h.oldText,showWhitespace)}</span></div>
+    <div class="card-line after"><span class="sign">+</span><span class="card-copy">${snippet(h.newText,showWhitespace)}</span></div>
+  </div>`;
+}
+function renderDrawer(){
+  const count=DIFF.hunks.length;
+  $('drawer-count').textContent=count?`${count} change${count===1?'':'s'}`:'No changes';
+  $('change-position').textContent=count?`Change ${ACTIVE_CHANGE+1} of ${count}`:'';
+  $('change-cards').innerHTML=count?DIFF.hunks.map(cardHTML).join(''):'<span class="empty">The working tree matches the baseline.</span>';
+  updateSelectedButton();
+}
+function measureOffset(offset){
+  const mirror=$('text-mirror'),marker=document.createElement('span');
+  mirror.style.width=ta.clientWidth+'px';
+  marker.textContent=(ta.value.slice(offset).match(/^\S+/)||[])[0]||ta.value[offset]||'\u200b';
+  mirror.replaceChildren(document.createTextNode(ta.value.slice(0,offset)),marker);
+  return marker.offsetTop+(parseFloat(getComputedStyle(ta).lineHeight)||25)/2;
+}
+function renderMarginEraser(){
+  eraserFrame=null;
+  const layer=$('eraser-layer'),h=DIFF.hunks[ACTIVE_CHANGE];
+  layer.innerHTML='';
+  if(!h)return;
+  const button=document.createElement('button');
+  button.type='button';button.className='margin-eraser';button.textContent='↶';
+  button.title=`Revert change ${ACTIVE_CHANGE+1}`;
+  button.setAttribute('aria-label',button.title);
+  button.style.top=(ta.offsetTop+measureOffset(h.newStart))+'px';
+  button.onclick=()=>revertChange(ACTIVE_CHANGE);
+  layer.appendChild(button);
+}
+function queueMarginEraser(){
+  if(eraserFrame)cancelAnimationFrame(eraserFrame);
+  eraserFrame=requestAnimationFrame(renderMarginEraser);
+}
+function renderChangeUI(){
+  if(DIFF.hunks.length)ACTIVE_CHANGE=Math.max(0,Math.min(ACTIVE_CHANGE,DIFF.hunks.length-1));
+  else ACTIVE_CHANGE=0;
+  resizeEditor();renderRail();renderDrawer();queueMarginEraser();
+  document.querySelectorAll('#oldt [data-hunk]').forEach(el=>el.classList.toggle('active-change',Number(el.dataset.hunk)===ACTIVE_CHANGE));
+}
+function scrollToChange(i){
+  const h=DIFF.hunks[i];if(!h)return;
+  requestAnimationFrame(()=>{
+    const right=$('working-pane'),rightTop=ta.offsetTop+measureOffset(h.newStart);
+    right.scrollTo({top:Math.max(0,rightTop-right.clientHeight*.35),behavior:'smooth'});
+    const left=$('baseline-pane'),mark=$(`oldt`).querySelector(`[data-hunk="${i}"]`);
+    if(mark){
+      const top=mark.getBoundingClientRect().top-left.getBoundingClientRect().top+left.scrollTop;
+      left.scrollTo({top:Math.max(0,top-left.clientHeight*.35),behavior:'smooth'});
+    }
+    if(DRAWER_OPEN){
+      const card=$('change-cards').querySelector(`[data-change="${i}"]`);
+      if(card)card.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+    }
+  });
+}
+function focusChange(i){
+  if(!DIFF.hunks.length)return;
+  ACTIVE_CHANGE=Math.max(0,Math.min(i,DIFF.hunks.length-1));
+  renderChangeUI();scrollToChange(ACTIVE_CHANGE);
+}
+function stepChange(delta){
+  if(!DIFF.hunks.length)return;
+  focusChange((ACTIVE_CHANGE+delta+DIFF.hunks.length)%DIFF.hunks.length);
+}
+function toggleDrawer(){
+  DRAWER_OPEN=!DRAWER_OPEN;
+  $('drawer').classList.toggle('open',DRAWER_OPEN);
+  $('drawer-toggle').setAttribute('aria-expanded',String(DRAWER_OPEN));
+  try{localStorage.setItem('aizomea-change-drawer',DRAWER_OPEN?'open':'closed');}catch(e){}
+  if(DRAWER_OPEN)scrollToChange(ACTIVE_CHANGE);
+  queueMarginEraser();
+}
+function toggleSelected(i,on){
+  if(on)SELECTED_CHANGES.add(i);else SELECTED_CHANGES.delete(i);
+  updateSelectedButton();
+}
+function updateSelectedButton(){
+  const button=$('revert-selected'),count=SELECTED_CHANGES.size;
+  button.disabled=!count;
+  button.textContent=count?`Revert selected (${count})`:'Revert selected';
+}
+function showUndo(message,before,after){
+  LAST_REVERT={file:FILES[idx],before,after};
+  $('toast-text').textContent=message;$('toast').classList.add('show');
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>hideToast(),6500);
+}
+function hideToast(clear=true){
+  clearTimeout(toastTimer);$('toast').classList.remove('show');
+  if(clear)LAST_REVERT=null;
+}
+function applyReverts(indices){
+  const unique=[...new Set(indices)].filter(i=>DIFF.hunks[i]).sort((a,b)=>DIFF.hunks[b].newStart-DIFF.hunks[a].newStart);
+  if(!unique.length)return;
+  const before=ta.value;let after=before;
+  for(const i of unique){
+    const h=DIFF.hunks[i];
+    after=after.slice(0,h.newStart)+h.oldText+after.slice(h.newEnd);
+  }
+  if(after===before)return;
+  const next=Math.min(...unique);
+  ta.value=after;SELECTED_CHANGES.clear();ACTIVE_CHANGE=next;
+  scheduleSave();
+  showUndo(`${unique.length} change${unique.length===1?'':'s'} reverted`,before,after);
+}
+function revertChange(i){applyReverts([i]);}
+function revertSelected(){applyReverts([...SELECTED_CHANGES]);}
+function undoRevert(){
+  const u=LAST_REVERT;
+  if(!u||u.file!==FILES[idx]||ta.value!==u.after){hideToast();return;}
+  ta.value=u.before;hideToast();SELECTED_CHANGES.clear();scheduleSave();
+  setStatus('saving','undoing revert…');
+}
 
 async function setReviewed(k,on,box){
   const f=FILES[k];
@@ -217,9 +494,11 @@ async function setReviewed(k,on,box){
 }
 
 function renderLeft(){
+  DIFF=buildDiff(OLD[idx]??'',ta.value);
   $('modetag').textContent=mode;
-  if(mode==='diff')$('oldt').innerHTML=rendDiff(OLD[idx],ta.value);
+  if(mode==='diff')$('oldt').innerHTML=rendDiff(DIFF);
   else $('oldt').innerHTML=plain(OLD[idx]);
+  renderChangeUI();
 }
 function renderMeta(){
   const f=FILES[idx],o=OLD[idx],cur=ta.value;
@@ -246,6 +525,7 @@ function ensureEntry(k){
 }
 function loadEntry(){
   const k=idx;
+  SELECTED_CHANGES.clear();ACTIVE_CHANGE=0;hideToast();
   if(OLD[k]===undefined||NEW[k]===undefined){
     ta.value='';dirty=false;renderLeft();renderMeta();markActive();
     setStatus('saving',`loading entry ${k+1}…`);
@@ -279,6 +559,9 @@ function scheduleSave(){
   renderLeft();renderMeta();setStatus('saving','editing…');
   clearTimeout(saveTimer);saveTimer=setTimeout(()=>doSave(idx,ta.value),1500);
 }
+function editorInput(){
+  hideToast();SELECTED_CHANGES.clear();scheduleSave();
+}
 function flush(){if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}}
 async function doSave(k,text){
   setStatus('saving','saving…');
@@ -293,7 +576,7 @@ async function doSave(k,text){
     setStatus('error','save failed ('+e.message+')');return false;
   }
 }
-ta.addEventListener('input',scheduleSave);
+ta.addEventListener('input',editorInput);
 ta.addEventListener('blur',flush);
 
 // ---- live reload ----
@@ -345,6 +628,9 @@ async function boot(){
     $('baseheading').textContent=`${meta.baseRef} baseline`;
     $('modetag').title=`plain ${meta.baseRef} / word-diff vs working tree (⌘/Ctrl+D)`;
   }
+  try{DRAWER_OPEN=localStorage.getItem('aizomea-change-drawer')==='open';}catch(e){}
+  $('drawer').classList.toggle('open',DRAWER_OPEN);
+  $('drawer-toggle').setAttribute('aria-expanded',String(DRAWER_OPEN));
   OLD=new Array(FILES.length);NEW=new Array(FILES.length);LOADS=new Array(FILES.length);
   REVIEWED=FILES.map(f=>reviewedNames.includes(f));
   buildSide();setStatus('saving','loading first entry…');
@@ -354,6 +640,7 @@ async function boot(){
   setInterval(pollCurrent,1500);
   setInterval(pollAll,15000);
   window.addEventListener('focus',pollAll);
+  window.addEventListener('resize',()=>{resizeEditor();queueMarginEraser();});
 }
 
 let booted=false,bootRetry=null;
@@ -374,7 +661,11 @@ function bootUntilReady(){
 document.addEventListener('keydown',e=>{
   if((e.key==='d'||e.key==='D')&&(e.metaKey||e.ctrlKey)){e.preventDefault();toggleMode();return;}
   if(e.target===ta){if(e.key==='Escape')ta.blur();return;}
-  if(e.key==='j'||e.key==='J'||e.key==='ArrowRight')show(idx+1);
+  if(e.target.closest&&e.target.closest('input,button'))return;
+  if(e.key==='['){e.preventDefault();stepChange(-1);}
+  else if(e.key===']'){e.preventDefault();stepChange(1);}
+  else if((e.key==='r'||e.key==='R')&&DIFF.hunks.length){e.preventDefault();revertChange(ACTIVE_CHANGE);}
+  else if(e.key==='j'||e.key==='J'||e.key==='ArrowRight')show(idx+1);
   else if(e.key==='k'||e.key==='K'||e.key==='ArrowLeft')show(idx-1);
 });
 bootUntilReady();
