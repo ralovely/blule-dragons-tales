@@ -2,7 +2,7 @@
 
 I have had to unlearn most of what I thought I knew about reading animals.
 
-The first time a dragon bared its teeth at me, I backed into a wall. It took a full week before someone explained that baring teeth is how they say hello. By then I had greeted approximately forty dragons by retreating in terror. I have been making up for it since.
+Ten years ago, the first time a dragon bared its teeth at me, I backed into a wall. It took a full week before someone explained that baring teeth is how they say hello. By then I had greeted approximately forty dragons by retreating in terror. I have been making up for it since.
 
 The tail is the most reliable indicator. Flat on the ground means contentment. Curled upward means alert. Tapping means bored, and if you have read my notes on boredom, you will know to take this seriously. Tail wrapped around another dragon means, near enough, "this one is mine and I am not discussing it."
 

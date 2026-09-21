@@ -18,6 +18,8 @@ Fixed island event: **the humming season** recurs annually "around the same date
 
 Historical anchor: the first settlers arrived in the fifth–sixth centuries. Some came from the Japanese archipelago carrying gourd seeds and communal-bathing customs; on Aizomea those customs met the dragons' older heated-pool practice and developed into the Manaïari form described in entries 06 and 14.
 
+Geographical anchor: **Aizomea is an island**. It takes roughly twenty days to cross on foot; Indigo estimates about 150 miles, while Jamie judges it closer to 100 miles across and leaves the southern half unmapped.
+
 Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = constrained (order, season, references) · **C** = free placement.
 
 ## T1 — 1938 (17 entries)

@@ -33,7 +33,7 @@ References are `entry#` in the canonical **01–77** numbering (`2-entries/`, re
 | ~2005 | Jamie finds the trunk ("That was twenty years ago" from Jamie's "now") | P |
 | 5th–6th c. | First settlers arrive on Aizomea; some come from the Japanese archipelago carrying gourd seeds and communal-bathing customs; dragons are already keeping hot pools | 06, 14 |
 | ~500 yrs ago | A dragon departed, returned smelling faintly of olive oil | 32 |
-| — | Continent ~20 days to cross on foot, 15 north–south; her estimate ~150 miles across (Jamie's note: closer to 100; southern half unmapped) | 53 |
+| — | **Aizomea is an island**, ~20 days to cross on foot, 15 north–south; Indigo estimates ~150 miles across (Jamie's note: closer to 100; southern half unmapped) | 53 |
 
 **Datelines:** every entry now opens with its date (italic, period ordinal form, e.g. "*11th March 1938*"), per the applied per-entry table in `chronology.md` — that table is the source of truth; change it first if a date moves. Entries remain **thematically ordered, not chronological** ("This is not a diary in sequence", P), so dates deliberately do not ascend with entry numbers. T1 keeps her "*Day N.*" arrival-count markers alongside (double bookkeeping, a young expedition scientist's discipline).
 
@@ -49,7 +49,7 @@ References are `entry#` in the canonical **01–77** numbering (`2-entries/`, re
 - **Manami** — Indigo's first friend and unofficial minder; speaks English (learnt from Nangula); a head taller than Indigo; blue-stained palms = harvester (09); directs fishing crews (03); daughter Hana; "next time" vocabulary (56); two fingers on the singed knot (22); never asks Indigo to stay or explain (77).
 - **Hana** — Manami's daughter, b. ~1937; baby in T1 (03) → young woman apprenticing at egg-kintsugi in T3 (37). Planted payoff.
 - **Gerald** — small dragon resident on Indigo's roof (12, 16); snores; never acknowledges her; never seen eating.
-- **Lady Chestnut** — the copper-scaled hill-dragon, red collar; still in the estate woods 100+ years later; greets Jamie (P).
+- **Lady Chestnut** — the copper-scaled hill-dragon, red collar; still in the estate woods nearly 100 years later; greets Jamie (P).
 - **The Elder** — old-jade sea-gate dragon; blinks at sleepers, rarely nods; nodded at Indigo (18).
 - **The Hiccupper** — young fire dragon with involuntary flame hiccups, hillside settlement (53); grown, calmer, remembers her eight years on (65).
 - **Margaret** — dragon wearing spider-lace since Tuesday (08).
@@ -68,7 +68,7 @@ References are `entry#` in the canonical **01–77** numbering (`2-entries/`, re
 | **Manami** | 16 August 1908 | alive through T5 | Entry 23 ("Manami and I disagreed today… She is always right.") is dated 16 Aug 1955 = **her birthday**. Optional, wicked. |
 | **Hana** | May 1937 | — | Baby on the hip, March 1938 ✓; kintsugi apprentice at 18 in 1955 ✓. |
 | **Kai** | 1 December 1940 | — | "Young fisherman" at 22 in 1963 ✓; 30 in 1971; Jamie's father (implied, never stated). |
-| **Lady Chestnut** | age unknown (100+ by ~2005, P) | — | **Naming day: 30 April 1907** — the button, the six-year-old, the gingerbread steam. A date Indigo might privately keep. |
+| **Lady Chestnut** | age unknown | — | **Naming day: 30 April 1907** — the button, the six-year-old, the gingerbread steam; she greets Jamie nearly 100 years later, around 2005. A date Indigo might privately keep. |
 | Gerald | — | — | Appears on her roof T3 1955; biography otherwise a mystery, which is the point. |
 
 River/Cendre death dates are the freest inventions (canon says only: River vanished, Cendre "a few months later", both before Jamie finds the trunk ~2005). None of the alignments are voiced in entry text — they live in the datelines, for rereaders.

@@ -2,9 +2,9 @@
 
 Manami has been promising to take me beyond the valley for weeks. Today she finally declared me ready, though she would not say what for. We argued about notebooks (she said two was plenty, I brought five) and left before the sun was fully up.
 
-The continent, she tells me, takes roughly twenty days to cross on foot. Fifteen north to south. I did the arithmetic. If the pace is anything like ours, that makes it perhaps a hundred and fifty miles across. Larger than anything I was prepared for. I have been living in a corner and thinking it was the whole.
+The island, she tells me, takes roughly twenty days to cross on foot. Fifteen north to south. I did the arithmetic. If the pace is anything like ours, that makes it perhaps a hundred and fifty miles across. Larger than anything I was prepared for. I have been living in a corner and thinking it was the whole. It feels as though someone packed a continent into an island and sat on the lid.
 
-*(Editor's note: Having walked a fair portion of it myself, I believe this is generous. The landmass is closer to a hundred miles across. The southern half remains unmapped.)*
+*(Editor's note: Having walked a fair portion of it myself, I believe this is generous. The island is closer to a hundred miles across. The southern half remains unmapped.)*
 
 By midday we had reached a settlement tucked into a fold of hillside, smaller than ours. We stopped to refill our water and I nearly set down my bag on a scorched log. The log opened two miserable eyes. It was a young dragon and it was having a bad day. *Le pauvre.*
 

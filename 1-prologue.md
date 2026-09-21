@@ -29,7 +29,7 @@ Indy's father was English, a man who spoke to his books more than to people. Her
 
 She studied biology at Oxford, one of three women in the department. Her rooms held trays of frogs, feathers and bones, and then, increasingly, notebooks of stories: sailors' stories, mountain stories, stories of dragons.
 
-In the 1920s she abandoned the constraints of England, setting off in search of the creatures she knew were real. Her travels led her across Eastern Europe, South America, Asia Minor, and finally to whispers of a lost continent called Aizomea, hidden somewhere in the Pacific. The stories all agreed on one thing: it could not be found, because it did not wish to be.
+In the 1920s she abandoned the constraints of England, setting off in search of the creatures she knew were real. Her travels led her across Eastern Europe, South America, Asia Minor, and finally to whispers of a lost island called Aizomea, hidden somewhere in the Pacific. The stories all agreed on one thing: it could not be found, because it did not wish to be.
 
 ---
 
@@ -83,13 +83,13 @@ The library still smelled of paper. I sat on the rug where I used to sit, and fo
 
 I was running my hand along the spines when I found it. Le Tour du Monde en 80 Jours, by Jules Verne. My childhood favourite. A sheet of paper fell out. A hand-drawn map of the forest behind the estate, in Indy's handwriting. At the bottom, in pencil: "Jamie. If you are reading this, I am gone and you are ready. Follow the map. Trust the compass. Do not be afraid of what you find. I wasn't. Well, perhaps a little. — Indy"
 
-Beneath the oldest tree lay a trunk, sealed away for generations. Inside were her research, her paintings, her detailed studies of the dragons of Aizomea, and the Aizomea Compass: a sphere about the size of a tangerine, covered in carved dragon scales and bound by a band of blue-tinged metal etched with stars. It opens like a locket, and inside is a dragon's eye: green-gold, with a slit pupil, clear as glass, still bright after what must be centuries.
+Beneath the oldest tree lay a trunk, hidden there since my grandmother's death. Inside were her research, her paintings, her detailed studies of the dragons of Aizomea, and the Aizomea Compass: a sphere about the size of a tangerine, covered in carved dragon scales and bound by a band of blue-tinged metal etched with stars. It opens like a locket, and inside is a dragon's eye: green-gold, with a slit pupil, clear as glass, still bright after what must be centuries.
 
 I knelt there for a long time, the compass in one hand and a stack of my grandmother's journals in the other. The forest was very quiet.
 
 Then the mist moved.
 
-A dragon stepped out of the trees, copper-scaled, wearing a bright red collar, and its eyes, when they found mine, were not surprised. It was Lady Chestnut, named by a six-year-old girl with a spare button. The same dragon, more than a hundred years later, still in the same woods.
+A dragon stepped out of the trees, copper-scaled, wearing a bright red collar, and its eyes, when they found mine, were not surprised. It was Lady Chestnut, named by a six-year-old girl with a spare button. The same dragon, nearly a hundred years later, still in the same woods.
 
 ---
 

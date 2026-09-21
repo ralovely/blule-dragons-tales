@@ -1,6 +1,6 @@
 *12th September 1971*
 
-I wonder sometimes if I am selfish. I chose this. I left my family for a continent of dragons. I know most people would not understand. I am not sure I understand. I tell myself I am doing this for science. I am not entirely lying.
+I wonder sometimes if I am selfish. I chose this. I left my family for a world of dragons. I know most people would not understand. I am not sure I understand. I tell myself I am doing this for science. I am not entirely lying.
 
 The difficulty is that I love it here. I am happy. And every moment of happiness is undercut by the knowledge that it is built on absence. I am happy because I left. That equation has never balanced, and I have stopped trying to make it.
 
