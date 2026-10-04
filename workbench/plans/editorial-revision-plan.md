@@ -1,5 +1,9 @@
 # Editorial revision plan: voice, cultural depth and AI-pattern removal
 
+## Paths after the directory reorganisation
+
+Historical passage anchors below retain their original paths and line numbers. Resolve `story/1-prologue.md` to `manuscript/1-prologue.md` and `story/2-entries/` to `manuscript/2-entries/`. The authoritative canon ledger and chronology now live in `reference/`; the broad timeline is `reference/timeline.md`. Plans live in `workbench/plans/`, candidates and research in `workbench/notes/`, and completed pass logs in `workbench/history/`. These locations supersede the old path and storage instructions below; they do not approve any pending editorial proposal.
+
 ## Purpose
 
 This plan describes a sequence of narrow editorial passes over `story/1-prologue.md` and the files in `story/2-entries/`. Its purpose is to address the following concerns without rewriting the book, changing its structure, altering the entry order, or reducing its essential warmth:
@@ -916,23 +920,23 @@ The log should record decisions, not merely changed files. This will make later 
 
 ## Preview and commit workflow
 
-The workbench preview compares the live `main` branch with the working tree. From the repository root (`story/`), run:
+The preview compares the live `main` branch with the working tree. From the repository root, run:
 
 ```sh
-python3 workbench/preview-server.py 8765
+python3 preview/server.py 8765
 ```
 
-Then open `http://127.0.0.1:8765/preview.html`. The left pane follows `main`; the right pane reads and autosaves the corresponding file in `2-entries/`. A commit made on `main` therefore makes the panes converge without a restart, while commits made on an editorial branch remain visible against `main`. The file list is generated dynamically, so renumbering or moving the old `entries`/`entries-v2` directories no longer breaks it. An optional second argument selects a different comparison branch or ref, for example:
+For local use, open `http://127.0.0.1:8765/`; in an Amp orb, expose the server through a portal. The left pane follows `main`; the right pane reads and autosaves the prologue or corresponding file in `manuscript/2-entries/`. A commit made on `main` therefore makes the panes converge without a restart, while commits made on an editorial branch remain visible against `main`. Baselines from before the directory move remain readable. An optional second argument selects a different comparison branch or ref, for example:
 
 ```sh
-python3 workbench/preview-server.py 8765 another-branch
+python3 preview/server.py 8765 another-branch
 ```
 
 Operational rules:
 
 - leave the server running across edits and commits; its baseline follows the selected branch automatically;
 - use the preview to assess wording, rhythm and word-count changes, not as the sole place to manage canon;
-- the editor deliberately writes only existing files in `2-entries/`; it cannot create entries or update ledgers;
+- the editor deliberately writes only the existing prologue and files in `manuscript/2-entries/`; it cannot create entries or update ledgers;
 - when a preview edit changes canon or time, make the corresponding ledger or chronology edit before committing;
 - after review, stage explicit files, inspect `git diff --cached`, run the pass checks and commit each edited story file separately; finish with one pass-closing workbench/ledger/chronology commit;
 - leave unrelated pre-existing modifications and deletions unstaged.

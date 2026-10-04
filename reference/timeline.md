@@ -1,5 +1,7 @@
 # Lady Pepper & Aizomea Timeline
 
+This is the broad timeline reference. For facts revised since this outline, [the canon ledger](canon-ledger.md) takes precedence; for applied entry dates and trip windows, use [the chronology](chronology.md). Approximate dates remain approximate, and questions or possibilities below are not settled facts. The entry-order section is a historical proposal, not the current manuscript order.
+
 ## Key Dates
 
 - 1864 Nangula Sossusvlei's birth

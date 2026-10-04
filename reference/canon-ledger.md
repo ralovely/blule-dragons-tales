@@ -1,7 +1,7 @@
 # canon-ledger.md — the world as it is (living canon)
 
 Originally the Phase-0 fact baseline; now the **living canon bible** for Aizomea. Nothing here changes without an author decision.
-References are `entry#` in the canonical **01–77** numbering (`2-entries/`, renumbered 2026-07-04) or `P` (prologue). Historical workbench docs (entry-plan, index, change-report, queries) still use OLD numbers — mapping at the bottom of `index.md`. Editing telemetry (tic inventory etc.) lives in `entry-plan.md`, not here.
+References are `entry#` in the canonical **01–77** numbering (`manuscript/2-entries/`, renumbered 2026-07-04) or `P` (prologue). Historical workbench docs still use OLD numbers — the conversion is recorded in `workbench/plans/editorial-revision-plan.md`. Editing telemetry (tic inventory etc.) lives in `workbench/plans/entry-plan.md`, not here.
 
 ## 1. Chronology
 

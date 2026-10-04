@@ -1,0 +1,8 @@
+services:
+  preview:
+    command: python3 preview/server.py "$PORT"
+    port: 8765
+    health: /api/files
+    portal:
+      url: /
+      title: Manuscript preview

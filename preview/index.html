@@ -827,7 +827,7 @@ function bootUntilReady(){
   clearTimeout(bootRetry);
   boot().then(()=>{booted=true;}).catch(()=>{
     $('ttl').textContent='Preview unavailable';
-    $('meta').textContent='Start preview-server.py on port 8765';
+    $('meta').textContent='Start preview/server.py on port 8765';
     $('badge').textContent='offline';
     $('badge').className='badge chg';
     $('side').innerHTML='<div class="empty" style="padding:12px">No manuscript list — waiting for the preview server…</div>';

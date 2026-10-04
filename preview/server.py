@@ -2,7 +2,7 @@
 """Local before/after server for the Aizomea manuscript preview.
 
 The preview compares the main branch (by default) with the editable
-working-tree prologue and files in ../2-entries/. The branch is resolved on
+working-tree prologue and files in ../manuscript/2-entries/. The branch is resolved on
 every poll, so committing on main makes the panes converge without restarting
 the server; committing on an editorial branch leaves the comparison against
 main intact.
@@ -15,7 +15,7 @@ GET /api/current/<file>    -> working-tree file content
 PUT /api/current/<file>    -> atomically updates the working-tree file
 PUT /api/review/<file>     -> marks or unmarks the current content as reviewed
 
-Run: python3 preview-server.py [port] [base-ref]
+Run from the repository root: python3 preview/server.py [port] [base-ref]
      default port: 8765
      default base-ref: main
 """
@@ -32,19 +32,20 @@ import threading
 import urllib.parse
 
 
-WORKBENCH_DIR = os.path.dirname(os.path.abspath(__file__))
-STORY_DIR = os.path.dirname(WORKBENCH_DIR)
+PREVIEW_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = os.path.dirname(PREVIEW_DIR)
+STORY_DIR = os.path.join(REPO_DIR, "manuscript")
 ENTRIES_DIR = os.path.join(STORY_DIR, "2-entries")
 PROLOGUE_NAME = "1-prologue.md"
 PROLOGUE_PATH = os.path.join(STORY_DIR, PROLOGUE_NAME)
-REVIEW_STATE_FILE = os.path.join(WORKBENCH_DIR, ".preview-reviews.json")
+REVIEW_STATE_FILE = os.path.join(PREVIEW_DIR, ".preview-reviews.json")
 BASE_REF = sys.argv[2] if len(sys.argv) > 2 else "main"
 REVIEW_LOCK = threading.Lock()
 
 
 def git(*args):
     return subprocess.run(
-        ["git", "-C", STORY_DIR, *args],
+        ["git", "-C", REPO_DIR, *args],
         check=False,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -101,8 +102,8 @@ def manuscript_path(name):
 def git_path(name):
     """Return the repository-relative path for one manuscript filename."""
     if name == PROLOGUE_NAME:
-        return PROLOGUE_NAME
-    return f"2-entries/{name}"
+        return f"manuscript/{PROLOGUE_NAME}"
+    return f"manuscript/2-entries/{name}"
 
 
 def validated_name(raw):
@@ -120,6 +121,12 @@ def baseline_bytes(name):
     commit = baseline_commit()
     if name not in BASELINE_CACHE:
         result = git("show", f"{commit}:{git_path(name)}")
+        # Baselines before the directory move stored the manuscript at the root.
+        # Choose by tree layout, not by file absence: a newly added entry must
+        # remain absent when comparing against an already-migrated baseline.
+        if result.returncode and git("cat-file", "-e", f"{commit}:manuscript").returncode:
+            legacy_path = git_path(name).removeprefix("manuscript/")
+            result = git("show", f"{commit}:{legacy_path}")
         BASELINE_CACHE[name] = result.stdout if result.returncode == 0 else None
     return BASELINE_CACHE[name]
 
@@ -160,7 +167,7 @@ def save_review_state(reviewed):
         with tempfile.NamedTemporaryFile(
             mode="w",
             encoding="utf-8",
-            dir=WORKBENCH_DIR,
+            dir=PREVIEW_DIR,
             prefix=".preview-reviews-",
             delete=False,
         ) as handle:
@@ -339,9 +346,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
-    os.chdir(WORKBENCH_DIR)
+    os.chdir(PREVIEW_DIR)
     server = http.server.ThreadingHTTPServer(("127.0.0.1", port), Handler)
-    print(f"preview server: http://localhost:{port}/preview.html")
+    print(f"preview server: http://localhost:{port}/")
     print(f"before: live {BASE_REF} ({baseline_commit()[:10]})")
     print(f"edited: {PROLOGUE_PATH} + {ENTRIES_DIR}")
     try:
