@@ -762,7 +762,12 @@ async function setReviewed(k,on,box){
     }
     if(liveK>=0){REVIEWED[liveK]=result.reviewed;updateSideItem(liveK);}
     setStatus('',result.reviewed?'marked reviewed':'review cleared');
-    if(result.reviewed&&FILES[idx]===f)show(idx+1);
+    if(result.reviewed&&FILES[idx]===f){
+      await hydrateEntries();
+      if(FILES[idx]!==f||!isReviewed(idx)||dirty)return;
+      const next=FILES.findIndex((_,i)=>i>idx&&isChg(i)&&!isReviewed(i));
+      if(next>=0)show(next);
+    }
   }catch(e){
     box.checked=isReviewed(k);
     setStatus('error','review update failed ('+e.message+')');
