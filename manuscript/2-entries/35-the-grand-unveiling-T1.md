@@ -6,7 +6,7 @@ It was also one of the funniest scenes. In a stone courtyard hemmed in by house 
 
 This variety was bouncy. Like rubber. As the game picked up, the egg seemed to take on a life of its own, adding a hilarious randomness to proceedings. After one epic kick, it bounced straight back into the kicker, with what looked for all the world like intent. N.B. A dragon egg is not fragile. Someone ought to tell the museum men who cradle them like porcelain.
 
-That's when an elder man, who had been watching with an amused yet attentive eye, interrupted the game. The egg lay still on the ground. The children, a few other villagers, and even a couple of dragons gathered around. The egg, quite round until now, began to change shape from the inside. A very sharp claw pierced through and tore a larger hole.
+That's when Emi, a middle-aged woman who had been watching with an amused yet attentive eye, interrupted the game. The egg lay still on the ground. The children, a few other villagers, and even a couple of dragons gathered around. The egg, quite round until now, began to change shape from the inside. A very sharp claw pierced through and tore a larger hole.
 
 From it, an already chunky (though small) dragon walked out. Or perhaps stumbled its way out, fumbling, rolling, still drunk on the bouncing. Everyone burst into laughter. River, you would have loved this. Cendre, you would have tried to take it home. I must bring you here one day. Though I suppose that requires being able to come back. Or leaving, for that matter.
 
