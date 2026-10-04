@@ -726,6 +726,8 @@ All seven editor's notes—`27, 29, 31, 32, 36, 53, 55`—must retain their func
 
 # Pass 7 — Turn selected anonymous roles into recurring people
 
+**Applied 4 October 2026:** the author selected five surgical threads: Sayo (05/21), Sumi (17/66), Hana as the mother in 73, Ren (52/73), and Emi (35/37). These supersede the candidate roster below, not the remaining editorial passes. Aizomea is large; Pepper's home village is rather small. See `workbench/history/pass-07-change-log.md` and the updated people/payoffs sections of `reference/canon-ledger.md`.
+
 ## Objective
 
 Make Aizomea feel inhabited by a community rather than staffed by unnamed examples, using a very small recurring cast. Do not name every passer-by.
