@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aizomea — before / after</title>
 <style>
 *{box-sizing:border-box}
@@ -128,25 +129,61 @@ span.del[data-hunk]:hover,span.add[data-hunk]:hover,span.del.active-change,span.
 #status.error .pulse{background:#c0392b}
 .empty{color:var(--muted);font-style:italic}
 kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
+#mobile-nav,#entries-close{display:none}
+#entries-dialog{padding:0;border:1px solid var(--border);background:var(--side);color:var(--fg);width:min(360px,calc(100% - 24px));height:calc(100dvh - 32px);max-height:calc(100dvh - 32px);border-radius:8px}
+#entries-dialog::backdrop{background:rgba(0,0,0,.35)}
+#entries-dialog[open]{display:flex;flex-direction:column}
+#entries-dialog #sidebar{display:flex;flex:1;border:0;min-height:0}
+#entries-close{align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--border);font:600 14px ui-sans-serif,system-ui,sans-serif}
+#entries-close button{min-width:44px;min-height:44px}
 @media(max-width:900px){
-  body{grid-template-columns:1fr}
+  body{grid-template-columns:1fr;height:100dvh;overflow:hidden}
   #sidebar{display:none}
   #head .meta{display:none}
+  #head,#mobile-nav,#foot{flex:none}
+  #mobile-nav{display:flex;align-items:center;gap:8px;padding:6px 10px;border-bottom:1px solid var(--border);font:13px ui-sans-serif,system-ui,sans-serif}
+  #mobile-nav button{min-height:44px;border:0;background:transparent;color:var(--meta);font:inherit;cursor:pointer;border-radius:5px}
+  #entries-button{display:flex;align-items:center;gap:6px;padding:0 8px}
+  #view-switch{display:flex;flex:1;background:var(--side);border:1px solid var(--border);border-radius:6px;padding:2px}
+  #view-switch button{flex:1;padding:0 8px;white-space:nowrap}
+  #view-switch button[aria-pressed="true"]{background:var(--sideAct);color:var(--fg);font-weight:600}
+  #panes{grid-template-columns:minmax(0,1fr);position:relative}
+  .pane{grid-area:1/1;min-width:0;padding:20px 24px 50px;overscroll-behavior-y:contain;touch-action:pan-y pinch-zoom}
+  .pane h2{margin:-20px 0 0;padding:8px 0 12px;top:-20px;min-height:56px}
+  .pane.mobile-inactive{visibility:hidden;pointer-events:none}
+  #working-pane{border-left:0}
+  #change-rail,.margin-eraser{display:none}
+  .txt,#edit,#text-mirror{font-size:16px}
+  #edit{min-height:calc(100dvh - 240px);touch-action:pan-y pinch-zoom}
+  #modetag{min-height:44px;display:inline-flex;align-items:center;padding:0 12px}
+  #entries-close{display:flex}
+  #global-search{height:44px;font-size:16px}
+  #search-clear{width:44px;height:44px;right:0}
+  #global-search{padding-right:44px}
+  #side .it{min-height:44px;font-size:14px;white-space:normal}
+  .search-nav button{width:44px;height:44px}
+  #drawer-toggle{height:44px}
+  #drawer-body{max-height:40dvh;overflow-y:auto;padding:10px}
+  .drawer-tools{flex-wrap:wrap}
+  #drawer .navbtn{min-height:44px}
+  .card-head input{width:24px;height:24px;margin:0 4px 0 0}
+  .change-card{flex-basis:min(340px,86vw)}
+  #foot{padding:6px 10px max(6px,env(safe-area-inset-bottom));font-size:11px;gap:8px}
+  #foot>span:first-child{font-size:0}
+  #foot>span:first-child::after{content:'Working tree autosaves';font-size:11px}
+  #foot kbd{display:none}
+  #toast{max-width:calc(100% - 24px);width:max-content;bottom:80px}
+  #toast button{min-height:44px;min-width:44px}
 }
 @media(max-width:640px){
   #head{padding:8px 10px;gap:7px}
-  #panes{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr)}
-  .pane{padding:20px 18px 50px}
-  .pane h2{margin:-20px 0 0;padding:20px 0 12px;top:-20px}
-  #rail-track{inset:42px 0 16px}
-  .margin-eraser{left:0;width:19px;height:19px;font-size:12px}
-  #foot{padding:5px 10px;font-size:10px;gap:8px}
-  #drawer-body{padding:10px}
-  .change-card{flex-basis:min(320px,86vw)}
 }
 </style>
 </head>
 <body>
+<dialog id="entries-dialog" aria-label="Manuscript entries">
+  <div id="entries-close">Manuscript <button class="navbtn" type="button" onclick="closeEntries()">Close</button></div>
+</dialog>
 <div id="sidebar">
   <div id="search-panel">
     <div class="search-row">
@@ -174,9 +211,16 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
     <h1 id="ttl"></h1><span class="meta" id="meta"></span><span class="badge" id="badge"></span>
     <button class="navbtn" id="themebtn" onclick="toggleTheme()" title="light / dark">🌙 dark</button>
   </div>
+  <div id="mobile-nav" aria-label="Manuscript navigation">
+    <button id="entries-button" type="button" onclick="openEntries()" aria-haspopup="dialog" aria-controls="entries-dialog" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Entries</button>
+    <div id="view-switch" role="group" aria-label="Visible version">
+      <button id="original-button" type="button" aria-controls="baseline-pane" aria-pressed="false" onclick="setMobileView('original')">Original</button>
+      <button id="working-button" type="button" aria-controls="working-pane" aria-pressed="true" onclick="setMobileView('working')">Working tree</button>
+    </div>
+  </div>
   <div id="panes">
     <div class="pane" id="baseline-pane">
-      <h2><span id="baseheading">Git baseline</span> <span class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</span></h2>
+      <h2><span id="baseheading">Git baseline</span> <button type="button" class="mode" id="modetag" onclick="toggleMode()" title="plain baseline / word-diff vs working tree (⌘/Ctrl+D)">diff</button></h2>
       <div class="txt" id="oldt"></div>
     </div>
     <div id="change-rail" aria-label="Change rail">
@@ -223,6 +267,62 @@ let searchTimer=null,searchSequence=0;
 const EDIT_SEQ={};
 const ta=$('edit');
 const searchInput=$('global-search');
+
+// Keep both panes laid out, so switching requires no fetch or text re-render.
+const mobileLayout=matchMedia('(max-width:900px)');
+let mobileView='working';
+function setMobileView(view){
+  const previous=$(mobileView==='working'?'working-pane':'baseline-pane');
+  const next=$(view==='working'?'working-pane':'baseline-pane');
+  if(view!==mobileView&&mobileLayout.matches){
+    const progress=previous.scrollTop/Math.max(1,previous.scrollHeight-previous.clientHeight);
+    next.scrollTop=progress*Math.max(0,next.scrollHeight-next.clientHeight);
+    if(document.activeElement===ta)ta.blur();
+  }
+  mobileView=view;
+  for(const [name,id] of [['original','baseline-pane'],['working','working-pane']]){
+    const inactive=mobileLayout.matches&&name!==view;
+    $(id).classList.toggle('mobile-inactive',inactive);
+    $(id).inert=inactive;
+    $(name+'-button').setAttribute('aria-pressed',String(name===view));
+  }
+}
+function openEntries(){
+  if(!mobileLayout.matches){searchInput.focus();return;}
+  $('entries-dialog').showModal();
+  $('entries-button').setAttribute('aria-expanded','true');
+}
+function closeEntries(){
+  if($('entries-dialog').open)$('entries-dialog').close();
+}
+$('entries-dialog').addEventListener('close',()=>{
+  $('entries-button').setAttribute('aria-expanded','false');
+});
+$('entries-dialog').addEventListener('click',e=>{
+  if(e.target===$('entries-dialog'))closeEntries();
+});
+function adaptLayout(){
+  closeEntries();
+  if(mobileLayout.matches)$('entries-dialog').appendChild($('sidebar'));
+  else document.body.insertBefore($('sidebar'),$('main'));
+  setMobileView(mobileView);
+  resizeEditor();queueMarginEraser();
+}
+mobileLayout.addEventListener('change',adaptLayout);
+let swipeStart=null;
+$('panes').addEventListener('touchstart',e=>{
+  swipeStart=mobileLayout.matches&&e.touches.length===1?[e.touches[0].clientX,e.touches[0].clientY]:null;
+},{passive:true});
+$('panes').addEventListener('touchcancel',()=>{swipeStart=null;},{passive:true});
+$('panes').addEventListener('touchend',e=>{
+  if(!swipeStart)return;
+  const [x,y]=swipeStart;swipeStart=null;
+  const dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;
+  if(Math.abs(dx)<60||Math.abs(dx)<Math.abs(dy)*2||String(window.getSelection()))return;
+  if(document.activeElement===ta&&ta.selectionStart!==ta.selectionEnd)return;
+  setMobileView(dx<0?'working':'original');
+},{passive:true});
+adaptLayout();
 
 // ---- theme ----
 function applyTheme(t){
@@ -326,7 +426,7 @@ function entryLabel(f){
 }
 
 function sideItemHTML(f,k){
-  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}${isReviewed(k)?' reviewed':''}"></span><span class="entry-name">${esc(entryLabel(f))}</span></div>`;
+  return `<div class="it" role="button" tabindex="0" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}${isReviewed(k)?' reviewed':''}"></span><span class="entry-name">${esc(entryLabel(f))}</span></div>`;
 }
 function buildSide(){
   if(SEARCH_QUERY){renderSearchResults();return;}
@@ -376,7 +476,7 @@ function searchResultHTML(group,groupIndex){
   const shown=SEARCH_MATCHES[shownIndex],contentMatches=group.matchIndexes.filter(i=>!SEARCH_MATCHES[i].title).length;
   const text=currentEntryText(group.k),count=contentMatches||'title';
   const selected=group.matchIndexes.includes(SEARCH_CURSOR)?' selected':'';
-  return `<div class="it search-result${selected}" data-k="${group.k}" data-search-group="${groupIndex}" onclick="openSearchGroup(${groupIndex})">
+  return `<div class="it search-result${selected}" role="button" tabindex="0" data-k="${group.k}" data-search-group="${groupIndex}" onclick="openSearchGroup(${groupIndex})">
     <span class="dot${isChg(group.k)?' chg':''}${isReviewed(group.k)?' reviewed':''}"></span>
     <span class="search-result-copy">
       <span class="search-result-head"><span class="search-result-title">${esc(entryLabel(FILES[group.k]))}</span><span class="search-result-count">${count}</span></span>
@@ -453,6 +553,7 @@ async function openSearchMatch(matchIndex,keepSearchFocus=false){
   const sameEntry=idx===match.k;
   SEARCH_CURSOR=matchIndex;
   if(!sameEntry){flush();idx=match.k;await ensureEntry(idx);loadEntry();}
+  if(mobileLayout.matches){setMobileView('working');if(!keepSearchFocus)closeEntries();}
   renderSearchResults();scrollToSearchMatch(match,!keepSearchFocus);
   if(keepSearchFocus)searchInput.focus();
 }
@@ -472,6 +573,9 @@ function searchKeydown(e){
 }
 searchInput.addEventListener('input',()=>scheduleGlobalSearch());
 searchInput.addEventListener('keydown',searchKeydown);
+$('side').addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches('.it')){e.preventDefault();e.target.click();e.stopPropagation();}
+});
 
 // ---- change review controls ----
 function resizeEditor(){
@@ -722,7 +826,7 @@ async function hydrateEntries(){
   };
   await Promise.all([worker(),worker(),worker(),worker()]);
 }
-function show(i){flush();idx=Math.max(0,Math.min(FILES.length-1,i));loadEntry();}
+function show(i){closeEntries();flush();idx=Math.max(0,Math.min(FILES.length-1,i));loadEntry();}
 function toggleMode(){mode=mode==='diff'?'plain':'diff';renderLeft();}
 
 // ---- saving ----
@@ -838,7 +942,7 @@ function bootUntilReady(){
 
 document.addEventListener('keydown',e=>{
   if((e.key==='f'||e.key==='F')&&(e.metaKey||e.ctrlKey)){
-    e.preventDefault();searchInput.focus();searchInput.select();return;
+    e.preventDefault();openEntries();searchInput.focus();searchInput.select();return;
   }
   if((e.key==='d'||e.key==='D')&&(e.metaKey||e.ctrlKey)){e.preventDefault();toggleMode();return;}
   if(e.target===ta){if(e.key==='Escape')ta.blur();return;}
