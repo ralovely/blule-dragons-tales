@@ -6,6 +6,6 @@ After a hatching, every fragment of shell is gathered and reassembled with a pas
 
 Given how rarely dragons are born, a house with four eggs on its shelf might represent centuries of family. The oldest repaired egg I have seen sits in the weaving hall, near the tapestries. The shell has yellowed. The blue stone lines have deepened to almost black. No one touches it. The shell is sound. Its age is sufficient reason for stillness.
 
-I watched a woman work on one for an entire afternoon. Her hands were steady, her brush strokes precise, her concentration total. Hana, Manami's daughter, now a young woman herself, sat beside her learning the strokes. There are perhaps three people in the village trusted with the task. The skill is earned over years.
+I watched Emi work on one for an entire afternoon. Her hands were steady, her brush strokes precise, her concentration total. Hana, Manami's daughter, now a young woman herself, sat beside her learning the strokes. There are perhaps three people in the village trusted with the task. The skill is earned over years. Emi maintains that an unmarked shell records a dull childhood.
 
 It reminds me of Kintsugi.
