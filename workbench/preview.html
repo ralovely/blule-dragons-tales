@@ -21,12 +21,37 @@ body.dark{
   --navbg:#2a2620;--navborder:#3b352d;--badgechg:#3a3017;--badgechgx:#e3bd63;--accent:#c9a24a;
   --rail:#29251f;--railmark:#dfa04a;--card:#29241c;--shadow:rgba(0,0,0,.35);
 }
-body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:var(--bg);color:var(--fg);display:grid;grid-template-columns:270px 1fr;height:100vh}
-#side{border-right:1px solid var(--border);overflow-y:auto;background:var(--side);padding:8px 0;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px}
+body{margin:0;font-family:Georgia,'Iowan Old Style',serif;background:var(--bg);color:var(--fg);display:grid;grid-template-columns:290px 1fr;height:100vh}
+#sidebar{border-right:1px solid var(--border);background:var(--side);display:flex;flex-direction:column;min-height:0;font-family:ui-sans-serif,system-ui,sans-serif}
+#search-panel{padding:9px 9px 7px;border-bottom:1px solid var(--border);flex:none}
+.search-row{position:relative;display:flex;align-items:center}
+#global-search{width:100%;height:30px;border:1px solid var(--navborder);border-radius:6px;background:var(--rightbg);color:var(--fg);padding:4px 30px 4px 9px;font:12.5px ui-sans-serif,system-ui,sans-serif;outline:none}
+#global-search:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 22%,transparent)}
+#global-search::placeholder{color:var(--muted)}
+#global-search::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+#search-clear{position:absolute;right:3px;width:24px;height:24px;border:0;background:transparent;color:var(--muted);font:18px/1 ui-sans-serif,system-ui,sans-serif;cursor:pointer;border-radius:4px}
+#search-clear:hover{background:var(--sideHover);color:var(--fg)}
+#search-meta{padding:6px 1px 0;display:flex;align-items:center;gap:5px;color:var(--muted);font-size:10.5px}
+#search-meta[hidden]{display:none}
+#search-count{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-nav{margin-left:auto;display:flex;gap:3px}
+.search-nav button{width:23px;height:20px;padding:0;border:1px solid var(--navborder);border-radius:4px;background:var(--navbg);color:var(--meta);cursor:pointer;font:12px ui-sans-serif,system-ui,sans-serif}
+.search-nav button:hover:not(:disabled){background:var(--sideHover);color:var(--fg)}
+.search-nav button:disabled{opacity:.4;cursor:default}
+#side{overflow-y:auto;background:var(--side);padding:8px 0;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;flex:1;min-height:0}
 #side .it{padding:4px 12px;cursor:pointer;display:flex;gap:8px;align-items:center;white-space:nowrap;color:var(--meta)}
 #side .it:hover{background:var(--sideHover)}
 #side .it.act{background:var(--sideAct);font-weight:600;color:var(--fg)}
 .entry-name{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.search-result{padding-top:7px!important;padding-bottom:8px!important;align-items:flex-start!important;white-space:normal!important}
+.search-result .dot{margin-top:4px}
+.search-result-copy{min-width:0;flex:1}
+.search-result-head{display:flex;align-items:baseline;gap:6px;color:var(--fg);font-weight:600}
+.search-result-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-result-count{margin-left:auto;flex:none;color:var(--muted);font-size:10px;font-weight:400}
+.search-snippet{margin-top:2px;color:var(--meta);font:11.5px/1.35 Georgia,'Iowan Old Style',serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.search-snippet mark{background:var(--badgechg);color:var(--badgechgx);border-radius:2px;padding:0 1px}
+.search-result.selected{box-shadow:inset 3px 0 var(--accent)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--dot);flex:none}
 .dot.chg{background:var(--dotchg)}
 .dot.reviewed{background:var(--dotreview)}
@@ -105,7 +130,7 @@ span.del[data-hunk]:hover,span.add[data-hunk]:hover,span.del.active-change,span.
 kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
 @media(max-width:900px){
   body{grid-template-columns:1fr}
-  #side{display:none}
+  #sidebar{display:none}
   #head .meta{display:none}
 }
 @media(max-width:640px){
@@ -122,7 +147,22 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
 </style>
 </head>
 <body>
-<div id="side"></div>
+<div id="sidebar">
+  <div id="search-panel">
+    <div class="search-row">
+      <input id="global-search" type="search" placeholder="Search prologue and entries" autocomplete="off" spellcheck="false" aria-label="Search the current manuscript">
+      <button id="search-clear" type="button" onclick="clearGlobalSearch(true)" aria-label="Clear search" title="Clear search" hidden>×</button>
+    </div>
+    <div id="search-meta" hidden>
+      <span id="search-count"></span>
+      <span class="search-nav">
+        <button id="search-prev" type="button" onclick="stepSearch(-1)" aria-label="Previous search match" title="Previous match (Shift+Enter)">↑</button>
+        <button id="search-next" type="button" onclick="stepSearch(1)" aria-label="Next search match" title="Next match (Enter)">↓</button>
+      </span>
+    </div>
+  </div>
+  <div id="side"></div>
+</div>
 <div id="main">
   <div id="head">
     <label class="review-switch" title="Mark this version as reviewed">
@@ -167,7 +207,7 @@ kbd{font-family:inherit;background:var(--chip);border-radius:3px;padding:0 5px}
     </div>
   </div>
   <div id="foot">
-    <span><kbd>J</kbd>/<kbd>K</kbd> navigate entries · <kbd>[</kbd>/<kbd>]</kbd> navigate changes · <kbd>R</kbd> reverts the active change · working tree autosaves</span>
+    <span><kbd>⌘/Ctrl F</kbd> search manuscript · <kbd>J</kbd>/<kbd>K</kbd> navigate files · <kbd>[</kbd>/<kbd>]</kbd> navigate changes · <kbd>R</kbd> reverts the active change · working tree autosaves</span>
     <span id="status"><span class="pulse"></span><span id="statustxt">ready</span></span>
   </div>
 </div>
@@ -178,8 +218,11 @@ let FILES=[],OLD=[],NEW=[],LOADS=[],REVIEWED=[],idx=0;
 let dirty=false, mode='diff', saveTimer=null;   // mode: 'diff' | 'plain' (left pane only)
 let DIFF={ops:[],hunks:[]},ACTIVE_CHANGE=0,DRAWER_OPEN=false;
 let SELECTED_CHANGES=new Set(),LAST_REVERT=null,toastTimer=null,eraserFrame=null;
+let SEARCH_QUERY='',SEARCH_MATCHES=[],SEARCH_GROUPS=[],SEARCH_CURSOR=-1,SEARCH_LOADING=false;
+let searchTimer=null,searchSequence=0;
 const EDIT_SEQ={};
 const ta=$('edit');
+const searchInput=$('global-search');
 
 // ---- theme ----
 function applyTheme(t){
@@ -276,15 +319,21 @@ function plain(t){
 function wc(t){return t?t.trim().split(/\s+/).filter(Boolean).length:0;}
 function isChg(k){return (OLD[k]??'')!==(NEW[k]??'');}
 function isReviewed(k){return Boolean(REVIEWED[k]);}
+function entryLabel(f){
+  if(f==='1-prologue.md')return 'P · prologue';
+  const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
+  return mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f;
+}
 
 function sideItemHTML(f,k){
-  const mm=f.match(/^(\d+[a-z]?)-(.+?)-T/);
-  const label=mm?mm[1]+' · '+mm[2].replace(/-/g,' '):f;
-  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}${isReviewed(k)?' reviewed':''}"></span><span class="entry-name">${esc(label)}</span></div>`;
+  return `<div class="it" data-k="${k}" onclick="show(${k})"><span class="dot${isChg(k)?' chg':''}${isReviewed(k)?' reviewed':''}"></span><span class="entry-name">${esc(entryLabel(f))}</span></div>`;
 }
-function buildSide(){$('side').innerHTML=FILES.map(sideItemHTML).join('');markActive();}
+function buildSide(){
+  if(SEARCH_QUERY){renderSearchResults();return;}
+  $('side').innerHTML=FILES.map(sideItemHTML).join('');markActive();
+}
 function markActive(){
-  document.querySelectorAll('#side .it').forEach((el,k)=>el.classList.toggle('act',k===idx));
+  document.querySelectorAll('#side .it').forEach(el=>el.classList.toggle('act',Number(el.dataset.k)===idx));
   updateReviewToggle();
 }
 function updateReviewToggle(){
@@ -293,13 +342,136 @@ function updateReviewToggle(){
   box.parentElement.title=box.checked?'Mark as not reviewed':'Mark this version as reviewed';
 }
 function updateSideItem(k){
-  const item=document.querySelector(`#side .it[data-k="${k}"]`);if(!item)return;
-  const dot=item.querySelector('.dot');
-  dot.classList.toggle('chg',isChg(k));
-  dot.classList.toggle('reviewed',isReviewed(k));
+  const items=document.querySelectorAll(`#side .it[data-k="${k}"]`);if(!items.length)return;
+  items.forEach(item=>{
+    const dot=item.querySelector('.dot');
+    dot.classList.toggle('chg',isChg(k));
+    dot.classList.toggle('reviewed',isReviewed(k));
+  });
   if(k===idx)updateReviewToggle();
 }
 function setStatus(cls,txt){$('status').className=cls;$('statustxt').textContent=txt;}
+
+// ---- collection search ----
+function currentEntryText(k){return k===idx?ta.value:(NEW[k]??'');}
+function findLiteralMatches(text,query){
+  const matches=[],haystack=(text||'').toLocaleLowerCase(),needle=query.toLocaleLowerCase();
+  if(!needle)return matches;
+  let from=0;
+  while(from<=haystack.length-needle.length){
+    const start=haystack.indexOf(needle,from);if(start<0)break;
+    matches.push({start,end:start+query.length,title:false});
+    from=start+Math.max(needle.length,1);
+  }
+  return matches;
+}
+function searchSnippetHTML(text,match){
+  if(match.title)return '<span class="empty">Match in file title</span>';
+  const radius=62,start=Math.max(0,match.start-radius),end=Math.min(text.length,match.end+radius);
+  const clean=s=>esc(s.replace(/\s+/g,' '));
+  return `${start?'&hellip;':''}${clean(text.slice(start,match.start))}<mark>${clean(text.slice(match.start,match.end))}</mark>${clean(text.slice(match.end,end))}${end<text.length?'&hellip;':''}`;
+}
+function searchResultHTML(group,groupIndex){
+  const shownIndex=group.matchIndexes.includes(SEARCH_CURSOR)?SEARCH_CURSOR:group.matchIndexes[0];
+  const shown=SEARCH_MATCHES[shownIndex],contentMatches=group.matchIndexes.filter(i=>!SEARCH_MATCHES[i].title).length;
+  const text=currentEntryText(group.k),count=contentMatches||'title';
+  const selected=group.matchIndexes.includes(SEARCH_CURSOR)?' selected':'';
+  return `<div class="it search-result${selected}" data-k="${group.k}" data-search-group="${groupIndex}" onclick="openSearchGroup(${groupIndex})">
+    <span class="dot${isChg(group.k)?' chg':''}${isReviewed(group.k)?' reviewed':''}"></span>
+    <span class="search-result-copy">
+      <span class="search-result-head"><span class="search-result-title">${esc(entryLabel(FILES[group.k]))}</span><span class="search-result-count">${count}</span></span>
+      <span class="search-snippet">${searchSnippetHTML(text,shown)}</span>
+    </span>
+  </div>`;
+}
+function renderSearchResults(){
+  if(!SEARCH_QUERY)return;
+  $('search-meta').hidden=false;$('search-clear').hidden=false;
+  $('search-prev').disabled=$('search-next').disabled=SEARCH_LOADING||!SEARCH_MATCHES.length;
+  if(SEARCH_LOADING){
+    $('search-count').textContent='Searching…';
+    $('side').innerHTML='<div class="empty" style="padding:12px">Searching the manuscript…</div>';
+  }else if(!SEARCH_GROUPS.length){
+    $('search-count').textContent='No matches';
+    $('side').innerHTML='<div class="empty" style="padding:12px">No matches in the working tree.</div>';
+  }else{
+    const contentCount=SEARCH_MATCHES.filter(m=>!m.title).length;
+    const titleCount=SEARCH_MATCHES.length-contentCount;
+    const matchText=contentCount?`${contentCount} match${contentCount===1?'':'es'}`:`${titleCount} title match${titleCount===1?'':'es'}`;
+    $('search-count').textContent=`${matchText} in ${SEARCH_GROUPS.length} file${SEARCH_GROUPS.length===1?'':'s'}`;
+    $('side').innerHTML=SEARCH_GROUPS.map(searchResultHTML).join('');
+  }
+  markActive();
+}
+function scheduleGlobalSearch(delay=120){
+  clearTimeout(searchTimer);
+  SEARCH_QUERY=searchInput.value.trim();SEARCH_CURSOR=-1;searchSequence++;
+  $('search-clear').hidden=!SEARCH_QUERY;
+  if(!SEARCH_QUERY){
+    SEARCH_LOADING=false;SEARCH_MATCHES=[];SEARCH_GROUPS=[];
+    $('search-meta').hidden=true;buildSide();return;
+  }
+  SEARCH_LOADING=true;renderSearchResults();
+  const sequence=searchSequence,query=SEARCH_QUERY;
+  searchTimer=setTimeout(()=>runGlobalSearch(query,sequence),delay);
+}
+async function runGlobalSearch(query,sequence){
+  try{await Promise.all(FILES.map((_,k)=>ensureEntry(k)));}catch(e){
+    if(sequence===searchSequence){SEARCH_LOADING=false;$('search-count').textContent='Search unavailable';}
+    return;
+  }
+  if(sequence!==searchSequence||query!==SEARCH_QUERY)return;
+  const matches=[],groups=[];
+  FILES.forEach((file,k)=>{
+    const text=currentEntryText(k),found=findLiteralMatches(text,query),matchIndexes=[];
+    for(const match of found){match.k=k;matchIndexes.push(matches.length);matches.push(match);}
+    if(entryLabel(file).toLocaleLowerCase().includes(query.toLocaleLowerCase())&&!found.length){
+      matchIndexes.push(matches.length);matches.push({k,start:0,end:0,title:true});
+    }
+    if(matchIndexes.length)groups.push({k,matchIndexes});
+  });
+  SEARCH_MATCHES=matches;SEARCH_GROUPS=groups;SEARCH_LOADING=false;renderSearchResults();
+}
+function clearGlobalSearch(focus=false){
+  clearTimeout(searchTimer);searchSequence++;searchInput.value='';
+  SEARCH_QUERY='';SEARCH_MATCHES=[];SEARCH_GROUPS=[];SEARCH_CURSOR=-1;SEARCH_LOADING=false;
+  $('search-clear').hidden=true;$('search-meta').hidden=true;buildSide();
+  if(focus)searchInput.focus();
+}
+function scrollToSearchMatch(match,focusEditor=true){
+  if(match.title){$('working-pane').scrollTop=0;return;}
+  const start=Math.min(match.start,ta.value.length),end=Math.min(match.end,ta.value.length);
+  if(focusEditor)ta.focus();
+  ta.setSelectionRange(start,end);
+  requestAnimationFrame(()=>{
+    const pane=$('working-pane'),top=ta.offsetTop+measureOffset(start);
+    pane.scrollTo({top:Math.max(0,top-pane.clientHeight*.35),behavior:'smooth'});
+  });
+}
+async function openSearchMatch(matchIndex,keepSearchFocus=false){
+  const match=SEARCH_MATCHES[matchIndex];if(!match)return;
+  const sameEntry=idx===match.k;
+  SEARCH_CURSOR=matchIndex;
+  if(!sameEntry){flush();idx=match.k;await ensureEntry(idx);loadEntry();}
+  renderSearchResults();scrollToSearchMatch(match,!keepSearchFocus);
+  if(keepSearchFocus)searchInput.focus();
+}
+function openSearchGroup(groupIndex){
+  const group=SEARCH_GROUPS[groupIndex];if(!group)return;
+  const current=group.matchIndexes.includes(SEARCH_CURSOR)?SEARCH_CURSOR:group.matchIndexes[0];
+  openSearchMatch(current);
+}
+async function stepSearch(delta,keepSearchFocus=false){
+  if(!SEARCH_MATCHES.length)return;
+  const next=SEARCH_CURSOR<0?(delta<0?SEARCH_MATCHES.length-1:0):(SEARCH_CURSOR+delta+SEARCH_MATCHES.length)%SEARCH_MATCHES.length;
+  await openSearchMatch(next,keepSearchFocus);
+}
+function searchKeydown(e){
+  if(e.key==='Enter'){e.preventDefault();stepSearch(e.shiftKey?-1:1,true);}
+  else if(e.key==='Escape'){e.preventDefault();clearGlobalSearch(true);}
+}
+searchInput.addEventListener('input',()=>scheduleGlobalSearch());
+searchInput.addEventListener('keydown',searchKeydown);
 
 // ---- change review controls ----
 function resizeEditor(){
@@ -502,11 +674,13 @@ function renderLeft(){
 }
 function renderMeta(){
   const f=FILES[idx],o=OLD[idx],cur=ta.value;
+  const prologue=f==='1-prologue.md';
   const mm=f.match(/^(\d+[a-z]?)-(.+?)-(T[-\dT]*\d)\.md$/);
-  $('ttl').textContent=mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
+  $('ttl').textContent=prologue?'Prologue':mm?`${mm[1]} — ${mm[2].replace(/-/g,' ')}`:f;
   const chg=(o??'')!==(cur??'');
   const dw=wc(cur)-wc(o), dws=dw===0?'':` (${dw>0?'+':''}${dw})`;
-  $('meta').textContent=`${mm?mm[3]:''} · ${wc(o)} → ${wc(cur)} words${dws} · entry ${idx+1}/${FILES.length}`;
+  const position=prologue?'prologue':`entry ${idx}/${FILES.length-1}`;
+  $('meta').textContent=`${mm?mm[3]+' · ':''}${wc(o)} → ${wc(cur)} words${dws} · ${position}`;
   $('badge').textContent=chg?'changed':'unchanged';
   $('badge').className='badge'+(chg?' chg':'');
 }
@@ -528,7 +702,7 @@ function loadEntry(){
   SELECTED_CHANGES.clear();ACTIVE_CHANGE=0;hideToast();
   if(OLD[k]===undefined||NEW[k]===undefined){
     ta.value='';dirty=false;renderLeft();renderMeta();markActive();
-    setStatus('saving',`loading entry ${k+1}…`);
+    setStatus('saving',FILES[k]==='1-prologue.md'?'loading prologue…':`loading entry ${k}…`);
     ensureEntry(k).then(()=>{if(idx===k){loadEntry();setStatus('','ready');}});
     return;
   }
@@ -561,6 +735,7 @@ function scheduleSave(){
 }
 function editorInput(){
   hideToast();SELECTED_CHANGES.clear();scheduleSave();
+  if(SEARCH_QUERY)scheduleGlobalSearch(220);
 }
 function flush(){if(dirty){clearTimeout(saveTimer);doSave(idx,ta.value);}}
 async function doSave(k,text){
@@ -589,6 +764,7 @@ async function pollCurrent(){
     NEW[k]=n;REVIEWED[k]=false;
     if(k===idx&&!dirty){ta.value=n??'';renderLeft();renderMeta();setStatus('','updated '+new Date().toLocaleTimeString());}
     updateSideItem(k);
+    if(SEARCH_QUERY)scheduleGlobalSearch(0);
   }
 }
 async function pollAll(){
@@ -601,6 +777,7 @@ async function pollAll(){
   const curName=FILES[idx], curOLD=OLD[idx], curNEW=NEW[idx], curReviewed=REVIEWED[idx];
   const manifestChanged=JSON.stringify(files)!==JSON.stringify(FILES);
   const [olds,news]=await Promise.all([Promise.all(files.map(getOld)),Promise.all(files.map(getNew))]);
+  const searchNeedsRefresh=manifestChanged||news.some((text,k)=>text!==NEW[k]);
   FILES=files;OLD=olds;NEW=news;REVIEWED=files.map(f=>reviews.includes(f));
   const ci=FILES.indexOf(curName);
   if(ci>=0){OLD[ci]=curOLD;NEW[ci]=curNEW;}   // leave current entry to pollCurrent (keeps scroll/caret)
@@ -611,6 +788,7 @@ async function pollAll(){
   }else{
     FILES.forEach((_,k)=>updateSideItem(k));                         // just refresh the dots
   }
+  if(SEARCH_QUERY&&searchNeedsRefresh)scheduleGlobalSearch(0);
 }
 
 async function boot(){
@@ -619,7 +797,7 @@ async function boot(){
     fetch('/api/meta',{cache:'no-store'}),
     fetch('/api/reviews',{cache:'no-store'})
   ]);
-  if(!filesResponse.ok)throw new Error('could not load entry list');
+  if(!filesResponse.ok)throw new Error('could not load manuscript list');
   FILES=await filesResponse.json();
   const reviewedNames=reviewsResponse.ok?await reviewsResponse.json():[];
   if(metaResponse.ok){
@@ -652,13 +830,16 @@ function bootUntilReady(){
     $('meta').textContent='Start preview-server.py on port 8765';
     $('badge').textContent='offline';
     $('badge').className='badge chg';
-    $('side').innerHTML='<div class="empty" style="padding:12px">No entry list — waiting for the preview server…</div>';
+    $('side').innerHTML='<div class="empty" style="padding:12px">No manuscript list — waiting for the preview server…</div>';
     setStatus('error','server unavailable — retrying…');
     bootRetry=setTimeout(bootUntilReady,1500);
   });
 }
 
 document.addEventListener('keydown',e=>{
+  if((e.key==='f'||e.key==='F')&&(e.metaKey||e.ctrlKey)){
+    e.preventDefault();searchInput.focus();searchInput.select();return;
+  }
   if((e.key==='d'||e.key==='D')&&(e.metaKey||e.ctrlKey)){e.preventDefault();toggleMode();return;}
   if(e.target===ta){if(e.key==='Escape')ta.blur();return;}
   if(e.target.closest&&e.target.closest('input,button'))return;

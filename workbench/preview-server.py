@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Local before/after server for the Aizomea entry preview.
+"""Local before/after server for the Aizomea manuscript preview.
 
 The preview compares the main branch (by default) with the editable
-working-tree files in ../2-entries/. The branch is resolved on every poll, so
-committing on main makes the panes converge without restarting the server;
-committing on an editorial branch leaves the comparison against main intact.
+working-tree prologue and files in ../2-entries/. The branch is resolved on
+every poll, so committing on main makes the panes converge without restarting
+the server; committing on an editorial branch leaves the comparison against
+main intact.
 
-GET /api/files             -> current canonical entry filenames
+GET /api/files             -> current canonical manuscript filenames
 GET /api/meta              -> baseline and path information
-GET /api/reviews           -> entries reviewed at their current content
+GET /api/reviews           -> manuscript files reviewed at their current content
 GET /api/original/<file>   -> file content at the fixed Git baseline
 GET /api/current/<file>    -> working-tree file content
 PUT /api/current/<file>    -> atomically updates the working-tree file
@@ -34,6 +35,8 @@ import urllib.parse
 WORKBENCH_DIR = os.path.dirname(os.path.abspath(__file__))
 STORY_DIR = os.path.dirname(WORKBENCH_DIR)
 ENTRIES_DIR = os.path.join(STORY_DIR, "2-entries")
+PROLOGUE_NAME = "1-prologue.md"
+PROLOGUE_PATH = os.path.join(STORY_DIR, PROLOGUE_NAME)
 REVIEW_STATE_FILE = os.path.join(WORKBENCH_DIR, ".preview-reviews.json")
 BASE_REF = sys.argv[2] if len(sys.argv) > 2 else "main"
 REVIEW_LOCK = threading.Lock()
@@ -72,17 +75,34 @@ except RuntimeError as exc:
     raise SystemExit(str(exc)) from exc
 
 
-def entry_names():
-    """Return the canonical entry files in numeric filename order."""
+def manuscript_names():
+    """Return the prologue followed by canonical entries in numeric order."""
     try:
         names = os.listdir(ENTRIES_DIR)
     except FileNotFoundError as exc:
         raise RuntimeError(f"Entry directory is missing: {ENTRIES_DIR}") from exc
-    return sorted(
+    entries = sorted(
         name
         for name in names
         if name.endswith(".md") and os.path.isfile(os.path.join(ENTRIES_DIR, name))
     )
+    if not os.path.isfile(PROLOGUE_PATH):
+        raise RuntimeError(f"Prologue is missing: {PROLOGUE_PATH}")
+    return [PROLOGUE_NAME, *entries]
+
+
+def manuscript_path(name):
+    """Return the working-tree path for one validated manuscript filename."""
+    if name == PROLOGUE_NAME:
+        return PROLOGUE_PATH
+    return os.path.join(ENTRIES_DIR, name)
+
+
+def git_path(name):
+    """Return the repository-relative path for one manuscript filename."""
+    if name == PROLOGUE_NAME:
+        return PROLOGUE_NAME
+    return f"2-entries/{name}"
 
 
 def validated_name(raw):
@@ -90,7 +110,7 @@ def validated_name(raw):
     name = urllib.parse.unquote(raw)
     if not name or name != os.path.basename(name) or not name.endswith(".md"):
         return None
-    if name not in set(entry_names()):
+    if name not in set(manuscript_names()):
         return None
     return name
 
@@ -99,7 +119,7 @@ def baseline_bytes(name):
     """Load a file from the latest commit on the comparison branch."""
     commit = baseline_commit()
     if name not in BASELINE_CACHE:
-        result = git("show", f"{commit}:2-entries/{name}")
+        result = git("show", f"{commit}:{git_path(name)}")
         BASELINE_CACHE[name] = result.stdout if result.returncode == 0 else None
     return BASELINE_CACHE[name]
 
@@ -107,7 +127,7 @@ def baseline_bytes(name):
 def content_digest(name):
     """Return a stable fingerprint for the current working-tree content."""
     digest = hashlib.sha256()
-    with open(os.path.join(ENTRIES_DIR, name), "rb") as handle:
+    with open(manuscript_path(name), "rb") as handle:
         for chunk in iter(lambda: handle.read(65536), b""):
             digest.update(chunk)
     return digest.hexdigest()
@@ -160,13 +180,13 @@ def save_review_state(reviewed):
         raise
 
 
-def reviewed_entry_names():
-    """Return entries whose current bytes match the version that was reviewed."""
+def reviewed_manuscript_names():
+    """Return files whose current bytes match the version that was reviewed."""
     with REVIEW_LOCK:
         reviewed = load_review_state()
         return [
             name
-            for name in entry_names()
+            for name in manuscript_names()
             if reviewed.get(name) == content_digest(name)
         ]
 
@@ -198,7 +218,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         path = urllib.parse.urlsplit(self.path).path
 
         if path == "/api/files":
-            self.send_json(entry_names())
+            self.send_json(manuscript_names())
             return
 
         if path == "/api/meta":
@@ -214,7 +234,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
         if path == "/api/reviews":
             try:
-                self.send_json(reviewed_entry_names())
+                self.send_json(reviewed_manuscript_names())
             except (OSError, RuntimeError) as exc:
                 self.send_error(500, str(exc))
             return
@@ -226,15 +246,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if path.startswith(prefix):
                 name = validated_name(path[len(prefix) :])
                 if name is None:
-                    self.send_error(404, "unknown entry")
+                    self.send_error(404, "unknown manuscript file")
                     return
                 if source == "original":
                     data = baseline_bytes(name)
                     if data is None:
-                        self.send_error(404, "entry does not exist at the Git baseline")
+                        self.send_error(404, "manuscript file does not exist at the Git baseline")
                         return
                 else:
-                    with open(os.path.join(ENTRIES_DIR, name), "rb") as handle:
+                    with open(manuscript_path(name), "rb") as handle:
                         data = handle.read()
                 self.send_bytes(data, "text/markdown; charset=utf-8")
                 return
@@ -247,7 +267,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if path.startswith(review_prefix):
             name = validated_name(path[len(review_prefix) :])
             if name is None:
-                self.send_error(403, "reviews allowed only for canonical entry files")
+                self.send_error(403, "reviews allowed only for canonical manuscript files")
                 return
 
             try:
@@ -270,22 +290,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
         prefix = "/api/current/"
         if not path.startswith(prefix):
-            self.send_error(403, "writes allowed only through /api/current/<entry>.md")
+            self.send_error(403, "writes allowed only through /api/current/<file>.md")
             return
 
         name = validated_name(path[len(prefix) :])
         if name is None:
-            self.send_error(403, "writes allowed only to existing canonical entry files")
+            self.send_error(403, "writes allowed only to existing canonical manuscript files")
             return
 
         temporary = None
         try:
             length = int(self.headers.get("Content-Length", 0))
             data = self.rfile.read(length)
-            destination = os.path.join(ENTRIES_DIR, name)
+            destination = manuscript_path(name)
             destination_mode = stat.S_IMODE(os.stat(destination).st_mode)
             with tempfile.NamedTemporaryFile(
-                dir=ENTRIES_DIR, prefix=".preview-", delete=False
+                dir=os.path.dirname(destination), prefix=".preview-", delete=False
             ) as handle:
                 temporary = handle.name
                 handle.write(data)
@@ -323,7 +343,7 @@ if __name__ == "__main__":
     server = http.server.ThreadingHTTPServer(("127.0.0.1", port), Handler)
     print(f"preview server: http://localhost:{port}/preview.html")
     print(f"before: live {BASE_REF} ({baseline_commit()[:10]})")
-    print(f"edited: {ENTRIES_DIR}")
+    print(f"edited: {PROLOGUE_PATH} + {ENTRIES_DIR}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
