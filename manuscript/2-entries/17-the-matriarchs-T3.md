@@ -13,7 +13,7 @@ I spent an afternoon there, running my fingers along decades. One tapestry near 
 
 **Village Sketches**
 
-- The Docks. The harbour is carved into a natural cove, the stone worn smooth by centuries. The boats are small and light, designed to be hauled by one person; large vessels would have nowhere to go. The harbour master is a young woman who directs the entire fishing fleet with a small wooden flute. She needs neither shouting nor bells. A high trill sent one boat to the eastern quay; a low, warbling tune told another its nets needed repair. The whole affair was as quiet and orderly as a well-conducted orchestra. One boat came in late. She played a single, flat note. It sounded exactly like disappointment.
+- The Docks. The harbour is carved into a natural cove, the stone worn smooth by centuries. The boats are small and light, designed to be hauled by one person; large vessels would have nowhere to go. The harbour master, Sumi, is a young woman who directs the entire fishing fleet with a small wooden flute. She needs neither shouting nor bells. A high trill sent one boat to the eastern quay; a low, warbling tune told another its nets needed repair. The whole affair was as quiet and orderly as a well-conducted orchestra. One boat came in late. She played a single, flat note. It sounded exactly like disappointment.
 
 - The Marketplace. Two ~~merchants~~ men, red-faced and puffing out their chests, were arguing over a patch of shade. A woman walking past with a child remarked, loud enough for them to hear, "It reminds one of the Tale of the Two Grumpy Beetles." Then she was gone. The men deflated where they stood and settled the matter between them. The most effective weapon here, it seems, is a well-aimed fable.
 
