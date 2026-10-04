@@ -21,6 +21,6 @@ A small boy jumped up next, to tell of losing a shiny button, only for a dragon 
 
 A fisherman stood next, quieter than the others. He told of a dragon, a long, silver-scaled thing, that had followed his boat every morning for an entire season. It never took the fish, never capsized the nets. It simply swam alongside, just below the surface, close enough to touch. Then one morning, it wasn't there. He never saw it again. He didn't know why it came, or why it left. The knot-keeper tied a long, loose loop with no bead, no pebble. A knot for something that has no ending.
 
-Later, an old dragon shared a story. Through a Listener, who closed her eyes, placed a hand on the dragon's flank, and spoke what she felt. A story of an age, not a year: how the mountain to the west got its crooked peak. Rock and ice and slow, geological time. For this, the knot-keeper tied a simple, elegant loop of deep blue, signifying a piece of ancient truth. His enormous fingers moved like they were threading a needle.
+Later, an old dragon shared a story. Sayo, greyer at the temples and no more tolerant of unnecessary preamble, closed her eyes, placed a hand on the dragon's flank, and spoke what she felt. A story of an age, not a year: how the mountain to the west got its crooked peak. Rock and ice and slow, geological time. For this, the knot-keeper tied a simple, elegant loop of deep blue, signifying a piece of ancient truth. His enormous fingers moved like they were threading a needle.
 
 They trade mayflies for mountains.
