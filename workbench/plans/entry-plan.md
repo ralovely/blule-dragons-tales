@@ -1,6 +1,8 @@
 # entry-plan.md — shape, ending type, tics, fixes per entry (Phase 1)
 
-Consult this **before opening each file** in Phase 3; re-grep after each batch (§2 patterns). No entry is finished until its neighbours have been checked for ending-type collisions.
+**Historical working document, superseded as an execution plan (5 October 2026).** Use [the master plan](editorial-revision-plan.md) for current work and `reference/` for facts and protections. The rows below retain old numbering, past experiments, stale counts and instructions superseded by later author review. Read them for provenance, not as a checklist to reapply. In particular, the southern ending now reads “Nobody needs to ask,” the island terminology is settled, and Japanese bathing inheritance has been revised. The old appendix's section and file references belong to its historical context.
+
+Historical Phase 3 instruction: consult the per-entry rows and check neighbouring endings. Current item briefs determine which of those concerns still apply.
 
 **EM-DASH RULE (author, 2026-06-13): avoid em-dashes (`---`/`—`) throughout.** They are an AI tell, and a typographic instrument — someone writing a journal by hand wouldn't reach for them. Replace with comma, semicolon, colon, parentheses, or a full stop; restructure if none fits. The double-dash parenthetical (`--- x ---`) is banned outright. Budget: a stray single dash may survive only where speech rhythm truly demands it (target ≤4 across the whole corpus; baseline in untouched originals: 36 — sweep each batch as it's edited). The addendum device is written "P.S." (author, 2026-06-13 — never an explicit "Later"; fits her letter-leaning journal voice). Vary occasionally with a bare "Evening." or "Next morning." so the marker itself doesn't become a template. Parentheses are period-correct for Indigo's asides and are Jamie's documented tic — prefer them.
 

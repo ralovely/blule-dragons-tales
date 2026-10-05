@@ -1,5 +1,7 @@
 # Pass 1 change log — AI rhetoric and repeated prose machinery
 
+**Historical result, not current validation (reconciliation note, 5 October 2026).** The author subsequently restored or revised parts of this pass in [the 20 September review](https://github.com/ralovely/blule-dragons-tales/commit/5c34892899c4e448c63dd62a01503e09f798d3f2). The inventory and zero-results claim below describe the pass at completion, not today's manuscript. Some phrase anchors are no longer present. Do not reapply them or undo author review to reproduce those counts. The [master plan](../plans/editorial-revision-plan.md) governs remaining work; current facts and protections live in `reference/`.
+
 Completed on branch `editorial/full-plan` against `main`. Every manuscript file below has its own commit. All interventions are **non-canon prose**: ledger action `none`; chronology action `none`. The wording changes preserve the facts carried by the original passages.
 
 ## Intervention inventory

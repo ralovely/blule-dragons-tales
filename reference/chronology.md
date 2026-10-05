@@ -1,20 +1,20 @@
 # chronology.md — dating the 77 entries
 
-Entry numbers are the **new canonical 01–77**. **STATUS: dates APPLIED to all 77 entries (2026-07-04)** as an italic dateline prepended to each file, period ordinal format ("*11th March 1938*"). T1's existing "*Day N.*" markers kept alongside (her double bookkeeping: calendar + arrival count) — prune in review if it reads doubled. This table is the source of truth; adjust here first if any date changes during review.
+Entry numbers are the **canonical 01–77**. **Dates were applied to all 77 entries on 4 July 2026**, as italic ordinal datelines ("*11th March 1938*"). T1's existing day-count markers remain alongside them. This is the current dating baseline, not an unimplemented proposal. Change dates only after an author decision, here first or atomically with manuscript and ledger. The confidence labels describe the original dating evidence, not a guarantee that every passage is consistent; see the open register below.
 
-## Proposed trip windows (assumptions — please confirm/adjust)
+## Current trip windows
 
 | Trip | Arrival (day 1) | Departure | Duration | Basis |
 |---|---|---|---|---|
 | T1 | **9 March 1938** | ~28 January 1939 | ~11 months | "lasted nearly a year" (prologue); sails from Wellington, 11 days at sea (entry 19) → departs Wellington ~26 Feb 1938 |
-
-**The voyage out (T1, proposed):** departs England ~**mid-January 1938** on a New Zealand Shipping Company liner (a "Rangi" boat), London → Curaçao → Panama Canal → the mid-Pacific call off **Pitcairn Island** (islanders rowing out to trade at the rail) → **Wellington, ~mid-late February** after ~5 weeks at sea. Leaves English winter, arrives New Zealand late summer — which is why the early island entries are all warm sun. A fortnight in Wellington to find a captain; departs 26 Feb; 11 days; wakes on Aizomea 9 March. **Date Line note:** she crosses it twice in opposite directions — westbound from Panama the liner *skips* a day; eastbound out of Wellington the fishing boat *repeats* one. Period diarists always recorded this ("two Tuesdays"); available as one dry dating joke if ever wanted.
-| T2 | **2 June 1948** | ~11 October 1948 | ~4½ months | no canon constraint; proposed shorter, sparer trip |
+| T2 | **2 June 1948** | ~11 October 1948 | ~4½ months | adopted dating framework for the shorter return |
 | T3 | **14 March 1955** | ~30 April 1956 | ~13½ months | "a longer stay, a deeper one" (prologue) |
 | T4 | **5 June 1963** | **12 October 1963** (entry 69 = departure morning) | ~4 months | with Cendre & River |
-| T5 | **15 April 1971** | ~20 September 1971 | ~5 months | with River; she is 70 |
+| T5 | **15 April 1971** | ~20 September 1971 | ~5 months | with River; Indigo turns 70 on 9 June |
 
-Fixed island event: **the humming season** recurs annually "around the same date" (entry 27 editor's note) → proposed ~8 November.
+**Voyage framework recorded in the canon ledger:** England ~mid-January 1938; New Zealand Shipping Company liner via Curaçao, Panama and Pitcairn to Wellington (~five weeks); hired fishing boat departs 26 February; fog on day eleven; Aizomea arrival 9 March. The ledger records opposite Date Line crossings. Exact intermediate timings and any period travel detail require checking before insertion into prose; the former “fortnight in Wellington” expansion is not established by these approximate dates. No new voyage scene is scheduled.
+
+Fixed island event: **the humming season** recurs annually "around the same date" (entry 27 editor's note); current placement ~8 November.
 
 Historical anchor: the first settlers arrived in the fifth–sixth centuries. Some came from the Japanese archipelago carrying gourd seeds and communal-bathing customs; on Aizomea those customs met the dragons' older heated-pool practice and developed into the Manaïari form described in entries 06 and 14.
 
@@ -24,7 +24,7 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 
 ## T1 — 1938 (17 entries)
 
-| Order | # | Entry | Proposed date | Conf | Evidence / notes |
+| Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 02 | first days | 11 Mar 1938 | A | "Day three." |
 | 2 | 10 | gold means nothing | 13 Mar 1938 | A | gold found "my fifth day", written that evening |
@@ -46,7 +46,7 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 
 ## T2 — 1948 (6 entries)
 
-| Order | # | Entry | Proposed date | Conf | Evidence / notes |
+| Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 13 | feasts and fun | 18 Jun 1948 | C | |
 | 2 | 60 | when a dragon is bored | 14 Jul 1948 | B | dual T2-T5; letter to children reads T2; must precede 59 |
@@ -57,7 +57,7 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 
 ## T3 — 1955–56 (38 entries)
 
-| Order | # | Entry | Proposed date | Conf | Evidence / notes |
+| Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 30 | medicine and healing | 12 May 1955 | B | wrist broken "in my second month", healed nine days |
 | 2 | 12 | daily life | 9 Jun 1955 | B | "stopped caring about buttons somewhere in the third month"; watch "stopped months ago" |
@@ -96,23 +96,23 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 | 35 | 50 | the skywings' ballet | 29 Mar 1956 | C | |
 | 36 | 51 | the air dancers | 4 Apr 1956 | B | "a fair summary of my early years here" → late-trip retrospection |
 | 37 | 52 | the lantern keepers | 11 Apr 1956 | C | foggy season |
-| 38 | 66 | the sea, the surfers | 18 Apr 1956 | B | dual T3-T5: body is T3; **final River/Kai paragraph is 1971** — see open decision 3 |
+| 38 | 66 | the sea, the surfers | 18 Apr 1956 | B | dual T3-T5: body is T3; **final River/Kai paragraph is 1971** — presentation remains open below |
 
 ## T4 — 1963 (7 entries)
 
-| Order | # | Entry | Proposed date | Conf | Evidence / notes |
+| Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 62 | bartering for baubles | 19 Jun 1963 | B | River's "three words of Manaïari" → early; meets Kai |
 | 2 | 63 | the grand gourmands | 26 Jun 1963 | A | "volunteering at the docks every morning this week" → the week after 62 |
 | 3 | 64 | mirrors to humanity | 10 Jul 1963 | B | Manami watching River → romance visible |
 | 4 | 67 | mudscale amphibians | 24 Jul 1963 | C | |
-| 5 | 65 | I brought them here | 7 Aug 1963 | A | "I have been gone eight years" ✓ 1955→1963 |
+| 5 | 65 | I brought them here | 7 Aug 1963 | A | Original anchor: "gone eight years"; distinguish October 1955 meeting from April 1956 departure; see open register |
 | 6 | 68 | snowball fights | 4 Sep 1963 | C | |
 | 7 | 69 | leaving | 12 Oct 1963 | A | departure morning — last T4 entry |
 
 ## T5 — 1971 (9 entries)
 
-| Order | # | Entry | Proposed date | Conf | Evidence / notes |
+| Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 72 | return | 15 Apr 1971 | A | "our first day back" |
 | 2 | 61 | the mimicking mouths | 8 May 1971 | A | "Three weeks ago, I hummed a hymn" |
@@ -124,9 +124,20 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 | 8 | 76 | the compass | 5 Sep 1971 | B | "we are leaving soon" |
 | 9 | 77 | inner life | 12 Sep 1971 | A | "We are packing to leave" — final entry |
 
-## Open decisions for the author
+## Open continuity register — R1 in the master plan
 
-1. **Date format & presentation.** Options: (a) a dateline header on every entry ("11 March 1938"); (b) calendar dates only where she'd plausibly write them, keeping T1's existing "Day three/twelve" markers as the young scientist's habit (both can coexist — day-count early, calendar later); (c) dates as marginal/production metadata for layout only, not in her voice. Note the charming period detail available: her T1 voyage crosses the International Date Line, so her calendar is one day adrift from Wellington's until someone tells her.
-2. **Trip windows** above are proposals — arrival dates and durations are free variables except T1 ≈ 11 months, and T4/T5 endings pinned by 69/77.
-3. **Entry 66 (surfers)** is genuinely two dates: T3 body + the 1971 River/Kai paragraph. Options: date it T3 and let the last paragraph read as a later addition in her journal (very period — journals get postscripts years later), or date the whole entry 1971 as a retrospective. The other dual-tag entries (33, 59, 60, 70) read fine with a single date as proposed.
-4. **Gaps are a feature:** the curated-selection conceit means months with no chosen entry (e.g. Dec 1938–Jan 1939) are expected and need no filling.
+No dates are changed by the 5 October reconciliation. Resolve the following through the continuity child thread and record the author's selected changes here and in the ledger.
+
+| Anchor | Current conflict or ambiguity | Boundary |
+|---|---|---|
+| 05 / 09 | 09 explains permanent blue fingers on 29 June; 05 still asks their cause on 20 July | Keep thematic order and the mystery/reveal; decide whether dating or wording changes |
+| 60 | “For months” by 14 July, after 2 June arrival | Check remembered material or later addition before moving its date; 59 refers back to the boredom notes |
+| 62 | Exchange and apparent subsequent visit both “this morning” | May be possible on one morning; clarify only if the intended sequence needs it |
+| 64 | Yesterday / this morning / by the end of the week | Clarify when the entry is being written; preserve River/Manami beat |
+| 65 | “Gone eight years” from an April 1956 departure; Hiccupper last seen October 1955 | Rounded time since a meeting is not the same as time absent; keep birthday alignment visible |
+| 66 | April 1956 body, 1971 final paragraph | Dual-trip fact approved; choose visible later addition or retrospective treatment, retaining Sumi and River/Kai in their respective periods |
+| P / ledger §2b | Age six at naming versus 30 April 1907, before the sixth birthday on 9 June | Exact naming date requires a decision; age-six story remains the anchor |
+
+The first voyage's approximate timings and Date Line treatment also warrant checking if used to justify an exact date. Final layout may revisit where datelines appear, but their current manuscript presence is settled implementation, not an outstanding instruction to add them.
+
+**Gaps are intentional:** the curated-selection conceit permits months without a selected entry. There is no task to fill them. Hana's “reads” versus the unwritten language is tracked in the canon ledger, not resolved by changing a date.
