@@ -5,7 +5,7 @@ Reconciled 5 October 2026. This is a reading guide to the [canon ledger](canon-l
 ## Before the journals
 
 - Indigo is born in 1901, to an English father and French mother. Her childhood moves between England, the Côte Basque and Montmartre.
-- At six, she meets and names Lady Chestnut. The exact naming date in the ledger conflicts with her birthday and is awaiting a decision; do not calculate a new story date from it.
+- At six, she meets and names Lady Chestnut. The exact naming date is unspecified; the conflicting precise date was retired by the author's R1 decision.
 - She studies biology at Oxford and travels in search of dragons in the 1920s. She meets Cassius in Paris and Nangula in Prague; precise meeting years are not fixed by the current ledger.
 - Cendre is born in 1931 and River in 1933. Cassius cares for them during Indigo's absences.
 - Nangula dies in 1935. Her scrolls and compass pass to Indigo, who first reaches Aizomea in 1938. Nangula never discussed Aizomea with Indigo; later addresses to her are posthumous.
@@ -20,7 +20,7 @@ Reconciled 5 October 2026. This is a reading guide to the [canon ledger](canon-l
 | T4 | June–October 1963 | With Cendre and River, Indigo age 62: parental observation; River and Kai meet |
 | T5 | April–September 1971 | With River, Indigo age 69–70: return, belonging, succession and farewell |
 
-The 77 entries remain in thematic order, not date order. Mixed-trip entries preserve retrospective material; entry 66's 1956 body and 1971 River/Kai paragraph still need an agreed presentation. Gaps between selected entries are intentional.
+The 77 numbered pieces remain in thematic order, not date order. Mixed-trip entries preserve retrospective material; entry 66 pairs two separate excerpts dated 18 April 1956 and 22 April 1971, without a postscript or an editorial explanation. The second date is an editorial placement under the author's R1 instruction to give it a full dateline. Gaps between selected entries are intentional.
 
 ## After the journeys
 

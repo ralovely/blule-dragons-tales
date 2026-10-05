@@ -12,4 +12,6 @@ There are waves that only dragons can ride. Enormous, deep-ocean swells that bre
 
 Every morning, before the fishing starts, the first surfers are in the water. It is the quietest part of the day. I went once, at Manami's insistence. I cannot surf. I sat on the board in the shallows and watched the others. The water was warm. A dragon surfaced beside me, looked at me, and dived under again. I stayed for an hour. The bay at Saint-Jean-de-Luz was never like this. Nothing was. I caught exactly zero waves. I caught something else.
 
-River, on her second visit, took to it immediately. She says she is learning. From what I can see, she has already learnt. Kai takes her out at dawn. They come back wet and grinning and speaking a language I do not think is entirely Manaïari.
+*22nd April 1971*
+
+River, on her second visit, took to surfing immediately. She says she is learning. From what I can see, she has already learnt. Kai takes her out at dawn. They come back wet and grinning and speaking a language I do not think is entirely Manaïari.

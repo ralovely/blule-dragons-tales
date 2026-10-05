@@ -5,12 +5,14 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 
 **Reconciled 5 October 2026:** documented author edits supersede stale quotations here. The southern ending below follows the 20 September author review; the sound-instrument quotation follows the retained Pass 1 wording. No new story event, date or mechanism is approved by this reconciliation. Known conflicts are listed in §7 and `chronology.md`, pending decisions rather than hidden by a false consistency claim.
 
+**R1 author decisions, 5 October 2026:** continuity selections subsequently applied; see §7 and the [R1 change log](../workbench/history/r1-continuity-change-log.md). Entry 66 contains two separately dated excerpts, not an old journal annotated on a later trip. Pepper does not carry her old journals from trip to trip. No Jamie explanation is added.
+
 ## 1. Chronology
 
 | When | Fact | Source |
 |---|---|---|
 | 9 Jun 1901 | Indigo born (day per §2b) | P, 29 note |
-| ~1907 | Aged six, meets the "hill" — offers it a button; names it Lady Chestnut (naming day 30 Apr 1907, §2b) | P |
+| Age six | Meets the "hill" — offers it a button; names it Lady Chestnut; exact date unspecified (§2b) | P |
 | — | Father English (bookish); mother French (Montmartre flat, dinner-party-for-fourteen). Childhood split: winters at the English estate; summers with the mother's people on the **Côte Basque** (specifically **Saint-Jean-de-Luz**, named in entry 66) or at the Montmartre flat. (Fix 16 resolved; author amended Brittany → Côte Basque — roots Indigo's south-of-France familiarity, cf. entries 03/42 and fix 8.) | P |
 | — | Biology at Oxford; one of three women in the department | P |
 | 1920s | Leaves England; travels Eastern Europe, South America, Asia Minor, chasing dragon stories | P |
@@ -27,7 +29,7 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 | Mar 1955–Apr 1956 | **T3**, age 53–54, "a longer stay, a deeper one" (~13½ months); interior expedition 3–18 Oct 1955 (16 days, 12 villages, ~a fifth of the northern half) | P, 53–57 |
 | ~8 Nov (annual) | **The humming season** — recurs "around the same date" each year; T3 instance 8 Nov 1955 | 27 + note |
 | Jun–Oct 1963 | **T4**, age 62, with Cendre and River; departs 12 Oct 1963 (69) | P, chronology.md |
-| 1963 | "I have been gone eight years"; approximation needs reconciliation with departure in April 1956 and the October 1955 Hiccupper meeting | 65, chronology.md |
+| 1963 | Away for over seven years (April 1956 departure to June 1963 return); nearly eight years since the October 1955 Hiccupper meeting at the August outing | 65, chronology.md |
 | Apr–Sep 1971 | **T5**, age 69→70 (turns 70 on 9 Jun 1971, mid-trip), with River alone; departs ~20 Sep 1971 | P, chronology.md |
 | 1971 | "I have known Manami for over thirty years" (1938→1971 ✓) | 77 |
 | 26 Mar 1972 | Jamie born; Dragon Protection Act the same year | P, §2b |
@@ -38,6 +40,8 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 | — | **Aizomea is an island**, ~20 days to cross on foot, 15 north–south; Indigo estimates ~150 miles across (Jamie's note: closer to 100; southern half unmapped) | 53 |
 
 **Datelines:** every entry now opens with its date (italic, period ordinal form, e.g. "*11th March 1938*"), per the applied per-entry table in `chronology.md` — that table is the source of truth; change it first if a date moves. Entries remain **thematically ordered, not chronological** (P: "arranged them by subject"), so dates deliberately do not ascend with entry numbers. T1 keeps her "*Day N.*" arrival-count markers alongside (double bookkeeping, a young expedition scientist's discipline).
+
+Entry 66 pairs excerpts dated **18 April 1956** and **22 April 1971** within one numbered piece. The second date is an editorial placement under the author's instruction to use a full date, one week after T5 arrival; it is not inferred as an exact day from the prose. Sumi and Indigo's surfing stay in 1956; River/Kai stay in 1971. On review, the author changed “took to it” to “took to surfing” so the second excerpt stands on its own; the remaining prose is unchanged.
 
 ## 2. People
 
@@ -51,7 +55,7 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 - **River** — daughter, b. 7 Aug 1933; Jamie's mother; visits Aizomea 1963 and 1971; takes the side of whoever is having the most fun (41); the dock/Kai thread (62→63→64 watched by Manami→66→70→74→blue cloth 77); became an explorer; died in a plane crash over the Pacific.
 - **Kai** — young Manaïari fisherman (b. ~1940); teaches River Manaïari (62), takes her surfing at dawn (66); shoulders touching at dinner (74). Implied to be Jamie's father — *never stated; restraint is the engine; do not advance*.
 - **Manami** — Indigo's first friend and unofficial minder; speaks English (learnt from Nangula); a head taller than Indigo; blue-stained palms = harvester (09); directs fishing crews (03); daughter Hana; "next time" vocabulary (56); two fingers on the singed knot (22); never asks Indigo to stay or explain (77).
-- **Hana** — Manami's daughter, b. ~1937; baby in T1 (03) → young woman apprenticing under Emi at egg-kintsugi in T3 (37) → mother reading to her children in T5, aged about 34 (73). Her family's regular dragon waits all night when she skips a story. Manami is consequently a grandmother; the manuscript does not announce this. Planted payoff.
+- **Hana** — Manami's daughter, b. ~1937; baby in T1 (03) → young woman apprenticing under Emi at egg-kintsugi in T3 (37) → mother telling her children stories in T5, aged about 34 (73). Her family's regular dragon waits all night when she skips a story. Manami is consequently a grandmother; the manuscript does not announce this. Planted payoff.
 - **Sayo** — Listener; adult in T1 (05), greyer at the temples seventeen years later in T3 (21). Patient with dragons, impatient with rambling people: interrupts Manami to ask her to reach the end sooner. Sits with the thirsty dragon in 05 and translates the old dragon's mountain story in 21. Not the bone-setter in 30.
 - **Sumi** — young harbour master in T3 (17, 66); directs the village fishing fleet with a wooden flute, surfs during lunch, returns with wet hair. These are the previously fixed harbour-master appearances, now named; 66's Sumi passage belongs to April 1956, not its 1971 River/Kai paragraph.
 - **Ren** — boy in April 1956 (52), father in May 1971 (73), fifteen years later. His theory is that Lantern Keepers fear the dark; as an adult he performs all the voices when telling his children stories. His household is next door to Hana's, not the same household.
@@ -59,7 +63,7 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 - **Gerald** — small dragon resident on Indigo's roof (12, 16); snores; never acknowledges her; never seen eating.
 - **Lady Chestnut** — the copper-scaled hill-dragon, red collar; still in the estate woods nearly 100 years later; greets Jamie (P).
 - **The Elder** — old-jade sea-gate dragon; blinks at sleepers, rarely nods; nodded at Indigo (18).
-- **The Hiccupper** — young fire dragon with involuntary flame hiccups, hillside settlement (53); grown, calmer, remembers her eight years on (65).
+- **The Hiccupper** — young fire dragon with involuntary flame hiccups, hillside settlement (53); grown, calmer, remembers her nearly eight years on (65).
 - **Margaret** — dragon wearing spider-lace since Tuesday (08).
 - Unnamed but fixed: **the scarred veteran** ("He went south once" — four claw scars, sleeps in the square, 22); the Boulderback critic (21); the knot-keeper with dinner-plate hands (21, 22); the backwards walker (16); the boulder-impersonator ("It ate the sign", 41); the dock critic (41); the white night-watcher in the square (41); the bell dragon (60); the laundry-nest dragon (60); the sound-collector (57); the meadow-back and its cat-sized tenant (48); the violet-flower eater (54); the dental inspector (29); Hans the Hunter dynasty (32).
 
@@ -76,7 +80,7 @@ References are `entry#` in the canonical **01–77** numbering (`manuscript/2-en
 | **Manami** | 16 August 1908 | alive through T5 | Entry 23 ("Manami and I disagreed today… She is always right.") is dated 16 Aug 1955 = **her birthday**. Optional, wicked. |
 | **Hana** | May 1937 | — | Baby on the hip, March 1938 ✓; kintsugi apprentice at 18 in 1955 ✓. |
 | **Kai** | 1 December 1940 | — | "Young fisherman" at 22 in 1963 ✓; 30 in 1971; Jamie's father (implied, never stated). |
-| **Lady Chestnut** | age unknown | — | **Naming day: 30 April 1907** — the button, the six-year-old, the gingerbread steam; she greets Jamie nearly 100 years later, around 2005. A date Indigo might privately keep. |
+| **Lady Chestnut** | age unknown | — | **Naming: when Indigo was six; exact date unspecified.** The button, the six-year-old, the gingerbread steam; she greets Jamie nearly 100 years later, around 2005. |
 | Gerald | — | — | Appears on her roof T3 1955; biography otherwise a mystery, which is the point. |
 
 River/Cendre death dates are the freest inventions (canon says only: River vanished, Cendre "a few months later", both before Jamie finds the trunk ~2005). None of the alignments are voiced in entry text — they live in the datelines, for rereaders.
@@ -152,10 +156,11 @@ Total 72 single-tag + 5 dual-tag = **77**. The two §7a additions are 22 (the ol
 
 ## 7. Reconciliation notes and unresolved questions
 
-These notes expose gaps in the references; they do not amend the story. The master plan assigns continuity to R1 and material coherence to R6.
+These notes distinguish resolved continuity decisions from remaining inventory questions. The master plan assigns continuity to R1 and material coherence to R6.
 
-- **Dated knowledge and elapsed time:** see the open register in `chronology.md` for 05/09, 60, 62, 64, 65, 66 and Chestnut's naming date. In particular, the age-six story and 30 April 1907 cannot both agree with Indigo's recorded birthday. Preserve the recorded values until an author decision resolves the conflict.
-- **Hana reading (73):** the approved resident pass names her as the mother, but “reads” remains unexplained beside the unwritten-language fact. No literacy system, imported book or later written language is authorised by that wording alone. Resolve the verb or its intended meaning while preserving the family payoff.
+- **R1 dated knowledge and elapsed time (author-reviewed):** 05 ends on the permanent stain, without claiming ignorance of its cause or recalling an earlier question; 09 supplies the discovery. 60 uses weeks; 62 remains a possible same-morning sequence; 64 recounts the previous week. 65 states over seven years away, then describes growth “since I last saw it” without repeating an elapsed-year count. Entry 66 pairs two separately dated excerpts. See the decisions register in `chronology.md`.
+- **Chestnut naming (author-approved):** retire the conflicting 30 April 1907 date, preserving the age-six story and Indigo's birthday. No replacement naming day is established.
+- **Hana storytelling (73, author-approved):** Hana tells stories to her children. The narrator's “child being read to” simile remains; it creates no island literacy claim. No literacy system, imported book or later written language is introduced.
 - **Floating eggs (34):** the current manuscript explicitly says traces of blue stone make one variety lighter than air. The previous plan incorrectly treated this as a connection not yet present. Inventory the existing claim before any coherence edit; neither delete it silently nor generalise it into a universal buoyancy law.
 - **Craft inventory:** 37 already describes blue stone mixed with tree resin; 24 already describes blue metal glider frames. Their presence is not permission to invent further material laws. R6 must distinguish existing statements from proposed explanations.
 - **Historical summaries:** older dates and proposed entry orders in earlier versions of `timeline.md`, and superseded tic targets in the historical entry plan, are not alternative canon. Consult Git history for provenance, not as an instruction to restore a discarded version.

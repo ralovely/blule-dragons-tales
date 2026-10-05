@@ -96,7 +96,7 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 | 35 | 50 | the skywings' ballet | 29 Mar 1956 | C | |
 | 36 | 51 | the air dancers | 4 Apr 1956 | B | "a fair summary of my early years here" → late-trip retrospection |
 | 37 | 52 | the lantern keepers | 11 Apr 1956 | C | foggy season |
-| 38 | 66 | the sea, the surfers | 18 Apr 1956 | B | dual T3-T5: body is T3; **final River/Kai paragraph is 1971** — presentation remains open below |
+| 38 | 66 | the sea, the surfers | 18 Apr 1956 | B | first of two separately dated excerpts; Sumi and Indigo's surfing belong here; River/Kai excerpt dated 22 Apr 1971 below |
 
 ## T4 — 1963 (7 entries)
 
@@ -106,38 +106,40 @@ Confidence: **A** = pinned by text (day-counts, explicit sequence) · **B** = co
 | 2 | 63 | the grand gourmands | 26 Jun 1963 | A | "volunteering at the docks every morning this week" → the week after 62 |
 | 3 | 64 | mirrors to humanity | 10 Jul 1963 | B | Manami watching River → romance visible |
 | 4 | 67 | mudscale amphibians | 24 Jul 1963 | C | |
-| 5 | 65 | I brought them here | 7 Aug 1963 | A | Original anchor: "gone eight years"; distinguish October 1955 meeting from April 1956 departure; see open register |
+| 5 | 65 | I brought them here | 7 Aug 1963 | A | River's thirtieth birthday retained; over seven years away from the island, nearly eight since the October 1955 Hiccupper meeting |
 | 6 | 68 | snowball fights | 4 Sep 1963 | C | |
 | 7 | 69 | leaving | 12 Oct 1963 | A | departure morning — last T4 entry |
 
-## T5 — 1971 (9 entries)
+## T5 — 1971 (10 entries/excerpts, including 66's second excerpt)
 
 | Order | # | Entry | Applied date | Conf | Evidence / notes |
 |---|---|---|---|---|---|
 | 1 | 72 | return | 15 Apr 1971 | A | "our first day back" |
-| 2 | 61 | the mimicking mouths | 8 May 1971 | A | "Three weeks ago, I hummed a hymn" |
-| 3 | 73 | bedtime stories | 26 May 1971 | C | |
-| 4 | 74 | an evening | 9 Jun 1971 | B | River & Kai established |
-| 5 | 45 | the final flight | 30 Jun 1971 | B | "this morning" |
-| 6 | 70 | night | 14 Jul 1971 | B | dual T3-T5; "River is out" → 1971 |
-| 7 | 75 | cloud-weaving wyrms | 11 Aug 1971 | B | tea surrender, sore knees → late |
-| 8 | 76 | the compass | 5 Sep 1971 | B | "we are leaving soon" |
-| 9 | 77 | inner life | 12 Sep 1971 | A | "We are packing to leave" — final entry |
+| 2 | 66 | the sea, the surfers (second excerpt) | 22 Apr 1971 | C | Editorial placement selected under the author's R1 instruction to give the separate excerpt a full date: one week after arrival, while River says she is learning; no precise day inferred from the prose |
+| 3 | 61 | the mimicking mouths | 8 May 1971 | A | "Three weeks ago, I hummed a hymn" |
+| 4 | 73 | bedtime stories | 26 May 1971 | C | |
+| 5 | 74 | an evening | 9 Jun 1971 | B | River & Kai established |
+| 6 | 45 | the final flight | 30 Jun 1971 | B | "this morning" |
+| 7 | 70 | night | 14 Jul 1971 | B | dual T3-T5; "River is out" → 1971 |
+| 8 | 75 | cloud-weaving wyrms | 11 Aug 1971 | B | tea surrender, sore knees → late |
+| 9 | 76 | the compass | 5 Sep 1971 | B | "we are leaving soon" |
+| 10 | 77 | inner life | 12 Sep 1971 | A | "We are packing to leave" — final entry |
 
-## Open continuity register — R1 in the master plan
+## R1 continuity decisions — 5 October 2026
 
-No dates are changed by the 5 October reconciliation. Resolve the following through the continuity child thread and record the author's selected changes here and in the ledger.
+The reconciliation itself changed no dates. The author subsequently approved the R1 recommendations, replacing G with two separate dated excerpts within entry 66: no P.S. and no Jamie explanation. The second excerpt's full date is an editorial placement under that instruction. No existing entry dateline or trip window moves. See the [R1 decision and change log](../workbench/history/r1-continuity-change-log.md).
 
-| Anchor | Current conflict or ambiguity | Boundary |
+| Anchor | Selected resolution | Boundary |
 |---|---|---|
-| 05 / 09 | 09 explains permanent blue fingers on 29 June; 05 still asks their cause on 20 July | Keep thematic order and the mystery/reveal; decide whether dating or wording changes |
-| 60 | “For months” by 14 July, after 2 June arrival | Check remembered material or later addition before moving its date; 59 refers back to the boredom notes |
-| 62 | Exchange and apparent subsequent visit both “this morning” | May be possible on one morning; clarify only if the intended sequence needs it |
-| 64 | Yesterday / this morning / by the end of the week | Clarify when the entry is being written; preserve River/Manami beat |
-| 65 | “Gone eight years” from an April 1956 departure; Hiccupper last seen October 1955 | Rounded time since a meeting is not the same as time absent; keep birthday alignment visible |
-| 66 | April 1956 body, 1971 final paragraph | Dual-trip fact approved; choose visible later addition or retrospective treatment, retaining Sumi and River/Kai in their respective periods |
-| P / ledger §2b | Age six at naming versus 30 April 1907, before the sixth birthday on 9 June | Exact naming date requires a decision; age-six story remains the anchor |
+| 05 / 09 | Author review ends 05 on the permanent stain, removing the recalled question; 09 remains the source discovery on 29 June | No claim of ignorance in July; thematic reveal and permanent stain retained |
+| 60 | “For weeks” fits the six weeks since 2 June arrival | 59 still follows and refers back to the boredom notes |
+| 62 | Retained: both visits can occur in one morning | No inferred intervening day |
+| 64 | “Last week” / “the next morning” makes the completed week retrospective | River/Manami ending unchanged |
+| 65 | “I was away for over seven years”; author review then uses only “since I last saw it”, without a second year count | April 1956 departure, June 1963 return, October 1955 meeting and River's birthday retained |
+| 66 | Two excerpts dated 18 April 1956 and 22 April 1971 in the same numbered piece | Pepper does not carry old journals between trips; no later annotation of an old volume or Jamie intervention implied |
+| P / ledger §2b | Age six retained; exact naming date retired as unspecified | Indigo's 9 June 1901 birthday unchanged; no replacement naming day invented |
+| 73 | Hana tells her children stories | No new literacy system; the narrator's reading simile remains |
 
 The first voyage's approximate timings and Date Line treatment also warrant checking if used to justify an exact date. Final layout may revisit where datelines appear, but their current manuscript presence is settled implementation, not an outstanding instruction to add them.
 
-**Gaps are intentional:** the curated-selection conceit permits months without a selected entry. There is no task to fill them. Hana's “reads” versus the unwritten language is tracked in the canon ledger, not resolved by changing a date.
+**Gaps are intentional:** the curated-selection conceit permits months without a selected entry. There is no task to fill them. Entry 66 appears in both T3 and T5 tables because it contains two dated excerpts; the collection still has 77 numbered pieces.
