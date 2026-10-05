@@ -4,7 +4,7 @@ Today I witnessed something few in the world have (I seem to be saying that ofte
 
 It was also one of the funniest scenes. In a stone courtyard hemmed in by house walls on three sides, children were playing a game I'd describe as a mix of rugby and football, with the added twist of trying to get as many bounces off the walls as possible. It took me a few minutes to realise the 'ball' was, in fact, an egg. A dragon egg.
 
-This variety was bouncy. Like rubber. As the game picked up, the egg seemed to take on a life of its own, adding a hilarious randomness to proceedings. After one epic kick, it bounced straight back into the kicker, with what looked for all the world like intent. N.B. A dragon egg is not fragile. Someone ought to tell the museum men who cradle them like porcelain.
+This variety was bouncy. Like rubber. As the game picked up, the egg seemed to take on a life of its own, adding a hilarious randomness to proceedings. After one terrific kick, it bounced straight back into the kicker, with what looked for all the world like intent. N.B. A dragon egg is not fragile. Someone ought to tell the museum men who cradle them like porcelain.
 
 That's when Emi, a middle-aged woman who had been watching with an amused yet attentive eye, interrupted the game. The egg lay still on the ground. The children, a few other villagers, and even a couple of dragons gathered around. The egg, quite round until now, began to change shape from the inside. A very sharp claw pierced through and tore a larger hole.
 

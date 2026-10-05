@@ -1,6 +1,6 @@
 *28th June 1955*
 
-Gerald update. He slept on the roof again last night. He has not moved since yesterday afternoon. I do not know what he eats. I have never seen him eat. I left a piece of fish near the door this morning as an experiment. When I came back, the fish was gone and Gerald had not moved. Either he is faster than he looks, or something else ate it. He did not acknowledge me. He has never acknowledged me. I am beginning to take it personally.
+As for Gerald, he slept on the roof again last night. He has not moved since yesterday afternoon. I do not know what he eats. I have never seen him eat. I left a piece of fish near the door this morning as an experiment. When I came back, the fish was gone and Gerald had not moved. Either he is faster than he looks, or something else ate it. He did not acknowledge me. He has never acknowledged me. I am beginning to take it personally.
 
 There is also a dragon I keep seeing asleep in different places: by the river this morning, at the market yesterday, on a rooftop the day before. It appears to be the same dragon. I have never seen it move or wake. I am beginning to wonder whether there is one of it at all.
 
