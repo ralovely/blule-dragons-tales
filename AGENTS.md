@@ -2,6 +2,8 @@
 
 - **Edit with context.** Read the whole piece before changing a passage. Keep each editorial pass focused on its agreed purpose; flag unrelated opportunities separately.
 - **Distinguish proposals from decisions.** Consult the relevant authoritative documents in `reference/`. Treat scratchpads and historical plans as working material, not permission to change the manuscript. Ask when instructions conflict. Keep affected references in sync with approved changes.
+- **Worldbuilding decisions.** Before proposing or changing wider-world history, institutions, human–dragon relations, or general dragon rules, consult `reference/wyrmspan-dragon-facts.md` and the relevant source rows it points to, alongside the canon ledger.
+- **Tone research.** When consulting style influences or proposing voice, tone or illustrated-book form, read `reference/tone-research/README.md` first for the author's creative direction and the linked assessment.
 - **Keep supporting material separate.** Put plans, exploratory notes, research, and editorial records in the appropriate `workbench/` directory. Create them when useful, rather than documenting every small edit. Keep story facts and creative direction out of this file.
 - **Make changes reviewable.** Keep revisions narrowly scoped and preserve a meaningful before/after comparison in the preview until author approval. Reserve its “Reviewed” marks for the author. Start the preview with `amp orb services ensure` in an Amp orb.
 
