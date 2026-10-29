@@ -7,7 +7,7 @@ They are preparing for the Knotted Cord.
 A dragon's memory, it turns out, is a strange and selective thing. They can recall the shape of a continent shifting over millennia, but will forget what they ate for breakfast. The small, fleeting moments of a year slip through their grasp like fine sand. So the Manaïari have made themselves the keepers of the dragons' little memories. And in return, the dragons repay the favour with the stories of the earth itself.
 
 
-We gathered at dusk. Or rather, I arrived at dusk. The others arrived when they arrived. No event on this island begins at its announced time. I have tested this rigorously and suspect a philosophical position on the nature of time, which I find both admirable and infuriating.
+We gathered at dusk. Or rather, I arrived at dusk. The others arrived when they arrived. No event on this island begins at its announced time. I have tested this rigorously. Admirable, in principle. Infuriating when one is waiting.
 
 A vast, open-air amphitheatre cupped between three mossy hills. Manami sat beside me without a word. A bonfire blazed in the centre. The dragons rested along the slopes, their immense forms like smaller hills themselves under the starlight.
 
