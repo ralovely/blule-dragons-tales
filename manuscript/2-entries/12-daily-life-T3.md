@@ -12,6 +12,6 @@ There is a rock near the edge of the ridge where I go to write and sketch. A dra
 
 Small objects have been appearing on my desk overnight. A pebble. A feather. A piece of shell. I have never seen who leaves them. Gerald is the obvious suspect, but Gerald does not move. The objects have no pattern I can identify. I keep them in a row along the windowsill. The row is getting longer.
 
-I keep a small pot of blue stone poultice on my desk. I use it on cuts, blisters, sore joints. It has become ordinary, the way aspirin is ordinary back home.
+I keep a small pot of poultice on my desk. I use it on cuts, blisters, sore joints. It smells worse than anything I have put it on. It has become ordinary, the way aspirin is ordinary back home.
 
 The evenings are long and never quiet. Communal meals that stretch past dark, voices and firelight, dragons settling into their spots around the edges. By the time I get back to my desk the candle is half gone and my notes from the day are already blurring into the next meal, the next conversation, the next thing someone wants to show me. I write and sketch until my eyes ache, then sit outside and listen. I ran out of paint weeks ago. I have been making my own from what I can find. Crushed berries, charcoal, clay from the riverbed. The blue stone, ground fine, produces a pigment so vivid it makes everything else on the page look timid. My illustrations are slowly turning blue. I do not mind. The island is never silent. It is never loud either. I should also write about the birds here. Tomorrow.

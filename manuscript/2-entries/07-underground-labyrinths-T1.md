@@ -6,4 +6,4 @@ The mountains are also home to gigantic caves. The climb to reach them is beastl
 
 Higher, much higher, hang what I have no choice but to call floating islands: islands, floating, complete with their own mountains, plains, and underground caves (although the notion of "underground" grows slippery when one stands beneath the ground in question).
 
-Of them, I know only what I can see and what the wind carries down. The Manaïari speak of them with a familiar reverence, these airborne quarries from which they fetch the impossible blue stone. The dragons fly up to them as casually as I would cross a road. This evening the islands turned amber, then violet, then went dark one by one as the sun left them. I watched until the highest one went out.
+Of them, I know only what I can see and what the wind carries down. The Manaïari speak of them with a familiar respect, these airborne quarries from which they fetch the impossible blue stone. The dragons fly up to them as casually as I would cross a road. This evening the islands turned amber, then violet, then went dark one by one as the sun left them. I watched until the highest one went out.
