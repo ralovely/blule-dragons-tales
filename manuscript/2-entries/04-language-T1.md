@@ -4,7 +4,7 @@
 
 The language here sounds like water over stones. Lots of vowels, soft consonants, a rhythm that rises and falls without ever quite hurrying. It is, I think, a language designed to be overheard by sleeping dragons. There is even a formal register, spoken more softly and slowly, used only near dragons, out of respect for the Listeners who might be working nearby.
 
-I am not starting from nothing. Manami speaks English, learnt from Nangula over her many visits, and a handful of others know enough to help me when I point at something and look lost. I am teaching Manami more in return, and she is a quicker student than I am. This is not a compliment to her so much as a confession about me.
+I am not starting from nothing. Nangula taught Manami English over her many visits, and a handful of others know enough to help me when I point at something and look lost. I am teaching Manami more in return, and she is a quicker student than I am. This is not a compliment to her so much as a confession about me.
 
 I have been saying what I thought meant "good morning" for three weeks now. Manami told me yesterday that I have in fact been saying something closer to "the fish agrees." She waited three weeks. She says it was funnier that way. The children, who have been following me around repeating everything I say, have apparently known all along. They are still saying it. To each other. While looking at me.
 

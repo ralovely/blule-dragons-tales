@@ -39,7 +39,7 @@ The first was Cassius Worthington, a scientist devoted to the study of extinct e
 
 The second was Nangula Sossusvlei.
 
-I never met Nangula. What I know of her I have assembled from Indy's journals, from their letters, and from the stories my grandmother told late at night when the memories came loose. She was from Namibia. She had been going back and forth to Aizomea her whole life, alone and unannounced, long before Indy knew the place existed. From the photographs in the trunk, she was a tall woman with enormous patience. Indy wrote that she moved as though she had been walking for centuries and had decided not to rush.
+I never met Nangula. What I know of her I have assembled from Indy's journals, from their letters, and from the stories my grandmother told late at night when the memories came loose. She was from Namibia and had spent decades trying to discover which of the world's dragon stories belonged to the same animals. Indy followed rumours towards a creature; Nangula followed a creature through the rumours. On a dragon's trail, she wanted another observation; Indy wanted to follow the tracks before the rain came. They were both right often enough to be irritating. She had been going back and forth to Aizomea her whole life, alone and unannounced, long before Indy knew the place existed. From the photographs in the trunk, she was a tall woman with enormous patience. Indy wrote that she moved as though she had been walking for centuries and had decided not to rush.
 
 They met at a botanical conference in Prague. Indy was presenting a paper on "Acoustic Resonances in Minerals", a topic met with more than a few stifled chuckles. She had with her a peculiar, lumpy rock she'd acquired from a sailor's market, which she swore hummed a low tune at dusk. It refused to perform for the audience.
 
@@ -49,7 +49,7 @@ The rock was not a rock. It was a dormant dragon egg.
 
 They found each other again and again over the years, in the strangest places: a teahouse in Hong Kong, a bookshop in Lisbon, a railway platform in Nairobi. Nangula would appear, examine whatever Indy was working on, and say something sideways. "That sailor's knot you sketched. Have you considered it as a map of a current?" She would leave behind a small gift: a tattered almanac, a book of poetry with a single phrase underlined. Each was a breadcrumb, though Indy did not realise for years that the trail led anywhere, let alone to Aizomea.
 
-Nangula had known all along. She had been waiting for the right person to show it to, and she had decided that person was Indy; the years of sideways questions were her way of making sure.
+Nangula had known all along. She had kept Aizomea secret through decades of work; now she had chosen Indy to carry that work on.
 
 ---
 
