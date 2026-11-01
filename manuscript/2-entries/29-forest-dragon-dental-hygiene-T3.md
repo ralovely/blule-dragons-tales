@@ -10,4 +10,4 @@ I examined a dragon's teeth up close. Centuries old, all intact. I could find ne
 
 Naturally, I tried the paste. It works extraordinarily well. My teeth have never felt cleaner. The side effect is that I smiled blue for the rest of the day. Manami took one look at me and laughed so hard she had to sit down. I kept my mouth shut for the evening. I used the paste again the next morning. And the morning after that. Within a week I had joined the line: thirty dragons and one Englishwoman at the river's edge, all chewing in silence as the sun came up. Nobody objected to my presence. It is the most peaceful fifteen minutes of my day, and I intend to continue the practice for as long as I have teeth. Dental hygiene is, improbably, one of the great cultural achievements of Aizomea.
 
-*(Editor's note: When Lady Pepper passed away in 1985, aged eighty-four, she had a full set of teeth that would have been the envy of a woman half her age.)*
+*(Editor's note: My grandmother died in 1985, aged eighty-four. All her own teeth.)*

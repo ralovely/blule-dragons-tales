@@ -5,7 +5,7 @@ It's hard to talk about dragons without talking about Lady Indigo Pepper. Or Ind
 
 I should start with the house. It is where I found the story. Its beginning lies elsewhere.
 
-The door stuck, the way it always had. Inside, the house smelled of dust and something underneath the dust that was hers. The little table where we'd had tea parties with impossibly tiny sandwiches was still there, still set for two. The bannister I used to slide down was still smooth on the underside, where a hundred descents had polished it. She used to pretend to be furious.
+The door stuck, the way it always had. Inside, the house smelled of dust and something underneath the dust that was hers. The little table where we'd had tea parties with impossibly tiny sandwiches was still there, still set for two. The bannister I used to slide down was still smooth on the underside, where a hundred descents had polished it. She used to pretend to be furious. I wish she could tell me off again.
 
 The Great Drawing-Room Expedition was a serious affair. Indy would turn the world upside down, draping sheets over upended armchairs to create the 'Subterranean Labyrinth'. To navigate this treacherous cave system, walking was forbidden. We had to move like 'Quartzy Rockbreakers', wriggling on our bellies and dislocating imaginary joints to squeeze through the impossibly tight gaps beneath the sofa. Our solemn mission was to retrieve the rare 'purple crystals', the lost amethyst earrings of Indy's mother, before the 'Smirking Ridgeback' (the grandfather clock) chimed five, signalling the cave's collapse.
 
@@ -95,6 +95,6 @@ A dragon stepped out of the trees, copper-scaled, wearing a bright red collar, a
 
 That was twenty years ago. I have spent those years reading, translating, travelling, and trying to understand a woman I thought I knew. This book is what I found.
 
-A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote as she lived: out of order, without a plan, whenever things struck her. I have chosen the entries that best show the world she found, and arranged them by subject: a world assembled from its pieces.
+A note on what follows. My grandmother's journals span five trips over thirty-three years, from 1938 to 1971. There are thousands of pages. What you are about to read is a selection. She wrote whenever things struck her; I have had to supply the order. I have chosen the entries that best show the world she found, and arranged them by subject: a world assembled from its pieces.
 
 The rest is hers: the journals, the illustrations, the letters, and all the other knick-knackeries that Lady Indigo Pepper left for us to rediscover. The compass sits open on my desk as I write, its green-gold eye brighter in one particular direction.
